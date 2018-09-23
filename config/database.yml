@@ -30,7 +30,7 @@ development:
   database: brandoneven
   pool: 5
   username: brandoneven
-  password: 12Silverado
+  password:
   timeout: 5000
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -60,5 +60,5 @@ test:
   database: brandoneven
   pool: 5
   username: brandoneven
-  password: 12Silverado
+  password:
   timeout: 5000
