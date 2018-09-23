@@ -9,6 +9,7 @@ Things you may want to cover:
     Ruby 2.5.1
 
 * System dependencies
+    Rails 5.2.1
 
 * Configuration
 
