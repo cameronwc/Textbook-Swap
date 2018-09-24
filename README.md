@@ -15,8 +15,12 @@ Things you may want to cover:
 
 * Database creation
     Setup a postgres database with a textbookswap table
+    This is done in different ways depending on your operating system
+    macOS: https://www.codementor.io/engineerapart/getting-started-with-postgresql-on-mac-osx-are8jcopb
+    linux: Depends on distrobution
 
 * Database initialization
+    in a terminal run these commands, replacing your username and password with the ones you setup in postgres:
     export POSTGRES_USERNAME='username'
     export POSTGRES_PASSWORD='password'
 
