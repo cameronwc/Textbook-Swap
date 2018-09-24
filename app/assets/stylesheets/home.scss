@@ -1,62 +1,72 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-@import url('https://fonts.googleapis.com/css?family=Lobster');
 
 $orange-color: #f5af19;
 $red-color: #f12711;
-
+@import url("https://fonts.googleapis.com/css?family=Lobster");
 body {
-    color: white !important;
+	color: white !important;
 }
 
 #home {
     height: 40%;
-    background-image: radial-gradient(circle at 100%, $orange-color, $red-color);
-    border-bottom: 3px $red-color;
+    min-height: 500px;
+	background-image: url('hero-background.png');
+	background-position: bottom;
+	background-size: cover;
+	border-bottom: 3px $red-color;
 }
 
 .search_container {
-    margin-top: 5%;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 10px;
-    width: 65%;
-    padding: 25px;
+	margin-top: 5%;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 10px;
+	width: 65%;
+	padding: 25px;
 }
 
-.logo{
-    font-size: 3em;
-    font-family: 'Lobster', cursive;
+.logo {
+	font-size: 3em;
+	font-family: 'Lobster', cursive;
 }
 
 .search_container h2 {
-    text-align: left;
+	text-align: left;
 }
 
 .item {
-    color: white !important;
+	color: white !important;
 }
 
-.left.box{
-    background-color: $orange-color;
-    color: black;
+.left.box {
+	background-color: $orange-color;
+	color: black;
 }
 
-.right.box{
-    background-color: $red-color;
+.right.box {
+	background-color: $red-color;
 }
 
-.left.box, .right.box {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 10px;
+.left.box,
+.right.box {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-radius: 10px;
 }
 
 .advert {
-    height: 40%;
-    background-image: url('https://c.cheggcdn.com/assets/site/images/img-sohp-study-1280-v01-min.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+	height: 40%;
+	background-image: url("https://c.cheggcdn.com/assets/site/images/img-sohp-study-1280-v01-min.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
+
+.search_category i {
+	font-size: 3em !important;
+	color: $orange-color;
+}
+
+.search_category {
+	border-right: 1px solid white;
+}
+
