@@ -10,18 +10,19 @@ Things you may want to cover:
 
 * System dependencies
     Rails 5.2.1
-
+    Postgres
 * Configuration
 
 * Database creation
+    Setup a postgres database with a textbookswap table
 
 * Database initialization
+    export POSTGRES_USERNAME='username'
+    export POSTGRES_PASSWORD='password'
 
 * How to run the test suite
 
 * Deployment instructions
-
-1. bundle install
-2. rails s
-
-* ...
+1. Ensure postgres db is running
+2. bundle install
+3. rails s
