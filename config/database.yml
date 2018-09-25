@@ -27,7 +27,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: textbookswap
+  database: <%= ENV['POSTGRES_DB'] %>
   pool: 5
   username: <%= ENV['POSTGRES_USERNAME'] %>
   password: <%= ENV['POSTGRES_PASSWORD'] %>
@@ -57,7 +57,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: textbookswap
+  database: <%= ENV['POSTGRES_DB'] %>
   pool: 5
   username: <%= ENV['POSTGRES_USERNAME'] %>
   password: <%= ENV['POSTGRES_PASSWORD'] %>
