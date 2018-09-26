@@ -90,6 +90,30 @@ body {
 	background-size: cover;
 }
 
+.button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: darkorange;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
 @media only screen and (max-width: 700px) {
 	.search_category i {
 		font-size: 0.5em;
