@@ -1,8 +1,14 @@
-Feature: Hello Cucumber
-As a product managaer
-I want our users to be greeted when they visit our site
-So that they have a better experience
+Feature: Search for a Textbook
+As a student
+So that I can find the book I need
+I want to search on TextSwap.
 
-Scenario: User sees the welcome message
-When I go to the homepage
-Then I should see the welcome message
+Scenario: User searches for a book by title
+Given I am on my user homepage		
+When I search for a book by title in the search box
+Then I should see a listing of books matching that title.
+
+Scenario: User searches for a book by ISBN
+Given I am on my user homepage
+When I search for a book by ISBN in the search box
+Then I should see a listing of books matching that ISBN
