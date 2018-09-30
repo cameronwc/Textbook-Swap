@@ -12,3 +12,14 @@ Scenario: User searches for a book by ISBN
 Given I am on my user homepage
 When I search for a book by ISBN in the search box
 Then I should see a listing of books matching that ISBN
+
+Scenario: User searches for a book by Author
+Given I am on my user homepage
+When  I search for a book by an author's name in the search box
+Then  I should see a listing of books matching the author's name
+
+Scenario: User finds no search results when searching
+Given I am on my user homepage
+When I search for a book and there's no matches
+Then I should see a page that displays there were no results found
+
