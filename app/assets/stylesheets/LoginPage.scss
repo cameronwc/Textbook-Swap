@@ -1,0 +1,100 @@
+
+$orange-color: #f5af19;
+$red-color: #f12711;
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+
+// Sets all text color to white
+body {
+	color: white !important;
+}
+
+// === HERO ===
+// Large hero across the top 50% of the page
+#home {
+    height: 50%;
+    min-height: 500px;
+	background-image: url('hero-background.png');
+	background-position: bottom;
+	background-size: cover;
+	border-bottom: 3px $red-color;
+}
+
+// Temporary logo across the top of the page
+.logo {
+	font-size: 3em;
+	font-family: 'Lobster', cursive;
+}
+
+// Search container in the middle of the page
+.search_container {
+	margin-top: 5%;
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 10px;
+	width: 65%;
+	padding: 25px;
+}
+
+// Aligns text
+.search_container h2 {
+	text-align: left;
+}
+
+// Sets search icons color and size
+.search_category i {
+	font-size: 3em !important;
+	color: $orange-color;
+}
+
+// Gives right border to icons
+.search_category {
+	border-right: 1px solid white;
+}
+
+
+// Sets menu items to white, because this is set in semantic ui I had to use the important flag
+.item {
+	color: white !important;
+}
+
+// === MIDDLE SECTION ===
+
+// Sets the left rounded box
+.left.box {
+	background-color: $orange-color;
+	color: black;
+}
+
+// Sets the right rounded box 
+.right.box {
+	background-color: $red-color;
+}
+
+// Sets the boxes general attributes
+.left.box,
+.right.box {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+// === BOTTOM ADVERT ===
+
+// Creates bottom advert
+.advert {
+	// TODO: Get better picture
+	height: 40%;
+	background-image: url("https://c.cheggcdn.com/assets/site/images/img-sohp-study-1280-v01-min.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media only screen and (max-width: 700px) {
+	.search_category i {
+		font-size: 0.5em;
+	}
+	.search_container {
+		width: 95%;
+	}
+}
