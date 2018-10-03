@@ -18,40 +18,38 @@
 
             </div>
         </div>
+        <div align="center">
+            <h1>Sell a Book!</h1>
+        </div>
         <div class="ui grid">
             <div class="eight wide column">
                 <form action="" class="ui form">
                     <label for="">ISBN</label>
                     <div class="field">
                         <div class="ui input">
-                            <input type="text">
+                            <input type="text" placeholder="9783161484100">
                         </div>
                     </div>
                     <label>Title</label>
                     <div class="field">
                         <div class="ui input">
-                            <input type="text">
+                            <input type="text" placeholder="University Physics">
                         </div>
                     </div>
                     <label>Edition</label>
                     <div class="field">
                         <div class="ui input">
-                            <input type="text">
+                            <input type="text" placeholder="13th">
                         </div>
                     </div>
                     <label>Condition</label>
                     <div class="field">
-                        <div class="ui selection dropdown">
-                            <input name="condition" type="hidden">
-                            <i class="dropdown icon"></i>
-                            <div class="default text">Condition</div>
-                            <div class="menu">
-                                <div class="item" data-value="0">Like-New</div>
-                                <div class="item" data-value="1">Good</div>
-                                <div class="item" data-value="2">Fair</div>
-                                <div class="item" data-value="3">Poor</div>
-                            </div>
-                        </div>
+                        <select name="condition" class="ui fluid selection dropdown" id="condition-dropdown">
+                            <option value="new">New</option>
+                            <option value="good">Good</option>
+                            <option value="fair">Fair</option>
+                            <option value="poor">Poor</option>
+                        </select>
                     </div>
                     <label>Price</label>
                     <div class="field">
@@ -59,18 +57,35 @@
                             <input type="number" placeholder="$100.00">
                         </div>
                     </div>
-                    <button class="ui large orange button">Sell Now</button>
+                    <div align="center">
+                        <button class="ui large orange button">Sell Now</button>
+                    </div>
                 </form>
             </div>
             <div class="eight wide column">
-                <div class="ui horizontal list" id="related_books">
+                <div class="ui horizontal list" id="related_books" align="center">
                     <div class="item">
-                        <img class="ui image" src="https://via.placeholder.com/200x200" alt="placeholder">
+                        <img class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
                         <h3>Title</h3>
                         <p>$100.00</p>
+                        <button class="ui basic orange button">View</button>
+                    </div>
+                    <div class="item">
+                        <img class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                        <h3>Title</h3>
+                        <p>$100.00</p>
+                        <button class="ui basic orange button">View</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    $('#condition-dropdown')
+        .dropdown({
+            clearable: true
+        })
+        ;
+</script>

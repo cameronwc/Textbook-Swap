@@ -4,3 +4,7 @@
 #related_books {
     color: black !important;
 }
+
+#related_books > .item {
+    border: 1px solid black;
+}
