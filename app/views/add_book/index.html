@@ -1,46 +1,76 @@
-<div class="ui container">
-    <div class="ui grid">
-        <div class="eight wide column">
-            <form action="" class="ui form">
-                <label for="">ISBN</label>
-                <div class="field">
-                    <div class="ui input">
-                        <input type="text">
-                    </div>
+<div id="add_book">
+    <div class="ui container">
+        <div class="ui secondary menu">
+            <div class="left menu">
+                <div class="stripe">
+                    <button class="button">
+                        Home
+                    </button>
+
+                    <button class="button">
+                        Dashboard
+                    </button>
+
+                    <button class="button">
+                        Sell an item
+                    </button>
                 </div>
-                <label>Title</label>
-                <div class="field">
-                    <div class="ui input">
-                        <input type="text">
-                    </div>
-                </div>
-                <label>Edition</label>
-                <div class="field">
-                    <div class="ui input">
-                        <input type="text">
-                    </div>
-                </div>
-                <label>Condition</label>
-                <div class="field">
-                    <div class="ui selection dropdown">
-                        <input name="condition" type="hidden">
-                        <i class="dropdown icon"></i>
-                        <div class="default text">Condition</div>
-                        <div class="menu">
-                            <div class="item" data-value="0">Like-New</div>
-                            <div class="item" data-value="1">Good</div>
-                            <div class="item" data-value="2">Fair</div>
-                            <div class="item" data-value="3">Poor</div>
+
+            </div>
+        </div>
+        <div class="ui grid">
+            <div class="eight wide column">
+                <form action="" class="ui form">
+                    <label for="">ISBN</label>
+                    <div class="field">
+                        <div class="ui input">
+                            <input type="text">
                         </div>
                     </div>
-                </div>
-                <label>Price</label>
-                <div class="field">
-                    <div class="ui input">
-                        <input type="number" placeholder="$100.00">
+                    <label>Title</label>
+                    <div class="field">
+                        <div class="ui input">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <label>Edition</label>
+                    <div class="field">
+                        <div class="ui input">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <label>Condition</label>
+                    <div class="field">
+                        <div class="ui selection dropdown">
+                            <input name="condition" type="hidden">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">Condition</div>
+                            <div class="menu">
+                                <div class="item" data-value="0">Like-New</div>
+                                <div class="item" data-value="1">Good</div>
+                                <div class="item" data-value="2">Fair</div>
+                                <div class="item" data-value="3">Poor</div>
+                            </div>
+                        </div>
+                    </div>
+                    <label>Price</label>
+                    <div class="field">
+                        <div class="ui input">
+                            <input type="number" placeholder="$100.00">
+                        </div>
+                    </div>
+                    <button class="ui large orange button">Sell Now</button>
+                </form>
+            </div>
+            <div class="eight wide column">
+                <div class="ui horizontal list" id="related_books">
+                    <div class="item">
+                        <img class="ui image" src="https://via.placeholder.com/200x200" alt="placeholder">
+                        <h3>Title</h3>
+                        <p>$100.00</p>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 </div>
