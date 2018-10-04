@@ -2,8 +2,12 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 a{color:Black !important;}
-
+// add a gradient background to the login page
 #loginPage{
   background-image: linear-gradient(to right,#f12711,#f5af19) !important;
   height:100%;
+}
+.login_container {
+  margin-top: 2%;
+  padding: 25px;
 }
