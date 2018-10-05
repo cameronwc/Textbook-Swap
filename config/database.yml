@@ -58,10 +58,10 @@ test: &test
   host: localhost
   adapter: postgresql
   encoding: unicode
-  database: sergioorozco #<%= ENV['POSTGRES_DB'] %>
+  database: <%= ENV['POSTGRES_DB'] %>
   pool: 5
-  username: sergioorozco #<%= ENV['POSTGRES_USERNAME'] %>
-  password: babyjesus1 #<%= ENV['POSTGRES_PASSWORD'] %>
+  username: <%= ENV['POSTGRES_USERNAME'] %>
+  password: <%= ENV['POSTGRES_PASSWORD'] %>
   timeout: 5000
 cucumber:
   <<: *test
