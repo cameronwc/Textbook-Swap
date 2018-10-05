@@ -1,147 +1,137 @@
 <div id="add_book">
-    <div class="ui container">
+    <div class="background-stripe">
         <div class="ui secondary menu">
-            <div class="left menu">
-                <div class="stripe">
-                    <a href="/" class="button">
-                        Home
-                    </a>
+            <div class="ui container">
+                <div class="left menu">
+                    <div class="stripe">
+                        <a href="/" class="button">
+                            Home
+                        </a>
 
-                    <button class="button">
-                        Dashboard
-                    </button>
+                        <button class="button">
+                            Dashboard
+                        </button>
 
-                    <a href="add_book" class="button">
-                        Sell an item
-                    </a>
+                        <a href="add_book" class="button">
+                            Sell an item
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="right menu">
-                <div class="item">
-                    <img class="ui avatar image" src="https://placeimg.com/200/200/any">
-                    <div class="content">
-                        <a class="header">Rachel</a>
-                        <div class="description">
-                            <a href="logout">
-                                log out
-                                <i class="arrow alternate circle right outline icon"></i>
-                            </a>
+                <div class="right menu">
+                    <div class="item">
+                        <img class="ui avatar image" src="https://placeimg.com/200/200/any">
+                        <div class="content">
+                            <a class="header">Rachel</a>
+                            <div class="description">
+                                <a href="logout">
+                                    log out
+                                    <i class="arrow alternate circle right outline icon"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div align="center">
-            <h1>Sell a Book!</h1>
-        </div>
-        <div class="ui grid">
-            <div class="eight wide column">
-                <form action="/add_book" method="POST" class="ui form" enctype="application/json">
-                    <label for="">ISBN</label>
-                    <div class="field">
-                        <div class="ui search">
-                            <input id="#isbn" name="isbn" type="text" placeholder="9783161484100">
-
-                        </div>
-                    </div>
-                    <label>Title</label>
-                    <div class="field">
-                        <div class="ui input">
-                            <input name="title" type="text" placeholder="University Physics">
-                        </div>
-                    </div>
-                    <label>Edition</label>
-                    <div class="field">
-                        <div class="ui input">
-                            <input name="edition" type="text" placeholder="13th">
-                        </div>
-                    </div>
-                    <label>Condition</label>
-                    <div class="field">
-                        <select name="condition" class="ui fluid selection dropdown" id="condition-dropdown">
-                            <option value="new">New</option>
-                            <option value="good">Good</option>
-                            <option value="fair">Fair</option>
-                            <option value="poor">Poor</option>
-                        </select>
-                    </div>
-                    <label>Price</label>
-                    <div class="field">
-                        <div class="ui input">
-                            <input name="price" type="number" placeholder="$100.00">
-                        </div>
-                    </div>
-                    <div class="field">
-                        <input name="picture_path" type="file" id="image-upload" style="display: none">
-                        <a onclick="$('#image-upload').click();" class="ui medium yellow button">Upload Picture</a>
-                    </div>
-                    <div align="center">
-                        <button type="submit" class="ui large orange button">Sell Now</button>
-                    </div>
-                </form>
+    <div class="page">
+        <div class="ui container">
+            <div align="center">
+                <h1>Sell a Book!</h1>
             </div>
-            <div class="eight wide column">
-                <h2 align="center">Similar Listings</h2>
-                <div class="ui horizontal list" id="related_books" align="center">
-                    <div class="item">
-                        <img class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
-                        <h3>Title</h3>
-                        <p>$100.00</p>
-                        <button class="ui basic orange button">View</button>
-                    </div>
-                    <div class="item">
-                        <img class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
-                        <h3>Title</h3>
-                        <p>$100.00</p>
-                        <button class="ui basic orange button">View</button>
+            <div class="ui grid">
+                <div class="eight wide column">
+                    <form action="/add_book" method="POST" class="ui form" enctype="application/json">
+                        <label for="">ISBN</label>
+                        <div class="field">
+                            <div class="ui search">
+                                <input id="isbn" name="isbn" type="text" placeholder="9783161484100">
+
+                            </div>
+                        </div>
+                        <label>Title</label>
+                        <div class="field">
+                            <div class="ui input">
+                                <input id="title" name="title" type="text" placeholder="University Physics">
+                            </div>
+                        </div>
+                        <label>Edition</label>
+                        <div class="field">
+                            <div class="ui input">
+                                <input name="edition" type="text" placeholder="13th">
+                            </div>
+                        </div>
+                        <label>Condition</label>
+                        <div class="field">
+                            <select name="condition" class="ui fluid selection dropdown" id="condition-dropdown">
+                                <option value="new">New</option>
+                                <option value="good">Good</option>
+                                <option value="fair">Fair</option>
+                                <option value="poor">Poor</option>
+                            </select>
+                        </div>
+                        <label>Price</label>
+                        <div class="field">
+                            <div class="ui input">
+                                <input name="price" type="number" placeholder="$100.00">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input name="picture_path" type="file" id="image-upload" style="display: none">
+                            <a onclick="$('#image-upload').click();" class="ui medium yellow button">Upload Picture</a>
+                        </div>
+                        <div align="center">
+                            <button type="submit" class="ui large orange button">Sell Now</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="eight wide column">
+                    <h2 align="center">Similar Listings</h2>
+                    <div class="ui horizontal list" id="related_books" align="center">
+                        <div class="item">
+                            <img class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                            <h3>Title</h3>
+                            <p>$100.00</p>
+                            <button class="ui basic orange button">View</button>
+                        </div>
+                        <div class="item">
+                            <img class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                            <h3>Title</h3>
+                            <p>$100.00</p>
+                            <button class="ui basic orange button">View</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <button id='test'></button>
         </div>
     </div>
 </div>
 
+<div class="footer-center">
+    <h2>
+        Made with love <3 - Group 5 </h2>
+</div>
+
 <script>
-    $.fn.api.settings.api = {
-        'get book': 'https://www.googleapis.com/books/v1/volumes?q='
-    };
 
-    $('.ui.search').search({
-        apiSettings: {
-            url: 'https://google.com/WTF'
-        },
-        type: 'category'
-    })
+    $("#isbn").keyup(function (event) {
+        event.preventDefault();
+        $.ajax({
+            type: "get",
+            dataType: "html",
+            url: 'https://www.googleapis.com/books/v1/volumes?q=' + $('#isbn').val(),
+            // data: $("#form").serialize(),
+            success: function (response) {
+                response = JSON.parse(response)
+                var firstBookResp = response.items[0].volumeInfo
 
-    // $('.ui.search').search({
-    //     apiSettings: {
-    //         action: 'get book',
-    //         successTest: function (response) {
-    //             return response && response.status == "OK";
-    //         }
-    //     },
-    //     searchDelay: 300,
-    //     type: 'list',
-    //     templates: {
-    //         list: function (response) {
-    //             var html = '';
-    //             if (response.results !== 'undefined') {
-    //                 $.each(response.results, function (index, result) {
-    //                     html += '' + '<div class="result">' + '<small class="name">' + result.formatted_address + '</small>' + '</div>';
-    //                 });
-    //                 return html;
-    //             }
-    //             return false;
-    //         }
-    //     },
-    //     onSelect: function (result, response) {
-    //         console.log(result);
-    //         console.log(response);
-    //         return true;
-    //     }
-    // });
+                var title = firstBookResp.title;
+                var authors = firstBookResp.authors;
+                $('#title').val(title);
+            }
+        });
+    });
 
     $('#condition-dropdown')
         .dropdown({
