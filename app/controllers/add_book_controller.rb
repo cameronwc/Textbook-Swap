@@ -3,6 +3,7 @@ class AddBookController < ApplicationController
   end
 
   def create
-    p params
+    @createdBook = Book.create(:isbn => params['isbn'], :title => params['title'], :edition => params['edition'], :condition => params['condition'], :price => params['price'])
+    @createdBook.save!
   end
 end
