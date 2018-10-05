@@ -8,16 +8,14 @@ class LoginController < ApplicationController
            p "ERROR-------------------------------------------------"
         end
     end
-
     def check
         p params
-        @user = Account.find_by(email: params[:user_email])
-        #if @ user != nil
+        @user = Account.find_by(email: params[:user_email].downcase)
         if @user.nil?
-            p "account does not exist"
+            p "Account does not exist"
         else
             if @user.authenticate(params[:user_password])
-                p "password correct"
+                p "correct Password"
             else
                 p "password incorrect"
             end
