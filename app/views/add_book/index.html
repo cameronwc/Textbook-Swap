@@ -37,23 +37,23 @@
         </div>
         <div class="ui grid">
             <div class="eight wide column">
-                <form action="" class="ui form">
+                <form action="/add_book" method="POST" class="ui form" enctype="application/json">
                     <label for="">ISBN</label>
                     <div class="field">
                         <div class="ui input">
-                            <input type="text" placeholder="9783161484100">
+                            <input name="isbn" type="text" placeholder="9783161484100">
                         </div>
                     </div>
                     <label>Title</label>
                     <div class="field">
                         <div class="ui input">
-                            <input type="text" placeholder="University Physics">
+                            <input name="title" type="text" placeholder="University Physics">
                         </div>
                     </div>
                     <label>Edition</label>
                     <div class="field">
                         <div class="ui input">
-                            <input type="text" placeholder="13th">
+                            <input name="edition" type="text" placeholder="13th">
                         </div>
                     </div>
                     <label>Condition</label>
@@ -68,15 +68,15 @@
                     <label>Price</label>
                     <div class="field">
                         <div class="ui input">
-                            <input type="number" placeholder="$100.00">
+                            <input name="price" type="number" placeholder="$100.00">
                         </div>
                     </div>
                     <div class="field">
-                        <input type="file" id="image-upload" style="display: none">
+                        <input name="picture" type="file" id="image-upload" style="display: none">
                         <a onclick="$('#image-upload').click();" class="ui medium yellow button">Upload Picture</a>
                     </div>
                     <div align="center">
-                        <button class="ui large orange button">Sell Now</button>
+                        <button type="submit" class="ui large orange button">Sell Now</button>
                     </div>
                 </form>
             </div>
