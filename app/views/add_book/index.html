@@ -40,8 +40,9 @@
                 <form action="/add_book" method="POST" class="ui form" enctype="application/json">
                     <label for="">ISBN</label>
                     <div class="field">
-                        <div class="ui input">
-                            <input name="isbn" type="text" placeholder="9783161484100">
+                        <div class="ui search">
+                            <input id="#isbn" name="isbn" type="text" placeholder="9783161484100">
+
                         </div>
                     </div>
                     <label>Title</label>
@@ -97,11 +98,51 @@
                     </div>
                 </div>
             </div>
+            <button id='test'></button>
         </div>
     </div>
 </div>
 
 <script>
+    $.fn.api.settings.api = {
+        'get book': 'https://www.googleapis.com/books/v1/volumes?q='
+    };
+
+    $('.ui.search').search({
+        apiSettings: {
+            url: 'https://google.com/WTF'
+        },
+        type: 'category'
+    })
+
+    // $('.ui.search').search({
+    //     apiSettings: {
+    //         action: 'get book',
+    //         successTest: function (response) {
+    //             return response && response.status == "OK";
+    //         }
+    //     },
+    //     searchDelay: 300,
+    //     type: 'list',
+    //     templates: {
+    //         list: function (response) {
+    //             var html = '';
+    //             if (response.results !== 'undefined') {
+    //                 $.each(response.results, function (index, result) {
+    //                     html += '' + '<div class="result">' + '<small class="name">' + result.formatted_address + '</small>' + '</div>';
+    //                 });
+    //                 return html;
+    //             }
+    //             return false;
+    //         }
+    //     },
+    //     onSelect: function (result, response) {
+    //         console.log(result);
+    //         console.log(response);
+    //         return true;
+    //     }
+    // });
+
     $('#condition-dropdown')
         .dropdown({
             clearable: true
