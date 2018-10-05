@@ -5,10 +5,10 @@ class CreateBooks < ActiveRecord::Migration[5.2]
       t.string 'title'
       t.string 'edition'
       t.string 'condition'
-      t.string 'price'
+      t.integer 'price'
       t.string 'author'
-      t.string 'seller_id'
-      t.string 'buyer_id'
+      t.integer 'seller_id'
+      t.integer 'buyer_id'
       t.string 'picture_path'
       t.timestamps
     end
