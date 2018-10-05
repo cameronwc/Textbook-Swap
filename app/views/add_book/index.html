@@ -59,6 +59,12 @@
                                 <input id="title" name="title" type="text" placeholder="University Physics">
                             </div>
                         </div>
+                        <label>Author</label>
+                        <div class="field">
+                            <div class="ui input">
+                                <input id="author" name="author" type="text" placeholder="Sam Milazzo">
+                            </div>
+                        </div>
                         <label>Edition</label>
                         <div class="field">
                             <div class="ui input">
@@ -90,20 +96,42 @@
                     </form>
                 </div>
                 <div class="eight wide column">
-                    <h2 align="center">Similar Listings</h2>
-                    <div class="ui horizontal list" id="related_books" align="center">
-                        <div class="item">
-                            <img class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
-                            <h3>Title</h3>
-                            <p>$100.00</p>
-                            <button class="ui basic orange button">View</button>
-                        </div>
-                        <div class="item">
-                            <img class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
-                            <h3>Title</h3>
-                            <p>$100.00</p>
-                            <button class="ui basic orange button">View</button>
-                        </div>
+                    <h2 align="center">preview</h2>
+                    <img id="thumbnail" class="ui medium image" src="" alt="preview">
+                </div>
+            </div>
+            <h2 align="center">Similar Listings</h2>
+            <div class="ui center aligned grid" id="related_books" align="center">
+                <div class="col">
+                    <div class="item">
+                        <img class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                        <h3>Title</h3>
+                        <p>$100.00</p>
+                        <button class="ui basic orange button">View</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="item">
+                        <img class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                        <h3>Title</h3>
+                        <p>$100.00</p>
+                        <button class="ui basic orange button">View</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="item">
+                        <img class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                        <h3>Title</h3>
+                        <p>$100.00</p>
+                        <button class="ui basic orange button">View</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="item">
+                        <img class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                        <h3>Title</h3>
+                        <p>$100.00</p>
+                        <button class="ui basic orange button">View</button>
                     </div>
                 </div>
             </div>
@@ -113,7 +141,8 @@
 
 <div class="footer-center">
     <h2>
-        Made with love <3 - Group 5 </h2>
+        Made with love
+        <3 - Group 5 </h2>
 </div>
 
 <script>
@@ -128,10 +157,12 @@
             success: function (response) {
                 response = JSON.parse(response)
                 var firstBookResp = response.items[0].volumeInfo
-
                 var title = firstBookResp.title;
-                var authors = firstBookResp.authors;
+                var author = firstBookResp.authors[0];
+                var imagelink = firstBookResp.imageLinks.thumbnail;
                 $('#title').val(title);
+                $('#author').val(author);
+                $('#thumbnail').attr('src', imagelink);
             }
         });
     });
