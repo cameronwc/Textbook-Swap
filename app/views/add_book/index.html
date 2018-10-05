@@ -16,7 +16,22 @@
                     </a>
                 </div>
             </div>
+            <div class="right menu">
+                <div class="item">
+                    <img class="ui avatar image" src="https://placeimg.com/200/200/any">
+                    <div class="content">
+                        <a class="header">Rachel</a>
+                        <div class="description">
+                            <a href="logout">
+                                log out
+                                <i class="arrow alternate circle right outline icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <div align="center">
             <h1>Sell a Book!</h1>
         </div>
@@ -56,12 +71,17 @@
                             <input type="number" placeholder="$100.00">
                         </div>
                     </div>
+                    <div class="field">
+                        <input type="file" id="image-upload" style="display: none">
+                        <a onclick="$('#image-upload').click();" class="ui medium yellow button">Upload Picture</a>
+                    </div>
                     <div align="center">
                         <button class="ui large orange button">Sell Now</button>
                     </div>
                 </form>
             </div>
             <div class="eight wide column">
+                <h2 align="center">Similar Listings</h2>
                 <div class="ui horizontal list" id="related_books" align="center">
                     <div class="item">
                         <img class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
