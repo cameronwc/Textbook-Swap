@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+
 #add_book {
     min-height: 85vh;
 }
@@ -15,6 +17,7 @@
 }
 
 .background-stripe{
+    padding-top: 20px;
     background-color: #f5af19;
 }
 
@@ -38,4 +41,16 @@ footer {
 
 .footer-center h2 {
     color: white;
+}
+
+.logo {
+    margin-top: 6px;
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+
+.background-stripe .stripe .button {
+    font-size: 1.75em;
+    padding-left: 40px;
+    padding-right: 40px;
 }
