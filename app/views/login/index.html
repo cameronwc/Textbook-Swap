@@ -63,24 +63,24 @@
 
                 <div class="eight wide column">
                     <h3>Login</h3>
-                    <form class="ui large inverted form">
+                    <form action="/check" class="ui large inverted form" method="post" enctype="application/json">
                         <div class="ui stacked inverted segment">
                             <div class="field">
                                 <div class="ui left icon input">
                                     <i class="user icon"></i>
-                                    <input name="email" placeholder="E-mail address" type="text">
+                                    <input name="user_email" placeholder="E-mail address" type="text">
                                 </div>
                             </div>
                             <div class="field">
                                 <div class="ui left icon input">
                                     <i class="lock icon"></i>
-                                    <input name="password" placeholder="Password" type="password">
+                                    <input name="user_password" placeholder="Password" type="password">
                                 </div>
                             </div>
                             <a href="/Forgot Password" class="active item">
                                 Forgot Password
                             </a>
-                            <div class="ui fluid large orange submit button">Login</div>
+                            <button class="ui fluid orange button" type="submit">Login</button>
                         </div>
                     </form>
                 </div>
