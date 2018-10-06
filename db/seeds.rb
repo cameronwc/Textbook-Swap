@@ -7,4 +7,3 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 #
 #
-books = Book.create([{ isbn: '9780984881246', title: 'Engineering Software as a Service: An Agile Approach Using Cloud Computing', edition: '1st', author: 'Armando Fox'}, {isbn: '9780132539715', title:'Business Communication Essentials', edition: '5th', author: 'Courtland Bovee'}])
