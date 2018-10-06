@@ -1,16 +1,21 @@
-<div id="home">
+<div id = "home">
     <div class="ui container">
         <div class="ui secondary menu">
             <div class="left menu">
-                <div class="active item">
-                    Home
+                <div class="stripe">
+                    <a href="/" class="button">
+                        Home
+                    </a>
+
+                    <button class="button">
+                        Dashboard
+                    </button>
+
+                    <a href="/add_book" class="button">
+                        Sell an item
+                    </a>
                 </div>
-                <div class="item">
-                    Dashboard
-                </div>
-                <div class="item">
-                    Sell an item
-                </div>
+
             </div>
         </div>
 
@@ -57,7 +62,10 @@
         </div>
     </div>
 </div>
-
+<% @allBooks.each do |book| %>
+    <%= book.isbn %>
+    <%= book.title %>
+<% end %>
 <div class="ui container">
     <div class="ui stackable grid">
         <div class="eight wide column">

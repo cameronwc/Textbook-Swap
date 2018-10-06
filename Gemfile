@@ -22,6 +22,11 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+# Include Bootstrap
+gem 'bootstrap'
+gem 'popper_js', '~> 1.14.3'
+# Include jquery
+gem 'jquery-rails'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
@@ -36,11 +41,16 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
+<<<<<<< HEAD
   gem 'factory_girl_rails'
+=======
+  gem 'factory_girl_rails'  
+>>>>>>> e2ea8a059c4b186fa185df965dd929aeb36e90dd
 end
 
 group :development do
@@ -53,8 +63,15 @@ group :development do
 end
 
 group :test do
+<<<<<<< HEAD
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
+=======
+
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
+  
+>>>>>>> e2ea8a059c4b186fa185df965dd929aeb36e90dd
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'

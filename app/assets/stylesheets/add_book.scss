@@ -1,0 +1,56 @@
+// Place all the styles related to the add_book controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+
+#add_book {
+    min-height: 85vh;
+}
+
+#related_books {
+    color: black !important;
+}
+
+#related_books > .item {
+    border: 1px solid black;
+}
+
+.background-stripe{
+    padding-top: 20px;
+    background-color: #f5af19;
+}
+
+.page {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+footer {
+}
+
+.footer-center {
+    background-image: linear-gradient(to right, #f5af19, #f12711);
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-center h2 {
+    color: white;
+}
+
+.logo {
+    margin-top: 6px;
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+
+.background-stripe .stripe .button {
+    font-size: 1.75em;
+    padding-left: 40px;
+    padding-right: 40px;
+}
