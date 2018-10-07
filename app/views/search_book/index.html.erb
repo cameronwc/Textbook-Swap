@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>
-    <div class="ui container">
+
 	<div align="center">
 		<div class="search_container">
 			<h2>Search for a textbook...</h2>
@@ -53,22 +53,32 @@
 			</form>
 		</div>
 	</div>
-    </div>
 
-    <div class="page">
-	    <div class="ui container">
-		    <div align="center">
-			    <h3><%= @message %></h3>
-			    <% @found_books.each do |book| %>
-				    <h4><%= book.title %></h4>
-				    <p><%= book.isbn %></p>
-				    <p><%= book.seller_id %></p>
-				    <hr>
-				<% end %>
-		    </div>
+	<br><br>
+   <div align="center">
+	<div class="results">
+	    <div class="results-banner">
+		    <h3><%= @message %></h3>
 	    </div>
-    </div>
+	    <hr><br>
+    		<% @found_books.each do |book| %>
+			<h4><%= book.title %>
+    				<% if(!book.edition.nil?)%>
+    					<%=book.edition+" Ed."%>
+				<% end %></h4>
+		    	<p><%= "ISBN: "+book.isbn %></p>
+		    	<p><%= "Price: $"+book.price.to_s %></p>
+		    	<button class="ui orange button">Add to Cart</button>
+		    	<button class="ui orange button">Request Swap</button>
+		    	<hr>
+		<% end %>
+		<br>
+	</div>
+   	<br>
+   	<button class="ui red button" align="center">Proceed to Checkout</button>
+   </div>
 </div>
+<br><br>
 
 <div class="footer-center">
     <h2>

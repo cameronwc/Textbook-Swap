@@ -1,3 +1,26 @@
 // Place all the styles related to the search_book controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+
+h2 {
+  color: white;
+}
+
+.results-banner {
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 10px;
+	width: 65%;
+	padding: 25px;
+	color: white;
+}
+
+.results {
+	background-color: #f5af19;
+	padding: 25px;
+	border-radius: 10px;
+	border-color: rgba(0,0,0,0.7);
+	align-content: center;
+	align-items: center;	
+}
