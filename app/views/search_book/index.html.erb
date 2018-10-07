@@ -60,7 +60,10 @@
 		    <div align="center">
 			    <h3><%= @message %></h3>
 			    <% @found_books.each do |book| %>
-				    <%= book.title %>
+				    <h4><%= book.title %></h4>
+				    <p><%= book.isbn %></p>
+				    <p><%= book.seller_id %></p>
+				    <hr>
 				<% end %>
 		    </div>
 	    </div>
