@@ -19,6 +19,7 @@ class LoginController < ApplicationController
                 log_in user
                 @current_user = current_user
                 p "Correct Password"
+                redirect_to "/"
             else
                 p "Password Incorrect"
             end
