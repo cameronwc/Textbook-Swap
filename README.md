@@ -23,6 +23,9 @@ Things you may want to cover:
 ## Database initialization
 * in a terminal run these commands, replacing your username and password with the ones you setup in postgres:
 ```bash
+export POSTGRES_DB='textbookswap'
+```
+```bash
 export POSTGRES_USERNAME='username'
 ```
 ```bash
@@ -31,7 +34,8 @@ export POSTGRES_PASSWORD='password'
 
 ## How to run the test suite
 
-## Deployment instructions
-1. Ensure postgres db is running
+## Deployment instructions 
+1. Ensure postgres db is running and credentials are setup
 2. bundle install
-3. rails s
+3. rake db:migrate db:seed
+4. rails s
