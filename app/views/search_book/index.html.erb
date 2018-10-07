@@ -59,12 +59,9 @@
 	    <div class="ui container">
 		    <div align="center">
 			    <h3><%= @message %></h3>
-			    <p>
-			    	<%= @found_books.each do |book|
-					book.title
-					book.author
-				end %>
-			    </p>
+			    <% @found_books.each do |book| %>
+				    <%= book.title %>
+				<% end %>
 		    </div>
 	    </div>
     </div>
