@@ -3,14 +3,14 @@ $orange-color: #f5af19;
 $red-color: #f12711;
 @import url("https://fonts.googleapis.com/css?family=Lobster");
 
-// Sets all text color to white
-body {
-	color: white !important;
+#home-container {
+	min-height: 85vh;
 }
 
 // === HERO ===
 // Large hero across the top 50% of the page
 #home {
+	color: white;
     height: 50%;
     min-height: 500px;
 	background-image: url('hero-background.png');
@@ -51,10 +51,6 @@ body {
 }
 
 
-// Sets menu items to white, because this is set in semantic ui I had to use the important flag
-.item {
-	color: white !important;
-}
 
 // === MIDDLE SECTION ===
 
@@ -72,6 +68,7 @@ body {
 // Sets the boxes general attributes
 .left.box,
 .right.box {
+	color: white;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	padding: 10px;
@@ -82,12 +79,37 @@ body {
 
 // Creates bottom advert
 .advert {
+	color: white;
 	// TODO: Get better picture
 	height: 40%;
 	background-image: url("book-store.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: darkorange;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
 }
 
 @media only screen and (max-width: 700px) {

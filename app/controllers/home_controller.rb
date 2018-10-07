@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @message = "test"
+    @allBooks = Book.all.limit(4)
   end
 end

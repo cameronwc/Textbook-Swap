@@ -1,0 +1,201 @@
+<div id="add_book">
+    <div class="background-stripe">
+        <div class="ui secondary menu">
+            <div class="ui container">
+                <div class="left menu">
+                    <div class="logo">
+                        Textbook Swap
+                    </div>
+                    <div class="stripe">
+                        <a href="/" class="button">
+                            Home
+                        </a>
+
+                        <a class="button">
+                            Dashboard
+                        </a>
+
+                        <a href="add_book" class="button">
+                            Sell an item
+                        </a>
+                    </div>
+                </div>
+                <div class="right menu">
+                    <div class="item">
+                        <img class="ui avatar image" src="https://placeimg.com/200/200/any">
+                        <div class="content">
+                            <a class="header">Rachel</a>
+                            <div class="description">
+                                <a href="logout">
+                                    log out
+                                    <i class="arrow alternate circle right outline icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="ui container">
+            <div align="center">
+                <h1>Sell a Book!</h1>
+            </div>
+            <div class="ui grid">
+                <div class="eight wide column">
+                    <form action="/add_book" method="POST" class="ui form" enctype="application/json">
+                        <label for="">ISBN</label>
+                        <div class="field">
+                            <div class="ui search">
+                                <input id="isbn" name="isbn" type="text" placeholder="9783161484100">
+
+                            </div>
+                        </div>
+                        <label>Title</label>
+                        <div class="field">
+                            <div class="ui input">
+                                <input id="title" name="title" type="text" placeholder="University Physics">
+                            </div>
+                        </div>
+                        <label>Author</label>
+                        <div class="field">
+                            <div class="ui input">
+                                <input id="author" name="author" type="text" placeholder="Sam Milazzo">
+                            </div>
+                        </div>
+                        <label>Edition</label>
+                        <div class="field">
+                            <div class="ui input">
+                                <input name="edition" type="text" placeholder="13th">
+                            </div>
+                        </div>
+                        <label>Condition</label>
+                        <div class="field">
+                            <select name="condition" class="ui fluid selection dropdown" id="condition-dropdown">
+                                <option value="new">New</option>
+                                <option value="good">Good</option>
+                                <option value="fair">Fair</option>
+                                <option value="poor">Poor</option>
+                            </select>
+                        </div>
+                        <label>Price</label>
+                        <div class="field">
+                            <div class="ui input">
+                                <input name="price" type="number" placeholder="$100.00">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input name="picture_path" type="file" id="image-upload" style="display: none">
+                            <!-- <a onclick="$('#image-upload').click();" class="ui medium yellow button">Upload Picture</a> -->
+                        </div>
+                        <div align="center">
+                            <button type="submit" class="ui large orange button">Sell Now</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="eight wide column" align="center">
+                    <h2>preview</h2>
+                    <!-- <img id="thumbnail" class="ui medium image" src="/images/book.png" alt="preview"> -->
+                    <%= image_tag("book.png", :alt => "placeholder", :class => "ui medium image", :id => "thumbnail") %>
+                </div>
+            </div>
+            <h2 align="center">Similar Listings</h2>
+            <br>
+            <div class="ui center aligned grid" id="related_books" align="center">
+                <div class="four wide column">
+                    <div class="ui segment item">
+                        <img id="related-img-1" class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                        <h3 id="related-title-1">Title</h3>
+                        <p id="related-price-1">$100.00</p>
+                        <a id="related-link-1" href="#" class="ui basic orange button">View</a>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <div class="ui segment item">
+                        <img id="related-img-2" class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                        <h3 id="related-title-2">Title</h3>
+                        <p id="related-price-2">$100.00</p>
+                        <a id="related-link-2" href="#" class="ui basic orange button">View</a>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <div class="ui segment item">
+                        <img id="related-img-3" class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                        <h3 id="related-title-3">Title</h3>
+                        <p id="related-price-3">$100.00</p>
+                        <a id="related-link-3" href="#" class="ui basic orange button">View</a>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <div class="ui segment item">
+                        <img id="related-img-4" class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                        <h3 id="related-title-4">Title</h3>
+                        <p id="related-price-4">$100.00</p>
+                        <a id="related-link-4" href="#" class="ui basic orange button">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer-center">
+    <h2>
+        Made with love
+        <3 - Group 5 </h2>
+</div>
+
+<script>
+
+    $("#isbn").keyup(function (event) {
+        event.preventDefault();
+        $.ajax({
+            type: "get",
+            dataType: "html",
+            url: 'https://www.googleapis.com/books/v1/volumes?q=' + $('#isbn').val(),
+            // data: $("#form").serialize(),
+            success: function (response) {
+                response = JSON.parse(response)
+                var firstBookResp = response.items[0].volumeInfo
+                var title = firstBookResp.title;
+                var author = firstBookResp.authors[0];
+                var imagelink = firstBookResp.imageLinks.thumbnail;
+                $('#title').val(title);
+                $('#author').val(author);
+                $('#thumbnail').attr('src', imagelink);
+            }
+        });
+
+        $.ajax({
+            type: "get",
+            dataType: "html",
+            url: `add_book/similar?isbn=${$('#isbn').val()}&limit=4`,
+            success: function (response) {
+                response = JSON.parse(response);
+                $('#related-title-1').text(response[0].title);
+                $('#related-price-1').text(`\$${response[0].price}`);
+                $('#related-link-1').attr('href',`/book/${response[0].id}`)
+
+                $('#related-title-2').text(response[1].title);
+                $('#related-price-2').text(`\$${response[1].price}`);
+                $('#related-link-2').attr('href',`/book/${response[1].id}`)
+
+                $('#related-title-3').text(response[2].title);
+                $('#related-price-3').text(`\$${response[2].price}`);
+                $('#related-link-3').attr('href',`/book/${response[2].id}`)
+
+                $('#related-title-4').text(response[3].title);
+                $('#related-price-4').text(`\$${response[3].price}`);
+                $('#related-link-4').attr('href',`/book/${response[3].id}`)
+            }
+        })
+    });
+
+    $('#condition-dropdown')
+        .dropdown({
+            clearable: true
+        })
+        ;
+</script>
