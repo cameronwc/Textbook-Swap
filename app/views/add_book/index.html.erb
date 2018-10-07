@@ -88,7 +88,7 @@
                         </div>
                         <div class="field">
                             <input name="picture_path" type="file" id="image-upload" style="display: none">
-                            <a onclick="$('#image-upload').click();" class="ui medium yellow button">Upload Picture</a>
+                            <!-- <a onclick="$('#image-upload').click();" class="ui medium yellow button">Upload Picture</a> -->
                         </div>
                         <div align="center">
                             <button type="submit" class="ui large orange button">Sell Now</button>
@@ -104,7 +104,7 @@
             <h2 align="center">Similar Listings</h2>
             <br>
             <div class="ui center aligned grid" id="related_books" align="center">
-                <div class="col">
+                <div class="four wide column">
                     <div class="ui segment item">
                         <img id="related-img-1" class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
                         <h3 id="related-title-1">Title</h3>
@@ -112,28 +112,28 @@
                         <a id="related-link-1" href="#" class="ui basic orange button">View</a>
                     </div>
                 </div>
-                <div class="col">
+                <div class="four wide column">
                     <div class="ui segment item">
-                        <img class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
-                        <h3>Title</h3>
-                        <p>$100.00</p>
-                        <button class="ui basic orange button">View</button>
+                        <img id="related-img-2" class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                        <h3 id="related-title-2">Title</h3>
+                        <p id="related-price-2">$100.00</p>
+                        <a id="related-link-2" href="#" class="ui basic orange button">View</a>
                     </div>
                 </div>
-                <div class="col">
+                <div class="four wide column">
                     <div class="ui segment item">
-                        <img class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
-                        <h3>Title</h3>
-                        <p>$100.00</p>
-                        <button class="ui basic orange button">View</button>
+                        <img id="related-img-3" class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                        <h3 id="related-title-3">Title</h3>
+                        <p id="related-price-3">$100.00</p>
+                        <a id="related-link-3" href="#" class="ui basic orange button">View</a>
                     </div>
                 </div>
-                <div class="col">
+                <div class="four wide column">
                     <div class="ui segment item">
-                        <img class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
-                        <h3>Title</h3>
-                        <p>$100.00</p>
-                        <button class="ui basic orange button">View</button>
+                        <img id="related-img-4" class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                        <h3 id="related-title-4">Title</h3>
+                        <p id="related-price-4">$100.00</p>
+                        <a id="related-link-4" href="#" class="ui basic orange button">View</a>
                     </div>
                 </div>
             </div>
@@ -177,6 +177,18 @@
                 $('#related-title-1').text(response[0].title);
                 $('#related-price-1').text(`\$${response[0].price}`);
                 $('#related-link-1').attr('href',`/book/${response[0].id}`)
+
+                $('#related-title-2').text(response[1].title);
+                $('#related-price-2').text(`\$${response[1].price}`);
+                $('#related-link-2').attr('href',`/book/${response[1].id}`)
+
+                $('#related-title-3').text(response[2].title);
+                $('#related-price-3').text(`\$${response[2].price}`);
+                $('#related-link-3').attr('href',`/book/${response[2].id}`)
+
+                $('#related-title-4').text(response[3].title);
+                $('#related-price-4').text(`\$${response[3].price}`);
+                $('#related-link-4').attr('href',`/book/${response[3].id}`)
             }
         })
     });
