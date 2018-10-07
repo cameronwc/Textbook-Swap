@@ -48,15 +48,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
-<<<<<<< HEAD
-<<<<<<< HEAD
-  gem 'factory_girl_rails'
-=======
   gem 'factory_girl_rails'  
->>>>>>> e2ea8a059c4b186fa185df965dd929aeb36e90dd
-=======
-  gem 'factory_girl_rails'
->>>>>>> b1630f89065b483737004f911552f1061ce92687
 end
 
 group :development do
