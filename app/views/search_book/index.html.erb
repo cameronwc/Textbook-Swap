@@ -1,0 +1,89 @@
+<div id="search_book">
+    <div class="background-stripe">
+        <div class="ui secondary menu">
+            <div class="ui container">
+                <div class="left menu">
+                    <div class="logo">
+                        Textbook Swap
+                    </div>
+                    <div class="stripe">
+                        <a href="/" class="button">
+                            Home
+                        </a>
+
+                        <a class="button">
+                            Dashboard
+                        </a>
+
+                        <a href="add_book" class="button">
+                            Sell an item
+                        </a>
+                    </div>
+                </div>
+                <div class="right menu">
+                    <div class="item">
+                        <img class="ui avatar image" src="https://placeimg.com/200/200/any">
+                        <div class="content">
+                            <a class="header">Rachel</a>
+                            <div class="description">
+                                <a href="logout">
+                                    log out
+                                    <i class="arrow alternate circle right outline icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div align="center">
+		<div class="search_container">
+			<h2>Search for a textbook...</h2>
+			<form action="/search_book" method="POST" enctype="application/json">
+				<div class="ui fluid action input">
+					<input id="search_text" name="search_text" type="text" placeholder="ISBN, title, author"/>
+					<button type="submit" class="ui orange button">
+						search
+						&nbsp
+						<i class="white search icon"></i>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<br><br>
+	<div align="center">
+		<div class="results-banner">
+			<h3><%= @message %>
+				<div align="right">
+					<button class="ui red button">Proceed to Checkout</button>
+				</div>
+			</h3>
+	    	</div>
+    		<% @found_books.each do |book| %>
+			<br>
+			<div class="results">
+				<h4><%= book.title %>
+    					<% if(!book.edition.nil?)%>
+    						<%=book.edition+" Ed."%>
+					<% end %></h4>
+		    		<p><%= "ISBN: "+book.isbn %></p>
+		    		<p><%= "Price: $"+book.price.to_s %></p>
+		    		<button class="ui orange button">Add to Cart</button>
+		    		<button class="ui orange button">Request Swap</button>
+			</div>
+		<% end %>
+		<br>
+   	</div>
+</div>
+<br><br>
+
+<div class="footer-center">
+    <h2>
+        Made with love
+        <3 - Group 5 </h2>
+</div>
+

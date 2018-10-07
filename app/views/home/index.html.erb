@@ -48,24 +48,20 @@
                     </div>
                 </div>
                 <h2>Search for a textbook...</h2>
-                <form action="">
+		<form action="/search_book" method="POST">
                     <div class="ui fluid action input">
-                        <input type="text" placeholder="University Physics Ed. 13s"/> 
-                        <button class="ui orange button">
-                            search
-                            &nbsp;
-                            <i class="white search icon"></i>
-                        </button>
+                        <input id="search_text" name="search_text" type="text" placeholder="ISBN, title, or author"> 
+			<button type="submit" class="ui orange button">
+                      		search
+                       		&nbsp;
+                   		<i class="white search icon"></i>
+			</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
-<% @allBooks.each do |book| %>
-    <%= book.isbn %>
-    <%= book.title %>
-<% end %>
 <div class="ui container">
     <div class="ui stackable grid">
         <div class="eight wide column">
