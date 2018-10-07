@@ -7,6 +7,8 @@ ruby '2.5.1'
 gem 'rails', '~> 5.2.1'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
+#Use Posgres searching
+gem 'pg_search'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -46,7 +48,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
-  gem 'factory_girl_rails'
+  gem 'factory_girl_rails'  
 end
 
 group :development do
@@ -59,6 +61,8 @@ group :development do
 end
 
 group :test do
+
+  
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
   # Adds support for Capybara system testing and selenium driver
