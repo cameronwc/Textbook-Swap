@@ -7,7 +7,7 @@ RSpec.describe Book, type: :model do
     @physics_book = Book.new(isbn: "1234567891234", title: "University Physics", edition: "12th", condition: "new", price: 100, author: "Milazzo", seller_id: 104).save
   end
 
-  it 'Newest test' do
+  it 'should find results with partial title' do
     @found_books = Book.where("title like '%Grinch%'")
     expect(@found_books.length > 0).to be true
   end
@@ -17,7 +17,7 @@ RSpec.describe Book, type: :model do
     expect(@found_books.length > 0).to be true
   end
 
-  it 'should find results through title search' do
+  it 'should find results through full title search' do
     @found_books = Book.where("title like '%University Physics%'")
     expect(@found_books.length > 0).to be true
   end
