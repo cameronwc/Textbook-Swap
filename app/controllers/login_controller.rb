@@ -18,8 +18,6 @@ class LoginController < ApplicationController
             if user.authenticate(params[:user_password])
                 log_in user
                 @current_user = current_user
-                p @current_user.id
-
                 p "Correct Password"
             else
                 p "Password Incorrect"
@@ -29,10 +27,11 @@ class LoginController < ApplicationController
     def destroy
     end
     def index
-        @current_user = current_user
+        #@current_user = current_user
         if logged_in?
-            @LogInOrOut = "Logout" + @current_user
+            @LogInOrOut = "Logout" + String(@current_user)
         else
+            p "login"
             @LogInOrOut = "Login"
 
         end

@@ -8,6 +8,11 @@ module LoginHelper
     end
   end
   def logged_in?
-    !current_user.nil?
+    @current_user = current_user
+    if @current_user.nil?
+      return false
+    else
+      return true
+    end
   end
 end
