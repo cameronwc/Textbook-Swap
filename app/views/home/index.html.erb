@@ -1,23 +1,23 @@
-<div id="home-container">
 <div id="home">
     <div class="ui container">
         <div class="ui secondary menu">
             <div class="left menu">
-                <div class="stripe">
-                    <a href="/" class="button">
-                        Home
-                    </a>
-
-                    <a href="#" class="button">
-                        Dashboard
-                    </a>
-
-                    <a href="/add_book" class="button">
-                        Sell an item
-                    </a>
+                <a href="/" class="active item">
+                    Home
+                </a>
+                <div class="item">
+                    Dashboard
                 </div>
-
+                <div class="item">
+                    Sell an item
+                </div>
             </div>
+            <div class="right menu">
+                    <a href="/login" class="active item">
+                        <%= @LogInOrOut %>
+                    </a>
+            </div>
+
         </div>
 
         <div align="center">
@@ -49,55 +49,49 @@
                     </div>
                 </div>
                 <h2>Search for a textbook...</h2>
-		<form action="/search_book" method="POST">
+                <form action="">
                     <div class="ui fluid action input">
-                        <input id="search_text" name="search_text" type="text" placeholder="ISBN, title, or author"> 
-			<button type="submit" class="ui orange button">
-                      		search
-                       		&nbsp;
-                   		<i class="white search icon"></i>
-			</button>
+                        <input type="text" placeholder="University Physics Ed. 13s"/> 
+                        <button class="ui orange button">
+                            search
+                            &nbsp;
+                            <i class="white search icon"></i>
+                        </button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
+
 <div class="ui container">
-    <h2 class="ui center aligned orange header">Recently listed books</h2>
-    <div class="ui grid">
-    <% if(@allBooks.present?) %>
-    <% @allBooks.each do |book| %>
-        <div class="four wide column">
-            <div class="ui card">
-                <div class="image"> 
-                    <img src="https://webstores.activenetwork.com/school-software/del_sol_high_schofaw/images/products/detail_516_del_sol_high_schofaw_textbooks.jpg">
-                </div>
-                <div class="content">
-                    <a class="header">
-                        <%= book.title %>
-                    </a>
-                    <div class="description">
-                        <%= "ISBN: #{book.isbn}" %>
-                        <br>
-                        <%= "Price: $#{book.price}" %>
-                        <br>
-                        <br>
-                        <div align="center">
-                            <a class="ui basic orange button">View <i class="angle right icon"></i></a>
-                        </div>
-                    </div>
-                </div>
+    <div class="ui stackable grid">
+        <div class="eight wide column">
+            <div class="left box">
+                <h6>TEXTBOOK SWAP ADVERT 1</h6>
+                <h2>Get your textbook today!</h2>
+                <h3>BOOST YOUR GRADE >></h3>
             </div>
         </div>
-    <% end %>
-    <% end %>
+        <div class="eight wide column">
+            <div class="right box">
+                <h6>TEXTBOOK SWAP ADVERT 2</h6>
+                <h2>Trade your textbook today!</h2>
+                <h3>TRADE & SAVE >></h3>
+            </div>
+        </div>
     </div>
 </div>
-<br>
-</div>
-<div class="footer-center">
-    <h2>
-        Made with love
-        <3 - Group 5 </h2>
+
+<div class="advert">
+    <div class="ui container">
+        <div class="ui grid">
+            <div class="eight wide column">
+                <h2>Big advert header</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut accusamus sequi molestias ullam, doloribus necessitatibus dolor ratione iste quasi rem delectus iure, repellat eaque. Dicta modi non distinctio reiciendis.
+                </p>
+                <a href="#" class="cta">GET THIS SEMESTERS BOOKS! ></a>
+            </div>
+        </div>
+    </div>
 </div>
