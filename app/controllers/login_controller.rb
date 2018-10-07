@@ -29,7 +29,7 @@ class LoginController < ApplicationController
     def index
         #@current_user = current_user
         if logged_in?
-            @LogInOrOut = "Logout" + String(@current_user)
+            @LogInOrOut = "Logout, " + String(@current_user.name)
         else
             p "login"
             @LogInOrOut = "Login"
