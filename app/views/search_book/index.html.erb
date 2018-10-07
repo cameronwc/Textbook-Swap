@@ -55,28 +55,29 @@
 	</div>
 
 	<br><br>
-   <div align="center">
-	<div class="results">
-	    <div class="results-banner">
-		    <h3><%= @message %></h3>
-	    </div>
-	    <hr><br>
+	<div align="center">
+		<div class="results-banner">
+			<h3><%= @message %>
+				<div align="right">
+					<button class="ui red button">Proceed to Checkout</button>
+				</div>
+			</h3>
+	    	</div>
     		<% @found_books.each do |book| %>
-			<h4><%= book.title %>
-    				<% if(!book.edition.nil?)%>
-    					<%=book.edition+" Ed."%>
-				<% end %></h4>
-		    	<p><%= "ISBN: "+book.isbn %></p>
-		    	<p><%= "Price: $"+book.price.to_s %></p>
-		    	<button class="ui orange button">Add to Cart</button>
-		    	<button class="ui orange button">Request Swap</button>
-		    	<hr>
+			<br>
+			<div class="results">
+				<h4><%= book.title %>
+    					<% if(!book.edition.nil?)%>
+    						<%=book.edition+" Ed."%>
+					<% end %></h4>
+		    		<p><%= "ISBN: "+book.isbn %></p>
+		    		<p><%= "Price: $"+book.price.to_s %></p>
+		    		<button class="ui orange button">Add to Cart</button>
+		    		<button class="ui orange button">Request Swap</button>
+			</div>
 		<% end %>
 		<br>
-	</div>
-   	<br>
-   	<button class="ui red button" align="center">Proceed to Checkout</button>
-   </div>
+   	</div>
 </div>
 <br><br>
 
