@@ -95,15 +95,25 @@
                         </div>
                     </form>
                 </div>
-                <div class="eight wide column">
-                    <h2 align="center">preview</h2>
-                    <img id="thumbnail" class="ui medium image" src="" alt="preview">
+                <div class="eight wide column" align="center">
+                    <h2>preview</h2>
+                    <!-- <img id="thumbnail" class="ui medium image" src="/images/book.png" alt="preview"> -->
+                    <%= image_tag("book.png", :alt => "placeholder", :class => "ui medium image", :id => "thumbnail") %>
                 </div>
             </div>
             <h2 align="center">Similar Listings</h2>
+            <br>
             <div class="ui center aligned grid" id="related_books" align="center">
                 <div class="col">
-                    <div class="item">
+                    <div class="ui segment item">
+                        <img id="related-img-1" class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                        <h3 id="related-title-1">Title</h3>
+                        <p id="related-price-1">$100.00</p>
+                        <a id="related-link-1" href="#" class="ui basic orange button">View</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="ui segment item">
                         <img class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
                         <h3>Title</h3>
                         <p>$100.00</p>
@@ -111,7 +121,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="item">
+                    <div class="ui segment item">
                         <img class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
                         <h3>Title</h3>
                         <p>$100.00</p>
@@ -119,15 +129,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="item">
-                        <img class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
-                        <h3>Title</h3>
-                        <p>$100.00</p>
-                        <button class="ui basic orange button">View</button>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="item">
+                    <div class="ui segment item">
                         <img class="ui image" src="https://picsum.photos/200/200/?random" alt="placeholder">
                         <h3>Title</h3>
                         <p>$100.00</p>
@@ -165,6 +167,18 @@
                 $('#thumbnail').attr('src', imagelink);
             }
         });
+
+        $.ajax({
+            type: "get",
+            dataType: "html",
+            url: `add_book/similar?isbn=${$('#isbn').val()}&limit=4`,
+            success: function (response) {
+                response = JSON.parse(response);
+                $('#related-title-1').text(response[0].title);
+                $('#related-price-1').text(`\$${response[0].price}`);
+                $('#related-link-1').attr('href',`/book/${response[0].id}`)
+            }
+        })
     });
 
     $('#condition-dropdown')
