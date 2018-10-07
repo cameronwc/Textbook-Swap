@@ -3,6 +3,9 @@ $orange-color: #f5af19;
 $red-color: #f12711;
 @import url("https://fonts.googleapis.com/css?family=Lobster");
 
+#home-container {
+	min-height: 85vh;
+}
 
 // === HERO ===
 // Large hero across the top 50% of the page

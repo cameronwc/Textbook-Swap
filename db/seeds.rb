@@ -7,3 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 #
 #
+Books = Book.create({ isbn: '1584885114'}, { name: 'Advanced University Physics, Second Edition' }, { price: 100})

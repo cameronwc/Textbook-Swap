@@ -49,10 +49,14 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
 <<<<<<< HEAD
+<<<<<<< HEAD
   gem 'factory_girl_rails'
 =======
   gem 'factory_girl_rails'  
 >>>>>>> e2ea8a059c4b186fa185df965dd929aeb36e90dd
+=======
+  gem 'factory_girl_rails'
+>>>>>>> b1630f89065b483737004f911552f1061ce92687
 end
 
 group :development do
@@ -65,15 +69,10 @@ group :development do
 end
 
 group :test do
-<<<<<<< HEAD
-  gem 'cucumber-rails', require: false
-  gem 'database_cleaner'
-=======
 
+  
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
-  
->>>>>>> e2ea8a059c4b186fa185df965dd929aeb36e90dd
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
