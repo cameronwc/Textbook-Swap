@@ -46,7 +46,7 @@
 					<input id="search_text" name="search_text" type="text" placeholder="ISBN, title, author"/>
 					<button type="submit" class="ui orange button">
 						search
-						&nbsp
+						&nbsp;
 						<i class="white search icon"></i>
 					</button>
 				</div>
@@ -63,20 +63,36 @@
 				</div>
 			</h3>
 	    	</div>
-    		<% @found_books.each do |book| %>
-			<br>
-			<div class="results">
-				<h4><%= book.title %>
-    					<% if(!book.edition.nil?)%>
-    						<%=book.edition+" Ed."%>
-					<% end %></h4>
-		    		<p><%= "ISBN: "+book.isbn %></p>
-		    		<p><%= "Price: $"+book.price.to_s %></p>
-		    		<button class="ui orange button">Add to Cart</button>
-		    		<button class="ui orange button">Request Swap</button>
-			</div>
-		<% end %>
 		<br>
    	</div>
+
+    <div class="ui container">
+    <% @found_books.each do |book| %>
+    <br>
+    <div class="ui raised segment">
+        <div class="ui grid">
+            <div class="six wide column">
+                <h4>
+                    <%= book.title %>
+                        <% if(!book.edition.nil?)%>
+                            <%=book.edition+" Ed."%>
+                    <% end %>
+                </h4>
+                <p><%= "ISBN: "+book.isbn %></p>
+                <p><%= "Price: $"+book.price.to_s %></p>
+            </div>
+            <div class="ten wide column">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio impedit minus voluptas praesentium dignissimos, voluptatem repellat quo nulla hic dicta aliquam voluptates est aperiam enim omnis consequuntur repellendus quos? Saepe!
+                </p>
+                <div align="right">
+                    <button class="ui orange button">Add to Cart</button>
+                    <button class="ui orange button">Request Swap</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <% end %>
+    </div>
 </div>
 <br><br>
