@@ -27,9 +27,9 @@
         <div class="login_container">
             <div class="ui grid">
                 <div class="eight wide column">
-                    <h3>Create an Account</h3>
                     <form action="/create" class="ui large inverted form" method="post" enctype="application/json" >
                         <div class="ui stacked inverted segment">
+                    <h3>Create an Account</h3>
                                 <div class="field">
                                         <label>Name</label>
                                         <input name="name" placeholder="John Doe" type="text">
@@ -62,16 +62,18 @@
                 </div>
 
                 <div class="eight wide column">
-                    <h3>Login</h3>
                     <form action="/check" class="ui large inverted form" method="post" enctype="application/json" >
                         <div class="ui stacked inverted segment">
+                            <h3>Login</h3>
                             <div class="field">
+                                <label>Email</label>
                                 <div class="ui left icon input">
                                     <i class="user icon"></i>
                                     <input name="user_email" placeholder="E-mail address" type="text">
                                 </div>
                             </div>
                             <div class="field">
+                                <label>Password</label>
                                 <div class="ui left icon input">
                                     <i class="lock icon"></i>
                                     <input name="user_password" placeholder="Password" type="password">
