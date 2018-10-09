@@ -14,7 +14,14 @@
                 </div>
             </div>
           <div class="right menu">
-            <a href="/login" class="active item">
+            <a
+             <% if(@LogInOrOut != 'Login') %>
+             href="/logout" 
+             data-method="delete"
+             <% else %>
+             href="/login"
+             <% end %>
+             class="active item">
               <%= @LogInOrOut %>
             </a>
           </div>
