@@ -1,5 +1,10 @@
 class AddBookController < ApplicationController
   def index
+    if logged_in?
+      @LogInOrOut = "Logout, " + String(@current_user.name)
+    else
+      @LogInOrOut = "Login"
+    end
   end
 
   def create

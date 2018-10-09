@@ -9,6 +9,7 @@ class LoginController < ApplicationController
            p "ERROR-------------------------------------------------"
         end
     end
+
     def check
         # TODO(Add flash with loged in/logout message)
         p params
@@ -26,11 +27,13 @@ class LoginController < ApplicationController
             end
         end
     end
+
     def destroy
         # TODO(Add flash with logout message)
         reset_session
         redirect_to "/"
     end
+    
     def index
         #@current_user = current_user
         if logged_in?
