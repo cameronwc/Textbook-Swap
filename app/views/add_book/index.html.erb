@@ -1,4 +1,39 @@
 <div id="add_book">
+    <div class="nav-stripe">
+    <div class="ui container">
+        <div class="ui secondary menu">
+            <div class="left menu">
+                <a href="/" class="item">
+                    <div class="nav-logo">
+                        Textbook Swap
+                    </div>
+                </a>
+                <a href="/" class="active item">
+                    Home
+                </a>
+                <a href="/dashboard" class="item">
+                    Dashboard
+                </a>
+                <a href="/add_book" class="item">
+                    Sell an item
+                </a>
+            </div>
+          <div class="right menu">
+            <a
+             <% if(@LogInOrOut != 'Login') %>
+             href="/logout" 
+             data-method="delete"
+             <% else %>
+             href="/login"
+             <% end %>
+             class="active item">
+              <%= @LogInOrOut || 'Login' %>
+            </a>
+          </div>
+        </div>
+    </div>
+    </div>
+        <!--
     <div class="background-stripe">
         <div class="ui secondary menu">
             <div class="ui container">
@@ -42,7 +77,7 @@
             </div>
         </div>
     </div>
-
+    -->
     <div class="page">
         <div class="ui container">
             <div align="center">

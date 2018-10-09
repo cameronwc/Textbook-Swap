@@ -1,46 +1,37 @@
 <div id="search_book">
-    <div class="background-stripe">
+    <div class="nav-stripe">
+    <div class="ui container">
         <div class="ui secondary menu">
-            <div class="ui container">
-                <div class="left menu">
-                    <div class="logo">
+            <div class="left menu">
+                <a href="/" class="item">
+                    <div class="nav-logo">
                         Textbook Swap
                     </div>
-                    <div class="stripe">
-                        <a href="/" class="button">
-                            Home
-                        </a>
-
-                        <a class="button">
-                            Dashboard
-                        </a>
-
-                        <a href="add_book" class="button">
-                            Sell an item
-                        </a>
-                    </div>
-                </div>
-                <div class="right menu">
-                    <div class="item">
-                        <img class="ui avatar image" src="https://placeimg.com/200/200/any">
-                        <div class="content">
-                            <div class="description">
-                                <a
-                                    <% if(@LogInOrOut != 'Login') %>
-                                    href="/logout" 
-                                    data-method="delete"
-                                    <% else %>
-                                    href="/login"
-                                    <% end %>
-                                    class="active item">
-                                    <%= @LogInOrOut || 'Login' %>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </a>
+                <a href="/" class="active item">
+                    Home
+                </a>
+                <a href="/dashboard" class="item">
+                    Dashboard
+                </a>
+                <a href="/add_book" class="item">
+                    Sell an item
+                </a>
             </div>
+          <div class="right menu">
+            <a
+             <% if(@LogInOrOut != 'Login') %>
+             href="/logout" 
+             data-method="delete"
+             <% else %>
+             href="/login"
+             <% end %>
+             class="active item">
+              <%= @LogInOrOut || 'Login' %>
+            </a>
+          </div>
         </div>
+    </div>
     </div>
 
 	<div align="center">

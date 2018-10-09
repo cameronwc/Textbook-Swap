@@ -3,19 +3,20 @@
     <div class="ui container">
         <div class="ui secondary menu">
             <div class="left menu">
-                <div class="stripe">
-                    <a href="/" class="button">
-                        Home
-                    </a>
-
-                    <a href="#" class="button">
-                        Dashboard
-                    </a>
-
-                    <a href="/add_book" class="button">
-                        Sell an item
-                    </a>
-                </div>
+                <a href="/" class="item">
+                    <div class="nav-logo">
+                        Textbook Swap
+                    </div>
+                </a>
+                <a href="/" class="active item">
+                    Home
+                </a>
+                <a href="/dashboard" class="item">
+                    Dashboard
+                </a>
+                <a href="/add_book" class="item">
+                    Sell an item
+                </a>
             </div>
           <div class="right menu">
             <a
@@ -26,10 +27,12 @@
              href="/login"
              <% end %>
              class="active item">
-              <%= @LogInOrOut %>
+              <%= @LogInOrOut || 'Login' %>
             </a>
           </div>
         </div>
+    </div>
+    <div class="ui container">
 
         <div align="center">
             <h1 class="logo">Textbook Swap</h1>

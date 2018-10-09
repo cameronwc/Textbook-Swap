@@ -43,8 +43,9 @@ footer {
     color: white;
 }
 
-.logo {
-    margin-top: 6px;
+.nav-logo {
+    // margin-top: 6px;
+    font-size: 2em;
     color: white;
     font-family: 'Lobster', cursive;
 }
@@ -53,4 +54,8 @@ footer {
     font-size: 1.5em;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.nav-stripe{
+    background-color: #f5af19;
 }
