@@ -3,15 +3,20 @@
     <div class="ui container">
         <div class="ui secondary menu">
             <div class="left menu">
+                <a href="/" class="item">
+                    <div class="nav-logo">
+                        Textbook Swap
+                    </div>
+                </a>
                 <a href="/" class="active item">
                     Home
                 </a>
-                <div class="item">
+                <a href="/dashboard" class="item">
                     Dashboard
-                </div>
-                <div class="item">
+                </a>
+                <a href="/add_book" class="item">
                     Sell an item
-                </div>
+                </a>
             </div>
           <div class="right menu">
             <a
@@ -26,6 +31,19 @@
             </a>
           </div>
         </div>
+    </div>
+
+        <% if flash[:alert] %>
+        <div class="ui container">
+            <div class="ui danger message">
+                <i class="close icon"></i>
+                <div class="header">
+                    Error
+                </div>
+                <p><%= flash[:alert] %></p>
+            </div>
+        </div>
+        <% end %>
 
         <div align="center">
             <h1 class="logo">Textbook Swap</h1>

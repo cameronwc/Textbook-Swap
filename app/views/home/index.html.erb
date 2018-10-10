@@ -33,6 +33,15 @@
         </div>
     </div>
     <div class="ui container">
+        <% if flash[:notice] %>
+            <div class="ui positive message">
+                <i class="close icon"></i>
+                <div class="header">
+                    Logged In
+                </div>
+                <p><%= flash[:notice] %></p>
+            </div>
+        <% end %>
 
         <div align="center">
             <h1 class="logo">Textbook Swap</h1>
