@@ -49,16 +49,12 @@
             <h1 class="logo">Textbook Swap</h1>
         </div>
 
-        <div class="login_container">
+        <div class="login_container ui container">
             <div class="ui grid">
                 <div class="eight wide column">
                     <form action="/create" class="ui large inverted form" method="post" enctype="application/json" >
                         <div class="ui stacked inverted segment">
                     <h3>Create an Account</h3>
-                                <div class="field">
-                                        <label>Name</label>
-                                        <input name="name" placeholder="John Doe" type="text">
-                                    </div>
                             <div class="field">
                                 <label>Email</label>
                                 <input name="email" placeholder="JohnDoe@gmail.com" type="text">
@@ -70,6 +66,14 @@
                             <div class="field">
                                 <label>Retype Password</label>
                                 <input name="password_confirmation" placeholder="Password" type="password">
+                            </div>
+                            <div class="field">
+                                <label>Name</label>
+                                <input name="name" placeholder="John Doe" type="text">
+                            </div>
+                            <div class="field">
+                                <label>Zip</label>
+                                <input name="email" placeholder="JohnDoe@gmail.com" type="text">
                             </div>
                             <!-- <div class="field">
                                 <label>School</label>
