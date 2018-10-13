@@ -6,4 +6,13 @@ class Account < ApplicationRecord
 
     has_secure_password
     validates :password, presence: true, length: { minimum: 6 }
+
+    def self.OwnedBook
+        #TODO: return all owned books that are not seeling
+    end
+
+    def self.SellingBooks
+        #TODO: return all owned books that are seeling
+    end
+
 end
