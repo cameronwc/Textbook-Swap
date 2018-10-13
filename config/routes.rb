@@ -19,6 +19,8 @@ Rails.application.routes.draw do
   post 'check', to: 'login#check'
   delete 'logout',  to: 'login#destroy'
 
+  get 'dashboard', to: 'dashboard#index'
+
   resources :users
 
 end
