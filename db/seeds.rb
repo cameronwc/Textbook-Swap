@@ -7,4 +7,5 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 #
 #
-Books = Book.create({ isbn: '1584885114'}, { name: 'Advanced University Physics, Second Edition' }, { price: 100})
+Books = Book.create({ isbn: '1584885114', title: 'Advanced University Physics, Second Edition', edition: "12th", condition: "new", price: 100, author: "Milazzo", seller_id: 104})
+Wishlists = Wishlist.create({user_id: 12, book_id: 1})
