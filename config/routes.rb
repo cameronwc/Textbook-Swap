@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'dashboard/new'
+  get 'dashboard/index'
   resources :entries, defaults: { format: 'json' }
   
   get 'sessions/new'
