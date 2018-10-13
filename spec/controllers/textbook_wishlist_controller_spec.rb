@@ -11,6 +11,7 @@ RSpec.describe TextbookWishlistController, type: :controller do
     it "returns http success" do
       post :create
       expect(response).to have_http_status(:success)
+    end
   end
   describe "POST #destroy" do
     it "returns http success" do
