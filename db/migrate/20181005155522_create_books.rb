@@ -10,6 +10,7 @@ class CreateBooks < ActiveRecord::Migration[5.2]
       t.integer 'seller_id'
       t.integer 'buyer_id'
       t.string 'picture_path'
+      t.Boolean 'selling'
       t.timestamps
     end
   end
