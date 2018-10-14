@@ -40,21 +40,24 @@ RSpec.describe Book, type: :model do
 
     it 'should find results through university search' do
 	    @found_books = Book.where("seller_id like '%@uccs.edu'")
-       expect(@found_books.length > 0).to be true
+      expect(@found_books.length > 0).to be true
     end
 
     it 'should find results through university and title search' do
-	    @found_books = Book.where("seller_id like '%@ppcc.edu' AND title like '%Grinch%'")
+	    @found_books = Book.where("seller_id like '%@ppcc.edu' AND title like '%University Physics%'")
 	    expect(@found_books.length >0).to be true
     end
 
-    it 'third' do
-
+    it 'should find results through university and author search' do
+      @found_books = Book.where("seller_id like '%@uccs.edu' AND author like '%Seuss%'")
+      expect(@found_books.length >0).to be true
     end
 
-    it 'fourth' do
-
+    it 'should find results through university and ISBN search ' do
+      @found_books = Book.where("seller_id like '%@ppcc.edu' AND isbn='1234567891234'")
+      expect(@found_books.length >0).to be true
     end
+
   end
 
 end
