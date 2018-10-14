@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'sold_books/index'
   get 'textbook_wishlist', to: 'textbook_wishlist#index'
   resources :entries, defaults: { format: 'json' }
   
