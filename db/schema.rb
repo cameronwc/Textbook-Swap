@@ -44,13 +44,6 @@ ActiveRecord::Schema.define(version: 2018_10_14_165013) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "track_sold_books", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "book_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "wishlists", force: :cascade do |t|
     t.integer "user_id"
     t.integer "book_id"
