@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'sold_books/index'
   get 'textbook_wishlist', to: 'textbook_wishlist#index'
   get 'dashboard/new'
   get 'dashboard/index'
