@@ -7,8 +7,8 @@ class CreateBooks < ActiveRecord::Migration[5.2]
       t.string 'condition'
       t.integer 'price'
       t.string 'author'
-      t.string 'seller_id'
-      t.string 'buyer_id'
+      t.int 'seller_id'
+      t.int 'buyer_id'
       t.string 'picture_path'
       t.Boolean 'selling'
       t.timestamps
