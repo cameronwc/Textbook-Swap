@@ -30,8 +30,8 @@ ActiveRecord::Schema.define(version: 2018_10_14_165013) do
     t.string "condition"
     t.integer "price"
     t.string "author"
-    t.int "seller_id"
-    t.int "buyer_id"
+    t.integer "seller_id"
+    t.integer "buyer_id"
     t.string "picture_path"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
