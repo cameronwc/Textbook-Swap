@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2018_10_14_165013) do
     t.integer "seller_id"
     t.integer "buyer_id"
     t.string "picture_path"
+    t.boolean "selling"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
