@@ -23,7 +23,7 @@ RSpec.describe SoldBook, type: :model do
   end
 
   it "should be defined for updating" do
-    Book.where(:isbn => "1234567891234", :seller_id => 1).update_all(sold: true)
+    Book.where(:isbn => "1234567891234", :seller_id => 1, sold: FALSE).update_all(sold: true)
     expect(Book.find_by_sold(sold = true)).should(exist)
   end
 end
