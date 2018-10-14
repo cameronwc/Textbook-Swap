@@ -44,7 +44,7 @@ RSpec.describe Book, type: :model do
     end
 
     it 'should find results through university and title search' do
-	    #@found_books = Book.where("seller_id like '%@ppcc.edu' AND title like '%Grinch%'")
+	    #@found_books = Book.where("seller_id like '%@uccs.edu' AND title like '%University Physics%'")
 	    #expect(@found_books.length >0).to be true
     end
 
