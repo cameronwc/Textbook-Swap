@@ -4,5 +4,5 @@ class Book < ApplicationRecord
     validates :edition, presence: true
     validates :condition, presence: true
     validates :price, presence: true
-    validates :seller, presence: true
+    validates :seller_id, presence: true
 end
