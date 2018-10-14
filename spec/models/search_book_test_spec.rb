@@ -3,6 +3,8 @@ require 'rails_helper'
 RSpec.describe Book, type: :model do
 
   before(:each) do
+    @ppcc_user = Account.new(name: "ppcc user", email: "user@ppcc.edu",password: "foobar", password_confirmation: "foobar").save
+    @uccs_user = Account.new(name: "uccs user", email: "user@uccs.edu",password: "foobar1", password_confirmation: "foobar1").save
     @grinch_book = Book.new(isbn: "1665544332211", title: "Grinch Stole Christmas", edition: "12th", condition: "new", price: 100, author: "Seuss", seller_id: "jsmith@uccs.edu").save
     @physics_book = Book.new(isbn: "1234567891234", title: "University Physics", edition: "12th", condition: "new", price: 100, author: "Milazzo", seller_id: "klamer@ppcc.edu").save
   end
