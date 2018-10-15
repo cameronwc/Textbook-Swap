@@ -1,2 +1,37 @@
-<h1>Dashboard#index</h1>
-<div class="ui divider"></div>
+<div id="dashboard">
+  <div class="nav-stripe">
+    <div class="ui container">
+      <div class="ui secondary menu">
+        <div class="left menu">
+          <a href="/" class="item">
+            <div class="nav-logo">
+              Textbook Swap
+            </div>
+          </a>
+          <a href="/" class="item">
+            Home
+          </a>
+          <a href="/dashboard" class="item">
+            Dashboard
+          </a>
+          <a href="/add_book" class="active item">
+            Sell an item
+          </a>
+        </div>
+        <div class="right menu">
+          <a
+            <% if(@LogInOrOut != 'Login') %>
+            href="/logout"
+            data-method="delete"
+            <% else %>
+            href="/login"
+            <% end %>
+            class="active item">
+            <%= @LogInOrOut || 'Login' %>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui divider"></div>
