@@ -2,7 +2,8 @@ class HomeController < ApplicationController
   def index
     @allBooks = Book.all.limit(4)
     if logged_in?
-        @LogInOrOut = "Logout, " + String(@current_user.name)
+        @username = @current_user.name
+        @LogInOrOut = "Logout, " + String(@username)
     else
         @LogInOrOut = "Login"
     end
