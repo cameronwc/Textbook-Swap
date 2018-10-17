@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'textbook_wishlist', to: 'textbook_wishlist#index'
+  get 'textbook_wishlist/create', to: 'textbook_wishlist#create'
   resources :entries, defaults: { format: 'json' }
   
   get 'sessions/new'

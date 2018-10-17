@@ -3,7 +3,7 @@ class AddBookController < ApplicationController
     if logged_in?
       @LogInOrOut = "Logout, " + String(@current_user.name)
     else
-      @LogInOrOut = "Login"
+      redirect_to "/login"
     end
   end
 
