@@ -9,8 +9,11 @@ class AddBookController < ApplicationController
 
   def create
     if logged_in?
-      @createdBook = Book.create(:isbn => params['isbn'], :title => params['title'], :edition => params['edition'], :author => params['author'], :condition => params['condition'], :price => params['price'], :seller_id => session[:user_id])
+      @createdBook = Book.create(:isbn => params['isbn'], :title => params['title'], :edition => params['edition'], :author => params['author'], :condition => params['condition'], :price => params['price'])
+      @createdBook.seller = @current_user
       @createdBook.save!
+      @current_user.books << @createdBook
+      #@current_user.save!
     else
       p "please login"
     end

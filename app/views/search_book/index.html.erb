@@ -75,7 +75,9 @@
                     <% end %>
                 </h4>
                 <p><%= "ISBN: "+book.isbn %></p>
-                <p><%= "Price: $"+book.price.to_s %></p>
+		<p><%= "Price: $"+book.price.to_s %></p>
+		<p><%= "Seller: "+book.seller.name %></p>
+		<p><%= "Contact: "+book.seller.email %></p>
             </div>
             <div class="ten wide column">
                 <p>

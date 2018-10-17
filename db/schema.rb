@@ -24,18 +24,18 @@ ActiveRecord::Schema.define(version: 2018_10_14_165013) do
   end
 
   create_table "books", force: :cascade do |t|
+    t.bigint "account_id"
     t.string "isbn"
     t.string "title"
     t.string "edition"
     t.string "condition"
     t.integer "price"
     t.string "author"
-    t.integer "seller_id"
-    t.integer "buyer_id"
     t.string "picture_path"
     t.boolean "selling"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["account_id"], name: "index_books_on_account_id"
   end
 
   create_table "sold_books", force: :cascade do |t|
