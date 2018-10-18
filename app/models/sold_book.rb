@@ -1,0 +1,2 @@
+class SoldBook < ApplicationRecord
+end

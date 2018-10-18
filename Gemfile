@@ -24,8 +24,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-# Include Bootstrap
-gem 'bootstrap'
+
 gem 'popper_js', '~> 1.14.3'
 # Include jquery
 gem 'jquery-rails'
@@ -33,6 +32,9 @@ gem 'jquery-rails'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'bootstrap'
+
+gem 'metric_fu', git: 'https://github.com/metricfu/metric_fu.git'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

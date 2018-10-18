@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'sold_books/index'
+  get 'textbook_wishlist', to: 'textbook_wishlist#index'
+  get 'dashboard/new'
+  get 'dashboard/index'
   resources :entries, defaults: { format: 'json' }
   
   get 'sessions/new'
@@ -16,6 +20,8 @@ Rails.application.routes.draw do
   post 'create', to: 'login#create'
   post 'check', to: 'login#check'
   delete 'logout',  to: 'login#destroy'
+
+  get 'dashboard', to: 'dashboard#index'
 
   resources :users
 
