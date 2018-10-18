@@ -1,2 +1,265 @@
-<h1>Dashboard#index</h1>
-<div class="ui divider"></div>
+<div id="dashboard">
+  <div class="nav-stripe">
+    <div class="ui container">
+      <div class="ui secondary menu">
+        <div class="left menu">
+          <a href="/" class="item">
+            <div class="nav-logo">
+              Textbook Swap
+            </div>
+          </a>
+          <a href="/" class="item">
+            Home
+          </a>
+          <a href="/dashboard" class="active item">
+            Dashboard
+          </a>
+          <a href="/add_book" class="item">
+            Sell an item
+          </a>
+        </div>
+        <div class="right menu">
+          <a
+            <% if(@LogInOrOut != 'Login') %>
+            href="/logout"
+            data-method="delete"
+            <% else %>
+            href="/login"
+            <% end %>
+            class="active item">
+            <%= @LogInOrOut || 'Login' %>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dashboard_container ui container">
+    <div align="center">
+      <h1 class="ui orange header">Dashboard</h1>
+    </div>
+    <div class="ui divider"></div>
+    <div class="ui grid">
+      <div class="sixteen wide column">
+        <div class="ui center aligned grid" id="related_books" align="center">
+          <div class="two wide column">
+            <div class="ui inverted compact vertical labeled icon menu">
+              <!-- Add Embedded Ruby Here to activate correct icon? -->
+              <a href="javascript:showHide('OwnedBooks');" class="active item">
+                <i class="book icon"></i>
+                Owned Books
+              </a>
+              <a  href="javascript:showHide('Selling');" class="item">
+                <i class="money bill alternate outline icon"></i>
+                Selling
+              </a>
+              <a href="javascript:showHide('SoldBooks');" class="item">
+                <i class="dollar sign icon"></i>
+                Sold Books
+              </a>
+              <a href="javascript:showHide('WishList');" class="item">
+                <i class="list alternate icon"></i>
+                Wish List
+              </a>
+            </div>
+          </div>
+          <div class="fourteen wide column">
+            <div class="pool-banner">
+              <div id="OwnedBooks">
+                <!-- ADD HTML FOR OWNED BOOKS HERE -->
+
+                <div class="ui stackable four column grid">
+                  <div class="column">
+                    <div class="ui segment item">
+                      <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                      <h3 id="related-title-2">Owned</h3>
+                      <p id="related-price-2">$100.00</p>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Sell</a>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Delete</a>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="ui segment item">
+                      <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                      <h3 id="related-title-2">Owned</h3>
+                      <p id="related-price-2">$100.00</p>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Sell</a>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Delete</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div id="Selling">
+                <div class="ui stackable four column grid">
+
+
+                    <!-- ADD HTML FOR SELLING BOOKS HERE -->
+                  <div class="column">
+                    <div class="ui segment item">
+                      <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                      <h3 id="related-title-2">Selling</h3>
+                      <p id="related-price-2">$100.00</p>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Un-List</a>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Delete</a>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="ui segment item">
+                      <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                      <h3 id="related-title-2">Selling</h3>
+                      <p id="related-price-2">$100.00</p>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Un-List</a>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Delete</a>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="ui segment item">
+                      <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                      <h3 id="related-title-2">Selling</h3>
+                      <p id="related-price-2">$100.00</p>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Un-List</a>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Delete</a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+               <div id="SoldBooks">
+                 <div class="ui stackable four column grid">
+
+
+                    <!-- ADD HTML FOR SOLD BOOKS HERE -->
+                   <div class="column">
+                    <div class="ui segment item">
+                      <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                      <h3 id="related-title-2">Sold</h3>
+                      <p id="related-price-2">$100.00</p>
+                    </div>
+                   </div>
+                   <div class="column">
+                     <div class="ui segment item">
+                       <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                       <h3 id="related-title-2">Sold</h3>
+                       <p id="related-price-2">$100.00</p>
+                     </div>
+                   </div>
+
+
+                 </div>
+               </div>
+
+                <div id="WishList">
+                  <div class="ui stackable four column grid">
+
+                    <!-- ADD HTML FOR WISH LIST BOOKS HERE -->
+                     <div class="column">
+                      <div class="ui card">
+                        <div class="image">
+                          <img src="https://webstores.activenetwork.com/school-software/del_sol_high_schofaw/images/products/detail_516_del_sol_high_schofaw_textbooks.jpg">
+                        </div>
+                        <div class="content">
+                          <div class="header">
+                            Wishlist
+                          </div>
+                          <div class="description">
+                            ISBN: 12345678
+                            <br>
+                            Price: 100
+                            <br>
+                            Condition: Poor
+                            <br>
+                            <br>
+                            <div align="center">
+                              <a href="#" class="ui basic orange button">Buy</a>
+                              <a href="#" class="ui basic orange button">Trade</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                     </div>
+                    <div class="column">
+                      <div class="ui segment item">
+                        <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                        <h3 id="related-title-2">Wishlist</h3>
+                        <p id="related-price-2">$100.00</p>
+                        <a id="related-link-2" href="#" class="ui basic orange button">Buy</a>
+                        <a id="related-link-2" href="#" class="ui basic orange button">Trade</a>
+                      </div>
+                    </div>
+                    <div class="column">
+                      <div class="ui segment item">
+                        <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                        <h3 id="related-title-2">Wishlist</h3>
+                        <p id="related-price-2">$100.00</p>
+                        <a id="related-link-2" href="#" class="ui basic orange button">Buy</a>
+                        <a id="related-link-2" href="#" class="ui basic orange button">Trade</a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+    function showHide(d)
+    {
+        var myElement = document.querySelector("#OwnedBooks");
+        myElement.style.display = "none";
+        var onediv = document.getElementById(d);
+        var myClass;
+        if(d == 'Selling') {
+            var myClass = "active item";
+        }
+        var divs=['OwnedBooks','Selling','SoldBooks','WishList'];
+        for (var i=0;i<divs.length;i++)
+        {
+            if (onediv != document.getElementById(divs[i]))
+            {
+                document.getElementById(divs[i]).style.display='none';
+            }
+
+        }
+        onediv.style.display = 'block';
+    }
+    //code to activate semantic UI menu buttons when selected
+    menu = {};
+
+    // ready event
+    menu.ready = function() {
+
+        // selector cache
+        var
+            $menuItem = $('.menu a.item, .menu .link.item'),
+            // alias
+            handler = {
+                activate: function() {
+                    $(this)
+                        .addClass('active')
+                        .closest('.ui.menu')
+                        .find('.item')
+                        .not($(this))
+                        .removeClass('active');
+                }
+            }
+        ;
+
+        $menuItem
+            .on('click', handler.activate)
+        ;
+
+    };
+
+
+    // attach ready event
+    $(document).ready(menu.ready);
+</script>
