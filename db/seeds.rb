@@ -7,5 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 #
 #
+newAcc = Account.create({:name => 'cameron', :email => 'test@test.edu', :password => 'password', :password_confirmation => 'password'})
 Books = Book.create({ isbn: '1584885114', title: 'Advanced University Physics, Second Edition', edition: "12th", condition: "new", price: 100, author: "Milazzo", seller_id: 104})
 Wishlists = Wishlist.create({user_id: 12, book_id: 1})
