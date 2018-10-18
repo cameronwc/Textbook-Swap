@@ -45,19 +45,19 @@
           <div class="two wide column">
             <div class="ui inverted compact vertical labeled icon menu">
               <!-- Add Embedded Ruby Here to activate correct icon? -->
-              <a href="javascript:showHide('OwnedBooks');" class="item active">
+              <a href="javascript:showHide('OwnedBooks');" class="active item">
                 <i class="book icon"></i>
                 Owned Books
               </a>
-              <a  href="javascript:showHide('Selling');" class="item active">
+              <a  href="javascript:showHide('Selling');" class="item">
                 <i class="money bill alternate outline icon"></i>
                 Selling
               </a>
-              <a href="javascript:showHide('SoldBooks');" class="item active">
+              <a href="javascript:showHide('SoldBooks');" class="item">
                 <i class="dollar sign icon"></i>
                 Sold Books
               </a>
-              <a href="javascript:showHide('WishList');" class="item active">
+              <a href="javascript:showHide('WishList');" class="item">
                 <i class="list alternate icon"></i>
                 Wish List
               </a>
@@ -68,40 +68,38 @@
               <div class="ui four column grid">
                 <div class="column">
                   <!-- Add Embedded Ruby Here to display correct books? -->
-                  <div id="OwnedBooks" rel="1">
+                  <div id="OwnedBooks">
                     <div class="ui segment item">
                       <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
                       <h3 id="related-title-2">Owned</h3>
                       <p id="related-price-2">$100.00</p>
                       <a id="related-link-2" href="#" class="ui basic orange button">Sell</a>
-                      <a id="related-link-2" href="#" class="ui basic orange button">Sell</a>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Delete</a>
                     </div>
                   </div>
-                  <div id="Selling" rel="2">
+                  <div id="Selling">
                     <div class="ui segment item">
                       <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
                       <h3 id="related-title-2">Selling</h3>
                       <p id="related-price-2">$100.00</p>
-                      <a id="related-link-2" href="#" class="ui basic orange button">Sell</a>
-                      <a id="related-link-2" href="#" class="ui basic orange button">Sell</a>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Un-List</a>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Delete</a>
                     </div>
                   </div>
-                  <div id="SoldBooks" rel="3">
+                  <div id="SoldBooks">
                     <div class="ui segment item">
                       <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
                       <h3 id="related-title-2">Sold</h3>
                       <p id="related-price-2">$100.00</p>
-                      <a id="related-link-2" href="#" class="ui basic orange button">Sell</a>
-                      <a id="related-link-2" href="#" class="ui basic orange button">Sell</a>
                     </div>
                   </div>
-                  <div id="WishList" rel="4">
+                  <div id="WishList">
                     <div class="ui segment item">
                       <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
                       <h3 id="related-title-2">Wishlist</h3>
                       <p id="related-price-2">$100.00</p>
-                      <a id="related-link-2" href="#" class="ui basic orange button">Sell</a>
-                      <a id="related-link-2" href="#" class="ui basic orange button">Sell</a>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Buy</a>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Trade</a>
                     </div>
                   </div>
                 </div>
@@ -130,7 +128,13 @@
 <script>
     function showHide(d)
     {
+        var myElement = document.querySelector("#OwnedBooks");
+        myElement.style.display = "none";
         var onediv = document.getElementById(d);
+        var myClass;
+        if(d == 'Selling') {
+            var myClass = "active item";
+        }
         var divs=['OwnedBooks','Selling','SoldBooks','WishList'];
         for (var i=0;i<divs.length;i++)
         {
@@ -138,7 +142,73 @@
             {
                 document.getElementById(divs[i]).style.display='none';
             }
+
         }
         onediv.style.display = 'block';
     }
+    /* did not work to activate items
+    function isActive(Letter) {
+        if (Letter == 'a'){
+          myClassA = "active item"
+          myClassB = "item"
+          myClassC = "item"
+          myClassD = "item"
+        }
+        else if(Letter == 'b'){
+            myClassA = "item"
+            myClassB = "active item"
+            myClassC = "item"
+            myClassD = "item"
+        }
+        else if(Letter == 'c'){
+            myClassA = "item"
+            myClassB = "item"
+            myClassC = "active item"
+            myClassD = "item"
+        }
+        else if(Letter == 'd'){
+            myClassA = "item"
+            myClassB = "item"
+            myClassC = "item"
+            myClassD = "active item"
+        }
+        else{
+            myClassA = "active item"
+            myClassB = "item"
+            myClassC = "item"
+            myClassD = "item"
+        }
+
+
+    }*/
+    menu = {};
+
+    // ready event
+    menu.ready = function() {
+
+        // selector cache
+        var
+            $menuItem = $('.menu a.item, .menu .link.item'),
+            // alias
+            handler = {
+                activate: function() {
+                    $(this)
+                        .addClass('active')
+                        .closest('.ui.menu')
+                        .find('.item')
+                        .not($(this))
+                        .removeClass('active');
+                }
+            }
+        ;
+
+        $menuItem
+            .on('click', handler.activate)
+        ;
+
+    };
+
+
+    // attach ready event
+    $(document).ready(menu.ready);
 </script>
