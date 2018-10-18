@@ -45,19 +45,19 @@
           <div class="two wide column">
             <div class="ui inverted compact vertical labeled icon menu">
               <!-- Add Embedded Ruby Here to activate correct icon? -->
-              <a data-tab="OwnedBooks" href = "#" class="item active">
+              <a href="javascript:showHide('OwnedBooks');" class="item active">
                 <i class="book icon"></i>
                 Owned Books
               </a>
-              <a data-tab = "Selling" href = "#" class="item">
+              <a  href="javascript:showHide('Selling');" class="item active">
                 <i class="money bill alternate outline icon"></i>
                 Selling
               </a>
-              <a data-tab = "SoldBooks" href = "#"  class="item">
+              <a href="javascript:showHide('SoldBooks');" class="item active">
                 <i class="dollar sign icon"></i>
                 Sold Books
               </a>
-              <a data-tab = "WishList" href = "#"  class="item">
+              <a href="javascript:showHide('WishList');" class="item active">
                 <i class="list alternate icon"></i>
                 Wish List
               </a>
@@ -127,3 +127,18 @@
   <div class="pome hide">A pome is...</div>
 </div>
 -->
+<script>
+    function showHide(d)
+    {
+        var onediv = document.getElementById(d);
+        var divs=['OwnedBooks','Selling','SoldBooks','WishList'];
+        for (var i=0;i<divs.length;i++)
+        {
+            if (onediv != document.getElementById(divs[i]))
+            {
+                document.getElementById(divs[i]).style.display='none';
+            }
+        }
+        onediv.style.display = 'block';
+    }
+</script>
