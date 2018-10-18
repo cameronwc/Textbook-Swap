@@ -3,6 +3,7 @@ class LoginController < ApplicationController
     def create
         p params
         @user = Account.new(:name => params[:name], :email => params[:email], :password => params[:password], :password_confirmation => params[:password_confirmation])
+        # @user.account_id = @user.id
         if @user.valid?
            flash.notice = "Succesfully created account and logged in."
            @user.save
@@ -16,7 +17,6 @@ class LoginController < ApplicationController
 
     def check
         # TODO(Add flash with loged in/logout message)
-        p params
         user = Account.find_by(email: params[:user_email].downcase)
         if user.nil?
             flash.alert = "User does not exist please signup."
