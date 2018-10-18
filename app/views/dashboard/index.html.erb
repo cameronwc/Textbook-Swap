@@ -44,20 +44,20 @@
         <div class="ui center aligned grid" id="related_books" align="center">
           <div class="two wide column">
             <div class="ui inverted compact vertical labeled icon menu">
-              <!-- Add Embedded Ruby Here to activate correct icon -->
-              <a class="item active">
+              <!-- Add Embedded Ruby Here to activate correct icon? -->
+              <a data-tab="OwnedBooks" href = "#" class="item active">
                 <i class="book icon"></i>
                 Owned Books
               </a>
-              <a class="item">
+              <a data-tab = "Selling" href = "#" class="item">
                 <i class="money bill alternate outline icon"></i>
                 Selling
               </a>
-              <a class="item">
+              <a data-tab = "SoldBooks" href = "#"  class="item">
                 <i class="dollar sign icon"></i>
                 Sold Books
               </a>
-              <a class="item">
+              <a data-tab = "WishList" href = "#"  class="item">
                 <i class="list alternate icon"></i>
                 Wish List
               </a>
@@ -67,12 +67,42 @@
             <div class="pool-banner">
               <div class="ui four column grid">
                 <div class="column">
-                  <!-- Add Embedded Ruby Here to display correct books -->
-                  <div class="ui segment item">
-                    <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
-                    <h3 id="related-title-2">Title</h3>
-                    <p id="related-price-2">$100.00</p>
-                    <a id="related-link-2" href="#" class="ui basic orange button">Sell</a>
+                  <!-- Add Embedded Ruby Here to display correct books? -->
+                  <div id="OwnedBooks" rel="1">
+                    <div class="ui segment item">
+                      <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                      <h3 id="related-title-2">Owned</h3>
+                      <p id="related-price-2">$100.00</p>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Sell</a>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Sell</a>
+                    </div>
+                  </div>
+                  <div id="Selling" rel="2">
+                    <div class="ui segment item">
+                      <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                      <h3 id="related-title-2">Selling</h3>
+                      <p id="related-price-2">$100.00</p>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Sell</a>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Sell</a>
+                    </div>
+                  </div>
+                  <div id="SoldBooks" rel="3">
+                    <div class="ui segment item">
+                      <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                      <h3 id="related-title-2">Sold</h3>
+                      <p id="related-price-2">$100.00</p>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Sell</a>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Sell</a>
+                    </div>
+                  </div>
+                  <div id="WishList" rel="4">
+                    <div class="ui segment item">
+                      <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
+                      <h3 id="related-title-2">Wishlist</h3>
+                      <p id="related-price-2">$100.00</p>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Sell</a>
+                      <a id="related-link-2" href="#" class="ui basic orange button">Sell</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -84,4 +114,16 @@
   </div>
 </div>
 
+<!--
+<select class="div-toggle" data-target=".my-info-1">
+  <option value="orange" data-show=".citrus">Orange</option>
+  <option value="lemon" data-show=".citrus">Lemon</option>
+  <option value="apple" data-show=".pome">Apple</option>
+  <option value="pear" data-show=".pome">Pear</option>
+</select>
 
+<div class="my-info-1">
+  <div class="citrus hide">Citrus is...</div>
+  <div class="pome hide">A pome is...</div>
+</div>
+-->
