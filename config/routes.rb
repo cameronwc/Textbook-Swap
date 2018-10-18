@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   get 'textbook_wishlist', to: 'textbook_wishlist#index'
   get 'dashboard/new'
   get 'dashboard/index'
+  get 'textbook_wishlist/create', to: 'textbook_wishlist#create'
+  get 'textbook_wishlist/destroy', to: 'textbook_wishlist#destroy'
   resources :entries, defaults: { format: 'json' }
   
   get 'sessions/new'

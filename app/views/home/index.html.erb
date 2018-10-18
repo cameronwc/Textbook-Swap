@@ -107,7 +107,10 @@
                         <br>
                         <br>
                         <div align="center">
-                            <a class="ui basic orange button">View <i class="angle right icon"></i></a>
+                            <a class="ui basic small green button">Buy Now</a>
+                            <% if(@username) %>
+                               <a class="ui basic small green button" href="/textbook_wishlist/create?book_id=<%= book.id %>&user_id=<%= @current_user.id %>">Add to wishlist</a>
+                            <% end %>
                         </div>
                     </div>
                 </div>
