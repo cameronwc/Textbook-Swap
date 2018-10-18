@@ -34,6 +34,8 @@ gem 'jquery-rails'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap'
 
+gem 'metric_fu', git: 'https://github.com/metricfu/metric_fu.git'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
