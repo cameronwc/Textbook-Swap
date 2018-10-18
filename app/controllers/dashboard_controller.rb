@@ -3,6 +3,9 @@ class DashboardController < ApplicationController
   end
 
   def index
+    if !logged_in?
+      redirect_to "/login"
+    end
     @wishlistBooks_Final = []
     @current_user = session['user_id']
 
