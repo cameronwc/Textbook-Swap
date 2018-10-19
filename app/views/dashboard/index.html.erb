@@ -19,16 +19,16 @@
           </a>
         </div>
         <div class="right menu">
-          <a
-            <% if(@LogInOrOut != 'Login') %>
-            href="/logout"
-            data-method="delete"
-            <% else %>
-            href="/login"
-            <% end %>
-            class="active item">
-            <%= @LogInOrOut || 'Login' %>
-          </a>
+            <a
+             <% if(@LogInOrOut != 'Login') %>
+             href="/logout" 
+             data-method="delete"
+             <% else %>
+             href="/login"
+             <% end %>
+             class="active item">
+              <%= @LogInOrOut || 'Login' %>
+            </a>
         </div>
       </div>
     </div>
@@ -67,88 +67,96 @@
             <div class="pool-banner">
               <div id="OwnedBooks">
                 <!-- ADD HTML FOR OWNED BOOKS HERE -->
-
-                <div class="ui stackable four column grid">
-                  <div class="column">
-                    <div class="ui segment item">
-                      <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
-                      <h3 id="related-title-2">Owned</h3>
-                      <p id="related-price-2">$100.00</p>
-                      <a id="related-link-2" href="#" class="ui basic orange button">Sell</a>
-                      <a id="related-link-2" href="#" class="ui basic orange button">Delete</a>
+                    <div class="ui grid">
+                    <% if(@ownedBooks.present?) %>
+                    <% @ownedBooks.each do |book| %>
+                        <div class="four wide column">
+                            <div class="ui card">
+                                <div class="image"> 
+                                    <img src="https://webstores.activenetwork.com/school-software/del_sol_high_schofaw/images/products/detail_516_del_sol_high_schofaw_textbooks.jpg">
+                                </div>
+                                <div class="content">
+                                    <a class="header">
+                                        <%= book.title %>
+                                    </a>
+                                    <div class="description">
+                                        <%= "ISBN: #{book.isbn}" %>
+                                        <br>
+                                        <%= "Price: $#{book.price}" %>
+                                        <br>
+                                        <br>
+                                        <div align="center">
+                                            <a class="ui basic small green button" href="/dashboard/update?book_id=<%= book.id %>">Sell</a>
+                                            <a class="ui basic small red button" href="/textbook_wishlist/destroy?book_id=<%= book.id %>&user_id=<%= @current_user %>">Remove</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <% end %>
+                    <% end %>
                     </div>
-                  </div>
-                  <div class="column">
-                    <div class="ui segment item">
-                      <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
-                      <h3 id="related-title-2">Owned</h3>
-                      <p id="related-price-2">$100.00</p>
-                      <a id="related-link-2" href="#" class="ui basic orange button">Sell</a>
-                      <a id="related-link-2" href="#" class="ui basic orange button">Delete</a>
-                    </div>
-                  </div>
-                </div>
 
               </div>
 
               <div id="Selling">
-                <div class="ui stackable four column grid">
-
-
-                    <!-- ADD HTML FOR SELLING BOOKS HERE -->
-                  <div class="column">
-                    <div class="ui segment item">
-                      <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
-                      <h3 id="related-title-2">Selling</h3>
-                      <p id="related-price-2">$100.00</p>
-                      <a id="related-link-2" href="#" class="ui basic orange button">Un-List</a>
-                      <a id="related-link-2" href="#" class="ui basic orange button">Delete</a>
+                    <div class="ui grid">
+                    <% if(@sellingBooks.present?) %>
+                    <% @sellingBooks.each do |book| %>
+                        <div class="four wide column">
+                            <div class="ui card">
+                                <div class="image"> 
+                                    <img src="https://webstores.activenetwork.com/school-software/del_sol_high_schofaw/images/products/detail_516_del_sol_high_schofaw_textbooks.jpg">
+                                </div>
+                                <div class="content">
+                                    <a class="header">
+                                        <%= book.title %>
+                                    </a>
+                                    <div class="description">
+                                        <%= "ISBN: #{book.isbn}" %>
+                                        <br>
+                                        <%= "Price: $#{book.price}" %>
+                                        <br>
+                                        <br>
+                                        <div align="center">
+                                            <a class="ui basic small green button" href="/dashboard/sold?book_id=<%= book.id %>">Mark as Sold</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <% end %>
+                    <% end %>
                     </div>
-                  </div>
-                  <div class="column">
-                    <div class="ui segment item">
-                      <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
-                      <h3 id="related-title-2">Selling</h3>
-                      <p id="related-price-2">$100.00</p>
-                      <a id="related-link-2" href="#" class="ui basic orange button">Un-List</a>
-                      <a id="related-link-2" href="#" class="ui basic orange button">Delete</a>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="ui segment item">
-                      <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
-                      <h3 id="related-title-2">Selling</h3>
-                      <p id="related-price-2">$100.00</p>
-                      <a id="related-link-2" href="#" class="ui basic orange button">Un-List</a>
-                      <a id="related-link-2" href="#" class="ui basic orange button">Delete</a>
-                    </div>
-                  </div>
 
                 </div>
-              </div>
 
                <div id="SoldBooks">
-                 <div class="ui stackable four column grid">
-
-
-                    <!-- ADD HTML FOR SOLD BOOKS HERE -->
-                   <div class="column">
-                    <div class="ui segment item">
-                      <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
-                      <h3 id="related-title-2">Sold</h3>
-                      <p id="related-price-2">$100.00</p>
+                <div class="ui grid">
+                    <% if(@soldBooks.present?) %>
+                    <% @soldBooks.each do |book| %>
+                        <div class="four wide column">
+                            <div class="ui card">
+                                <div class="image"> 
+                                    <img src="https://webstores.activenetwork.com/school-software/del_sol_high_schofaw/images/products/detail_516_del_sol_high_schofaw_textbooks.jpg">
+                                </div>
+                                <div class="content">
+                                    <a class="header">
+                                        <%= book.title %>
+                                    </a>
+                                    <div class="description">
+                                        <%= "ISBN: #{book.isbn}" %>
+                                        <br>
+                                        <%= "Price: $#{book.price}" %>
+                                        <br>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <% end %>
+                    <% end %>
                     </div>
-                   </div>
-                   <div class="column">
-                     <div class="ui segment item">
-                       <img id="related-img-2" class="ui small image" src="https://picsum.photos/200/200/?random" alt="placeholder">
-                       <h3 id="related-title-2">Sold</h3>
-                       <p id="related-price-2">$100.00</p>
-                     </div>
-                   </div>
-
-
-                 </div>
                </div>
 
                 <div id="WishList">

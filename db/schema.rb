@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_14_165013) do
+ActiveRecord::Schema.define(version: 2018_10_13_232902) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,17 +32,11 @@ ActiveRecord::Schema.define(version: 2018_10_14_165013) do
     t.integer "price"
     t.string "author"
     t.string "picture_path"
-    t.boolean "selling"
+    t.boolean "selling", default: false
+    t.boolean "sold", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["account_id"], name: "index_books_on_account_id"
-  end
-
-  create_table "sold_books", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "book_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "wishlists", force: :cascade do |t|
