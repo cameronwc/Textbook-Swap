@@ -386,10 +386,6 @@
         1,
         null
       ],
-      "/home/cameron/Code/textbookswap/app/helpers/sold_books_helper.rb": [
-        1,
-        null
-      ],
       "/home/cameron/Code/textbookswap/app/helpers/textbook_wishlist_helper.rb": [
         1,
         null
@@ -541,31 +537,6 @@
         null,
         null
       ],
-      "/home/cameron/Code/textbookswap/spec/controllers/sold_books_controller_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        0,
-        null,
-        null,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/app/controllers/sold_books_controller.rb": [
-        1,
-        1,
-        null,
-        null
-      ],
       "/home/cameron/Code/textbookswap/spec/controllers/textbook_wishlist_controller_spec.rb": [
         1,
         null,
@@ -625,23 +596,6 @@
         null
       ],
       "/home/cameron/Code/textbookswap/spec/helpers/login_helper_spec.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/spec/helpers/sold_books_helper_spec.rb": [
         1,
         null,
         null,
@@ -846,41 +800,6 @@
         null,
         null
       ],
-      "/home/cameron/Code/textbookswap/spec/models/sold_book_spec.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        4,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/app/models/sold_book.rb": [
-        1,
-        null
-      ],
       "/home/cameron/Code/textbookswap/spec/models/wishlist_spec.rb": [
         1,
         null,
@@ -904,6 +823,8 @@
       "/home/cameron/Code/textbookswap/app/models/wishlist.rb": [
         1,
         null,
+        1,
+        1,
         null
       ],
       "/home/cameron/Code/textbookswap/spec/views/dashboard/index.html.erb_spec.rb": [
@@ -914,13 +835,6 @@
         null
       ],
       "/home/cameron/Code/textbookswap/spec/views/dashboard/new.html.erb_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/spec/views/sold_books/index.html.erb_spec.rb": [
         1,
         null,
         1,
@@ -942,6 +856,6 @@
         null
       ]
     },
-    "timestamp": 1539980153
+    "timestamp": 1539981048
   }
 }
