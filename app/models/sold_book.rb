@@ -1,2 +1,0 @@
-class SoldBook < ApplicationRecord
-end
