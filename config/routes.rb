@@ -1,15 +1,16 @@
 Rails.application.routes.draw do
+  resources :entries, defaults: { format: 'json' }
+  
   get 'sold_books/index'
-  get 'textbook_wishlist', to: 'textbook_wishlist#index'
   get 'dashboard/new'
   get 'dashboard/index'
+
+  get 'textbook_wishlist', to: 'textbook_wishlist#index'
   get 'textbook_wishlist/create', to: 'textbook_wishlist#create'
   get 'textbook_wishlist/destroy', to: 'textbook_wishlist#destroy'
 
   get 'dashboard/update', to: 'dashboard#update'
   get 'dashboard/sold', to: 'dashboard#sold'
-
-  resources :entries, defaults: { format: 'json' }
   
   get 'sessions/new'
   get 'users/new'

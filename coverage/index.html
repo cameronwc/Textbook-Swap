@@ -14,14 +14,14 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-10-19T14:30:48-06:00">2018-10-19T14:30:48-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-10-19T14:48:48-06:00">2018-10-19T14:48:48-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">74.34%</span></span>
+    (<span class="covered_percent"><span class="red">74.48%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
@@ -32,9 +32,9 @@
   <a name="AllFiles"></a>
   <div>
     <b>48</b> files in total.
-    <b>339</b> relevant lines. 
-    <span class="green"><b>252</b> lines covered</span> and
-    <span class="red"><b>87</b> lines missed </span>
+    <b>337</b> relevant lines. 
+    <span class="green"><b>251</b> lines covered</span> and
+    <span class="red"><b>86</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -363,7 +363,7 @@
       <tr>
         <td class="strong"><a href="#afed4a3bd03337419f9bcdaf7ec72f49976e02f4" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>34</td>
+        <td>35</td>
         <td>24</td>
         <td>24</td>
         <td>0</td>
@@ -372,10 +372,10 @@
       
       <tr>
         <td class="strong"><a href="#eed0e5d02bf7fa28b0559cbd47e5f720241c7b2f" class="src_link" title="spec/controllers/dashboard_controller_spec.rb">spec/controllers/dashboard_controller_spec.rb</a></td>
-        <td class="red strong">65.22 %</td>
-        <td>34</td>
-        <td>23</td>
-        <td>15</td>
+        <td class="red strong">68.0 %</td>
+        <td>42</td>
+        <td>25</td>
+        <td>17</td>
         <td>8</td>
         <td>0.7</td>
       </tr>
@@ -402,11 +402,11 @@
       
       <tr>
         <td class="strong"><a href="#9876fe89f0a76d2b23481dfef880eac8d07f43a5" class="src_link" title="spec/controllers/textbook_wishlist_controller_spec.rb">spec/controllers/textbook_wishlist_controller_spec.rb</a></td>
-        <td class="yellow strong">85.71 %</td>
-        <td>22</td>
-        <td>14</td>
-        <td>12</td>
-        <td>2</td>
+        <td class="yellow strong">90.0 %</td>
+        <td>16</td>
+        <td>10</td>
+        <td>9</td>
+        <td>1</td>
         <td>0.9</td>
       </tr>
       
@@ -3432,55 +3432,55 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  get &#39;sold_books/index&#39;</code>
+          <code class="ruby">  resources :entries, defaults: { format: &#39;json&#39; }</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="3">
           
-          <code class="ruby">  get &#39;textbook_wishlist&#39;, to: &#39;textbook_wishlist#index&#39;</code>
+          
+          <code class="ruby">  </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  get &#39;dashboard/new&#39;</code>
+          <code class="ruby">  get &#39;sold_books/index&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">  get &#39;dashboard/index&#39;</code>
+          <code class="ruby">  get &#39;dashboard/new&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">  get &#39;textbook_wishlist/create&#39;, to: &#39;textbook_wishlist#create&#39;</code>
+          <code class="ruby">  get &#39;dashboard/index&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  get &#39;textbook_wishlist/destroy&#39;, to: &#39;textbook_wishlist#destroy&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="never" data-hits="" data-linenumber="7">
           
           
           <code class="ruby"></code>
         </li>
       
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  get &#39;textbook_wishlist&#39;, to: &#39;textbook_wishlist#index&#39;</code>
+        </li>
+      
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">  get &#39;dashboard/update&#39;, to: &#39;dashboard#update&#39;</code>
+          <code class="ruby">  get &#39;textbook_wishlist/create&#39;, to: &#39;textbook_wishlist#create&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
-          <code class="ruby">  get &#39;dashboard/sold&#39;, to: &#39;dashboard#sold&#39;</code>
+          <code class="ruby">  get &#39;textbook_wishlist/destroy&#39;, to: &#39;textbook_wishlist#destroy&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
@@ -3492,136 +3492,142 @@
         <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">  resources :entries, defaults: { format: &#39;json&#39; }</code>
+          <code class="ruby">  get &#39;dashboard/update&#39;, to: &#39;dashboard#update&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  get &#39;dashboard/sold&#39;, to: &#39;dashboard#sold&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby">  </code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
+        <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
           <code class="ruby">  get &#39;sessions/new&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="15">
+        <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
           <code class="ruby">  get &#39;users/new&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
+        <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
           <code class="ruby">  root &#39;home#index&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="18">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  get &#39;add_book&#39;, to: &#39;add_book#index&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="19">
           <span class="hits">1</span>
           
-          <code class="ruby">  get &#39;add_book/similar&#39;, to: &#39;add_book#similar&#39;</code>
+          <code class="ruby">  get &#39;add_book&#39;, to: &#39;add_book#index&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
+          <code class="ruby">  get &#39;add_book/similar&#39;, to: &#39;add_book#similar&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
           <code class="ruby">  post &#39;/add_book&#39;, to: &#39;add_book#create&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="never" data-hits="" data-linenumber="22">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="22">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  get &#39;search_book&#39;, to: &#39;search_book#index&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="23">
           <span class="hits">1</span>
           
+          <code class="ruby">  get &#39;search_book&#39;, to: &#39;search_book#index&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
           <code class="ruby">  post &#39;/search_book&#39;, to: &#39;search_book#index&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="never" data-hits="" data-linenumber="25">
           
           
           <code class="ruby">  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="25">
+        <li class="covered" data-hits="1" data-linenumber="26">
           <span class="hits">1</span>
           
           <code class="ruby">  get &#39;login&#39;, to: &#39;login#index&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="26">
+        <li class="covered" data-hits="1" data-linenumber="27">
           <span class="hits">1</span>
           
           <code class="ruby">  post &#39;create&#39;, to: &#39;login#create&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="27">
+        <li class="covered" data-hits="1" data-linenumber="28">
           <span class="hits">1</span>
           
           <code class="ruby">  post &#39;check&#39;, to: &#39;login#check&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="28">
+        <li class="covered" data-hits="1" data-linenumber="29">
           <span class="hits">1</span>
           
           <code class="ruby">  delete &#39;logout&#39;,  to: &#39;login#destroy&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="30">
+        <li class="covered" data-hits="1" data-linenumber="31">
           <span class="hits">1</span>
           
           <code class="ruby">  get &#39;dashboard&#39;, to: &#39;dashboard#index&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="31">
+        <li class="never" data-hits="" data-linenumber="32">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="32">
+        <li class="covered" data-hits="1" data-linenumber="33">
           <span class="hits">1</span>
           
           <code class="ruby">  resources :users</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="never" data-hits="" data-linenumber="34">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="35">
           
           
           <code class="ruby">end</code>
@@ -3635,10 +3641,10 @@
         <div class="source_table" id="eed0e5d02bf7fa28b0559cbd47e5f720241c7b2f">
   <div class="header">
     <h3>spec/controllers/dashboard_controller_spec.rb</h3>
-    <h4><span class="red">65.22 %</span> covered</h4>
+    <h4><span class="red">68.0 %</span> covered</h4>
     <div>
-      <b>23</b> relevant lines. 
-      <span class="green"><b>15</b> lines covered</span> and
+      <b>25</b> relevant lines. 
+      <span class="green"><b>17</b> lines covered</span> and
       <span class="red"><b>8</b> lines missed.</span>
     </div>
   </div>
@@ -3691,13 +3697,13 @@
         <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
-          <code class="ruby">      @createdBook = Book.create(:isbn =&gt; &quot;123456789&quot;, :title =&gt; &quot;Test1&quot;, :edition =&gt; &quot;1&quot;, :author =&gt; &quot;test1&quot;, :condition =&gt; &quot;Good&quot;, :price =&gt; &quot;10&quot;, :seller_id =&gt; @user.id, :selling =&gt; False)</code>
+          <code class="ruby">      @createdBook = Book.create(:isbn =&gt; &quot;123456789&quot;, :title =&gt; &quot;Test1&quot;, :edition =&gt; &quot;1&quot;, :author =&gt; &quot;test1&quot;, :condition =&gt; &quot;Good&quot;, :price =&gt; &quot;10&quot;, :selling =&gt; False)</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="9">
           
           
-          <code class="ruby">      @createdBook = Book.create(:isbn =&gt; &quot;987654321&quot;, :title =&gt; &quot;Test2&quot;, :edition =&gt; &quot;1&quot;, :author =&gt; &quot;test2&quot;, :condition =&gt; &quot;Good&quot;, :price =&gt; &quot;10&quot;, :seller_id =&gt; @user.id, :selling =&gt; True)</code>
+          <code class="ruby">      @createdBook = Book.create(:isbn =&gt; &quot;987654321&quot;, :title =&gt; &quot;Test2&quot;, :edition =&gt; &quot;1&quot;, :author =&gt; &quot;test2&quot;, :condition =&gt; &quot;Good&quot;, :price =&gt; &quot;10&quot;, :selling =&gt; True)</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="10">
@@ -3733,13 +3739,13 @@
         <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
-          <code class="ruby">      @createdBook = Book.create(:isbn =&gt; &quot;123456789&quot;, :title =&gt; &quot;Test1&quot;, :edition =&gt; &quot;1&quot;, :author =&gt; &quot;test1&quot;, :condition =&gt; &quot;Good&quot;, :price =&gt; &quot;10&quot;, :seller_id =&gt; @user.id, :selling =&gt; False)</code>
+          <code class="ruby">      @createdBook = Book.create(:isbn =&gt; &quot;123456789&quot;, :title =&gt; &quot;Test1&quot;, :edition =&gt; &quot;1&quot;, :author =&gt; &quot;test1&quot;, :condition =&gt; &quot;Good&quot;, :price =&gt; &quot;10&quot;, :selling =&gt; False)</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="16">
           
           
-          <code class="ruby">      @createdBook = Book.create(:isbn =&gt; &quot;987654321&quot;, :title =&gt; &quot;Test2&quot;, :edition =&gt; &quot;1&quot;, :author =&gt; &quot;test2&quot;, :condition =&gt; &quot;Good&quot;, :price =&gt; &quot;10&quot;, :seller_id =&gt; @user.id, :selling =&gt; False)</code>
+          <code class="ruby">      @createdBook = Book.create(:isbn =&gt; &quot;987654321&quot;, :title =&gt; &quot;Test2&quot;, :edition =&gt; &quot;1&quot;, :author =&gt; &quot;test2&quot;, :condition =&gt; &quot;Good&quot;, :price =&gt; &quot;10&quot;, :selling =&gt; False)</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="17">
@@ -3775,13 +3781,13 @@
         <li class="covered" data-hits="1" data-linenumber="22">
           <span class="hits">1</span>
           
-          <code class="ruby">      @createdBook = Book.create(:isbn =&gt; &quot;123456789&quot;, :title =&gt; &quot;Test1&quot;, :edition =&gt; &quot;1&quot;, :author =&gt; &quot;test1&quot;, :condition =&gt; &quot;Good&quot;, :price =&gt; &quot;10&quot;, :seller_id =&gt; @user.id, :selling =&gt; False)</code>
+          <code class="ruby">      @createdBook = Book.create(:isbn =&gt; &quot;123456789&quot;, :title =&gt; &quot;Test1&quot;, :edition =&gt; &quot;1&quot;, :author =&gt; &quot;test1&quot;, :condition =&gt; &quot;Good&quot;, :price =&gt; &quot;10&quot;, :selling =&gt; False)</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="23">
           
           
-          <code class="ruby">      @createdBook = Book.create(:isbn =&gt; &quot;987654321&quot;, :title =&gt; &quot;Test2&quot;, :edition =&gt; &quot;1&quot;, :author =&gt; &quot;test2&quot;, :condition =&gt; &quot;Good&quot;, :price =&gt; &quot;10&quot;, :seller_id =&gt; @user.id, :selling =&gt; True)</code>
+          <code class="ruby">      @createdBook = Book.create(:isbn =&gt; &quot;987654321&quot;, :title =&gt; &quot;Test2&quot;, :edition =&gt; &quot;1&quot;, :author =&gt; &quot;test2&quot;, :condition =&gt; &quot;Good&quot;, :price =&gt; &quot;10&quot;, :selling =&gt; True)</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="24">
@@ -3817,13 +3823,13 @@
         <li class="covered" data-hits="1" data-linenumber="29">
           <span class="hits">1</span>
           
-          <code class="ruby">      @createdBook = Book.create(:isbn =&gt; &quot;123456789&quot;, :title =&gt; &quot;Test1&quot;, :edition =&gt; &quot;1&quot;, :author =&gt; &quot;test1&quot;, :condition =&gt; &quot;Good&quot;, :price =&gt; &quot;10&quot;, :seller_id =&gt; @user.id, :selling =&gt; True)</code>
+          <code class="ruby">      @createdBook = Book.create(:isbn =&gt; &quot;123456789&quot;, :title =&gt; &quot;Test1&quot;, :edition =&gt; &quot;1&quot;, :author =&gt; &quot;test1&quot;, :condition =&gt; &quot;Good&quot;, :price =&gt; &quot;10&quot;, :selling =&gt; True)</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="30">
           
           
-          <code class="ruby">      @createdBook = Book.create(:isbn =&gt; &quot;987654321&quot;, :title =&gt; &quot;Test2&quot;, :edition =&gt; &quot;1&quot;, :author =&gt; &quot;test2&quot;, :condition =&gt; &quot;Good&quot;, :price =&gt; &quot;10&quot;, :seller_id =&gt; @user.id, :selling =&gt; True)</code>
+          <code class="ruby">      @createdBook = Book.create(:isbn =&gt; &quot;987654321&quot;, :title =&gt; &quot;Test2&quot;, :edition =&gt; &quot;1&quot;, :author =&gt; &quot;test2&quot;, :condition =&gt; &quot;Good&quot;, :price =&gt; &quot;10&quot;, :selling =&gt; True)</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="31">
@@ -3845,6 +3851,54 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;GET #update&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;GET #sold&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
           
           
           <code class="ruby">end</code>
@@ -3998,11 +4052,11 @@
         <div class="source_table" id="9876fe89f0a76d2b23481dfef880eac8d07f43a5">
   <div class="header">
     <h3>spec/controllers/textbook_wishlist_controller_spec.rb</h3>
-    <h4><span class="yellow">85.71 %</span> covered</h4>
+    <h4><span class="yellow">90.0 %</span> covered</h4>
     <div>
-      <b>14</b> relevant lines. 
-      <span class="green"><b>12</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
+      <b>10</b> relevant lines. 
+      <span class="green"><b>9</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
   
@@ -4030,7 +4084,7 @@
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  describe &quot;GET #index&quot; do</code>
+          <code class="ruby">  describe &quot;GET #create&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
@@ -4042,11 +4096,11 @@
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">      get :index</code>
+          <code class="ruby">      post :create, params: { }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="7">
-          
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
           
           <code class="ruby">      expect(response).to have_http_status(:success)</code>
         </li>
@@ -4066,7 +4120,7 @@
         <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
-          <code class="ruby">  describe &quot;POST #create&quot; do</code>
+          <code class="ruby">  describe &quot;GET #destroy&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="11">
@@ -4078,11 +4132,11 @@
         <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">      post :create</code>
+          <code class="ruby">      post :destroy</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
           
           <code class="ruby">      expect(response).to have_http_status(:success)</code>
         </li>
@@ -4099,43 +4153,7 @@
           <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  describe &quot;POST #destroy&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="17">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    it &quot;returns http success&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="18">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      post :destroy</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="19">
-          
-          
-          <code class="ruby">      expect(response).to have_http_status(:success)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="20">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">end</code>
