@@ -46,3 +46,4 @@ class DashboardController < ApplicationController
     redirect_to "/dashboard"
   end
 end
+
