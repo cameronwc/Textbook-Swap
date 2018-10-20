@@ -7,6 +7,10 @@ RSpec.describe SearchBookController, type: :controller do
       get :index
       expect(response).to have_http_status(:success)
     end
+
+    it "assigns @text" do
+    	text = 
+    end
   end
 
 end
