@@ -13,6 +13,7 @@ class AddBookController < ApplicationController
       @createdBook.seller = @current_user
       @createdBook.save!
       @current_user.books << @createdBook
+      #@current_user.save!
     else
       p "please login"
     end
