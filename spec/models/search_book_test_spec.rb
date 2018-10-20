@@ -2,17 +2,26 @@ require 'rails_helper'
 
 RSpec.describe Book, type: :model do
 
+	#Seed dummy db for tests.
   before(:each) do
     @ppcc_user = Account.new(name: "ppcc user", email: "user@ppcc.edu",password: "foobar", password_confirmation: "foobar").save
     @uccs_user = Account.new(name: "uccs user", email: "user@uccs.edu",password: "foobar1", password_confirmation: "foobar1").save
-    @grinch_book = Book.new(isbn: "1665544332211", title: "Grinch Stole Christmas", edition: "12th", condition: "new", price: 100, author: "Seuss", seller_id: "jsmith@uccs.edu").save
-    @physics_book = Book.new(isbn: "1234567891234", title: "University Physics", edition: "12th", condition: "new", price: 100, author: "Milazzo", seller_id: "klamer@ppcc.edu").save
+    @grinch_book = Book.new(isbn: "1665544332211", title: "Grinch Stole Christmas", edition: "12th", condition: "new", price: 100, author: "Seuss").save
+    @physics_book = Book.new(isbn: "1234567891234", title: "University Physics", edition: "12th", condition: "new", price: 100, author: "Milazzo").save
+    @ppcc_user.books << @grinch_book
+    @grinch_book.seller = @ppcc_user
+    @uccs_user.books << @physics_book
+    @physics_book.seller = @uccs_user
+    @ppcc_user.save
+    @grinch_book.save
+    @uccs_user.save
+    @physics_book.save
   end
 
   context 'Basic search functionality' do
     it 'should find results with partial title' do
       @found_books = Book.where("title like '%Grinch%'")
-      expect(@found_books.length > 0).to be true
+      expect(@found_books.length == 1).to be true
     end
 
     it 'should find results through exact ISBN search' do
