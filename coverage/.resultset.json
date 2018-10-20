@@ -1,59 +1,23 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/jbutler/group5_fall2018/spec/models/search_book_test_spec.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/spec/controllers/search_book_controller_spec.rb": [
         1,
         null,
         1,
-        null,
-        null,
         1,
-        11,
-        11,
-        11,
-        11,
-        11,
-        11,
-        11,
-        11,
-        11,
-        11,
-        11,
-        11,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
         null,
         1,
         null,
@@ -65,27 +29,14 @@
         1,
         1,
         1,
+        0,
         null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
         null,
         null,
         null,
         null
       ],
-      "/home/jbutler/group5_fall2018/spec/rails_helper.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/spec/rails_helper.rb": [
         null,
         1,
         1,
@@ -148,14 +99,14 @@
         null,
         null
       ],
-      "/home/jbutler/group5_fall2018/config/environment.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/home/jbutler/group5_fall2018/config/application.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/config/application.rb": [
         1,
         null,
         1,
@@ -176,13 +127,13 @@
         null,
         null
       ],
-      "/home/jbutler/group5_fall2018/config/boot.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/config/boot.rb": [
         1,
         null,
         1,
         1
       ],
-      "/home/jbutler/group5_fall2018/config/environments/test.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/config/environments/test.rb": [
         1,
         null,
         null,
@@ -230,7 +181,7 @@
         null,
         null
       ],
-      "/home/jbutler/group5_fall2018/config/initializers/application_controller_renderer.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
@@ -240,7 +191,7 @@
         null,
         null
       ],
-      "/home/jbutler/group5_fall2018/config/initializers/assets.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -256,7 +207,7 @@
         null,
         null
       ],
-      "/home/jbutler/group5_fall2018/config/initializers/backtrace_silencers.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -265,7 +216,7 @@
         null,
         null
       ],
-      "/home/jbutler/group5_fall2018/config/initializers/content_security_policy.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/config/initializers/content_security_policy.rb": [
         null,
         null,
         null,
@@ -292,14 +243,14 @@
         null,
         null
       ],
-      "/home/jbutler/group5_fall2018/config/initializers/cookies_serializer.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/config/initializers/cookies_serializer.rb": [
         null,
         null,
         null,
         null,
         1
       ],
-      "/home/jbutler/group5_fall2018/config/initializers/cors.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/config/initializers/cors.rb": [
         null,
         null,
         null,
@@ -308,13 +259,13 @@
         null,
         null
       ],
-      "/home/jbutler/group5_fall2018/config/initializers/filter_parameter_logging.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/home/jbutler/group5_fall2018/config/initializers/inflections.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -332,13 +283,13 @@
         null,
         null
       ],
-      "/home/jbutler/group5_fall2018/config/initializers/mime_types.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/home/jbutler/group5_fall2018/config/initializers/wrap_parameters.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -354,7 +305,7 @@
         null,
         null
       ],
-      "/home/jbutler/group5_fall2018/config/routes.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/config/routes.rb": [
         1,
         1,
         null,
@@ -391,23 +342,23 @@
         null,
         null
       ],
-      "/home/jbutler/group5_fall2018/app/helpers/add_book_helper.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/app/helpers/add_book_helper.rb": [
         1,
         null
       ],
-      "/home/jbutler/group5_fall2018/app/helpers/application_helper.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/jbutler/group5_fall2018/app/helpers/dashboard_helper.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/app/helpers/dashboard_helper.rb": [
         1,
         null
       ],
-      "/home/jbutler/group5_fall2018/app/helpers/home_helper.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/app/helpers/home_helper.rb": [
         1,
         null
       ],
-      "/home/jbutler/group5_fall2018/app/helpers/login_helper.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/app/helpers/login_helper.rb": [
         1,
         1,
         0,
@@ -427,56 +378,100 @@
         null,
         null
       ],
-      "/home/jbutler/group5_fall2018/app/helpers/search_book_helper.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/app/helpers/search_book_helper.rb": [
         1,
         null
       ],
-      "/home/jbutler/group5_fall2018/app/helpers/sessions_helper.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/app/helpers/sessions_helper.rb": [
         1,
         null
       ],
-      "/home/jbutler/group5_fall2018/app/helpers/textbook_wishlist_helper.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/app/helpers/textbook_wishlist_helper.rb": [
         1,
         null
       ],
-      "/home/jbutler/group5_fall2018/app/models/book.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/app/controllers/search_book_controller.rb": [
         1,
         1,
+        null,
         1,
         1,
+        null,
         1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
         1,
         1,
         null,
         null
       ],
-      "/home/jbutler/group5_fall2018/app/models/application_record.rb": [
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/app/controllers/application_controller.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/app/models/account.rb": [
+        1,
+        1,
+        5,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/home/jbutler/group5_fall2018/app/models/account.rb": [
-        1,
-        1,
-        23,
+      "/Users/ericruacho/RubymineProjects/SoftwareProject/group5_fall2018/app/models/book.rb": [
         1,
         1,
         1,
-        null,
         1,
         1,
-        null,
+        1,
         1,
         null,
         null,
         null,
         1,
+        2,
+        0,
         null,
+        2,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1540069050
+    "timestamp": 1540078529
   }
 }
