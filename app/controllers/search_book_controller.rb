@@ -18,7 +18,6 @@ class SearchBookController < ApplicationController
 	  if(@university != "")
 		  @message = "#{@message} at university '#{@university}'"
 	  end
-	  
-	  
+
   end
 end
