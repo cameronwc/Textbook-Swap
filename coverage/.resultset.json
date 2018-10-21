@@ -1,37 +1,100 @@
 {
   "RSpec": {
     "coverage": {
+<<<<<<< HEAD
       "/home/cameron/Code/textbookswap/spec/controllers/textbook_wishlist_controller_spec.rb": [
+=======
+      "/home/jbutler/group5_fall2018/spec/models/search_book_test_spec.rb": [
+>>>>>>> 436215d9598f1106e02265ab7b4ddda7e45bfc8f
         1,
         null,
         1,
-        1,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
         null,
         null,
         1,
-        1,
-        1,
-        1,
-        null,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
         null,
         null,
         1,
         1,
         1,
         1,
+        null,
+        null,
         1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+<<<<<<< HEAD
+=======
+        1,
+        1,
+        1,
+        null,
+>>>>>>> 436215d9598f1106e02265ab7b4ddda7e45bfc8f
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+<<<<<<< HEAD
+=======
+        1,
+        null,
+        null,
+        null,
+        null,
+>>>>>>> 436215d9598f1106e02265ab7b4ddda7e45bfc8f
+        1,
+        1,
+        1,
+<<<<<<< HEAD
+=======
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+>>>>>>> 436215d9598f1106e02265ab7b4ddda7e45bfc8f
         null,
         null,
         null
@@ -390,6 +453,7 @@
         1,
         null
       ],
+<<<<<<< HEAD
       "/home/cameron/Code/textbookswap/app/controllers/textbook_wishlist_controller.rb": [
         1,
         1,
@@ -418,21 +482,24 @@
       ],
       "/home/cameron/Code/textbookswap/app/models/account.rb": [
         1,
-        1,
-        5,
-        1,
-        1,
-        1,
-        null,
+=======
+      "/home/jbutler/group5_fall2018/app/models/book.rb": [
+>>>>>>> 436215d9598f1106e02265ab7b4ddda7e45bfc8f
         1,
         1,
-        null,
         1,
-        null,
-        null,
-        null,
+        1,
+        1,
+        1,
         1,
         null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
         null,
         null,
         null
@@ -442,22 +509,33 @@
         1,
         null
       ],
+<<<<<<< HEAD
       "/home/cameron/Code/textbookswap/app/models/book.rb": [
+=======
+      "/home/jbutler/group5_fall2018/app/models/account.rb": [
+>>>>>>> 436215d9598f1106e02265ab7b4ddda7e45bfc8f
         1,
         1,
-        1,
-        1,
+        23,
         1,
         1,
         1,
         null,
+        1,
+        1,
+        null,
+        1,
         null,
         null,
+<<<<<<< HEAD
         1,
         0,
         0,
+=======
+>>>>>>> 436215d9598f1106e02265ab7b4ddda7e45bfc8f
         null,
         0,
+        null,
         null,
         null,
         null
@@ -470,6 +548,10 @@
         null
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1540157653
+=======
+    "timestamp": 1540157088
+>>>>>>> 436215d9598f1106e02265ab7b4ddda7e45bfc8f
   }
 }
