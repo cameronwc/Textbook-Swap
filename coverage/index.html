@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns='http://www.w3.org/1999/xhtml'>
   <head>
-    <title>Code coverage for Group5 fall2018</title>
+    <title>Code coverage for Textbookswap</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.2/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.2/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-10-21T00:21:47+00:00">2018-10-21T00:21:47+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-10-21T16:26:42-06:00">2018-10-21T16:26:42-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">92.57%</span></span>
+    (<span class="covered_percent"><span class="green">90.51%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.11
+         1.5
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>30</b> files in total.
-    <b>148</b> relevant lines. 
-    <span class="green"><b>137</b> lines covered</span> and
-    <span class="red"><b>11</b> lines missed </span>
+    <b>48</b> files in total.
+    <b>390</b> relevant lines. 
+    <span class="green"><b>353</b> lines covered</span> and
+    <span class="red"><b>37</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -51,7 +51,7 @@
     <tbody>
       
       <tr>
-        <td class="strong"><a href="#24e033ca90e9687f70579a6a79348edc5b9fb275" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+        <td class="strong"><a href="#8be986074a17a439601b90411e44486712a0583a" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>7</td>
         <td>3</td>
@@ -61,7 +61,27 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#6ddbcbcbad4e8c636de58f10d48fc604dec94116" class="src_link" title="app/controllers/search_book_controller.rb">app/controllers/search_book_controller.rb</a></td>
+        <td class="strong"><a href="#49c0189b84d2e99b8de092a18c603856d4ee4204" class="src_link" title="app/controllers/dashboard_controller.rb">app/controllers/dashboard_controller.rb</a></td>
+        <td class="yellow strong">81.48 %</td>
+        <td>55</td>
+        <td>27</td>
+        <td>22</td>
+        <td>5</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#017320a9054ac56f7702c0f2ffe7c166ea61aed4" class="src_link" title="app/controllers/login_controller.rb">app/controllers/login_controller.rb</a></td>
+        <td class="red strong">16.13 %</td>
+        <td>53</td>
+        <td>31</td>
+        <td>5</td>
+        <td>26</td>
+        <td>0.2</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#0ba8a47cd4e4440130769aee15fdb620937d3e9f" class="src_link" title="app/controllers/search_book_controller.rb">app/controllers/search_book_controller.rb</a></td>
         <td class="green strong">92.31 %</td>
         <td>23</td>
         <td>13</td>
@@ -71,89 +91,9 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#aa32ae67609d6a0220dbb3e786d4cb5c61eb0bf3" class="src_link" title="app/helpers/add_book_helper.rb">app/helpers/add_book_helper.rb</a></td>
+        <td class="strong"><a href="#a4524efb66703b9f1b75c1dd81c4c1e4279050b5" class="src_link" title="app/controllers/textbook_wishlist_controller.rb">app/controllers/textbook_wishlist_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>2</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#dfa2b98438b4f4d5888e6c8eec1ba917645534ec" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>2</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#916d832b7fc0c53128cd6b2d341349ef0f5cd242" class="src_link" title="app/helpers/dashboard_helper.rb">app/helpers/dashboard_helper.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>2</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#9d6bfc4cac02b2ccb5e3729bd4f4b161196e0e4b" class="src_link" title="app/helpers/home_helper.rb">app/helpers/home_helper.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>2</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#3eafa2b6bd2fac677cf1cf9e1287bcc41b821c4a" class="src_link" title="app/helpers/login_helper.rb">app/helpers/login_helper.rb</a></td>
-        <td class="red strong">36.36 %</td>
-        <td>18</td>
-        <td>11</td>
-        <td>4</td>
-        <td>7</td>
-        <td>0.4</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#96f3a61e599061635fab4f020b834f3ec60a1b03" class="src_link" title="app/helpers/search_book_helper.rb">app/helpers/search_book_helper.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>2</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#7f81694b379de1ea49a49a8f30a2e55f863cab62" class="src_link" title="app/helpers/sessions_helper.rb">app/helpers/sessions_helper.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>2</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#50e897aeaa69b8467baec5f0fb86c9d2866463f0" class="src_link" title="app/helpers/textbook_wishlist_helper.rb">app/helpers/textbook_wishlist_helper.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>2</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#32e76680f620adef0793ee1b7b250d9c24b9c21a" class="src_link" title="app/models/account.rb">app/models/account.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>19</td>
+        <td>15</td>
         <td>10</td>
         <td>10</td>
         <td>0</td>
@@ -161,7 +101,97 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#2396bd297eda04d0948dcd7abf53c18e97bc102f" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
+        <td class="strong"><a href="#5af46751303b4aa32ea07a0e3fee6614764da746" class="src_link" title="app/helpers/add_book_helper.rb">app/helpers/add_book_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#26c8f6d763a1e6326d924d3371e2714b1f8a15e4" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#195f13143075d3b34be31bb2c9234921acd750bc" class="src_link" title="app/helpers/dashboard_helper.rb">app/helpers/dashboard_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#6091fd9fac7ed82129adc8819b41ed1387456261" class="src_link" title="app/helpers/home_helper.rb">app/helpers/home_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#c2fddd1829675b1f6f776f2e19ff18f6163675af" class="src_link" title="app/helpers/login_helper.rb">app/helpers/login_helper.rb</a></td>
+        <td class="yellow strong">81.82 %</td>
+        <td>18</td>
+        <td>11</td>
+        <td>9</td>
+        <td>2</td>
+        <td>2.2</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#53d54963098dcaddc9b4abfc47385813b973a2c6" class="src_link" title="app/helpers/search_book_helper.rb">app/helpers/search_book_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#9d833ceb003190c4c5441f3fdfa45aaab53cf266" class="src_link" title="app/helpers/sessions_helper.rb">app/helpers/sessions_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#99cbd3eb33a21224daf20fa83fe1b03d4f3a56ea" class="src_link" title="app/helpers/textbook_wishlist_helper.rb">app/helpers/textbook_wishlist_helper.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#61c1ce68d3ab71f06ceff1a99ce0693b8f1cdf26" class="src_link" title="app/models/account.rb">app/models/account.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>19</td>
+        <td>10</td>
+        <td>10</td>
+        <td>0</td>
+        <td>4.6</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#994ef4a92570b3e22508122f9103f176a28a3219" class="src_link" title="app/models/application_record.rb">app/models/application_record.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>3</td>
         <td>2</td>
@@ -171,7 +201,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#fb7459c916d089fb3f4376f446a3de0ebad637a7" class="src_link" title="app/models/book.rb">app/models/book.rb</a></td>
+        <td class="strong"><a href="#50654c651cc3925b09593cea5121e2c629bb1484" class="src_link" title="app/models/book.rb">app/models/book.rb</a></td>
         <td class="green strong">90.91 %</td>
         <td>18</td>
         <td>11</td>
@@ -181,7 +211,17 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#734df55b73253c545dba735c048e4226d55339ed" class="src_link" title="config/application.rb">config/application.rb</a></td>
+        <td class="strong"><a href="#9549a576df90caeb2bb375c6ed5b733d80fd79fb" class="src_link" title="app/models/wishlist.rb">app/models/wishlist.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#4487d467e6cfc295c6ac352918995e2100fa2eaf" class="src_link" title="config/application.rb">config/application.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>19</td>
         <td>6</td>
@@ -191,7 +231,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#1f16a49599853abc2e91c0a90763de69939372eb" class="src_link" title="config/boot.rb">config/boot.rb</a></td>
+        <td class="strong"><a href="#f768cbca430f18772944236fadd12b5a03b0f843" class="src_link" title="config/boot.rb">config/boot.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>4</td>
         <td>3</td>
@@ -201,7 +241,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#ece7a9fb1ff98d0f8f36bc56c33a85108cfec789" class="src_link" title="config/environment.rb">config/environment.rb</a></td>
+        <td class="strong"><a href="#d91069342fdae038ce2e6545994bee1a569327e4" class="src_link" title="config/environment.rb">config/environment.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>5</td>
         <td>2</td>
@@ -211,7 +251,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#f9f983bbfdaf9b5d99fd472b4c35725f7d0d82cf" class="src_link" title="config/environments/test.rb">config/environments/test.rb</a></td>
+        <td class="strong"><a href="#d1bd2fb5658a71db042a6dece529bf2ae373f7da" class="src_link" title="config/environments/test.rb">config/environments/test.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>46</td>
         <td>13</td>
@@ -221,7 +261,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#ca751cd52f41b78f34812a677e2e4332f0ee4209" class="src_link" title="config/initializers/application_controller_renderer.rb">config/initializers/application_controller_renderer.rb</a></td>
+        <td class="strong"><a href="#e2e575f1869417ea3980b628b4222a1921c342ca" class="src_link" title="config/initializers/application_controller_renderer.rb">config/initializers/application_controller_renderer.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>8</td>
         <td>0</td>
@@ -231,7 +271,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#090b683072998d1051c5b9f5bb3f082619b2111c" class="src_link" title="config/initializers/assets.rb">config/initializers/assets.rb</a></td>
+        <td class="strong"><a href="#6439533ec32b803842c661867f3368f51f0aab49" class="src_link" title="config/initializers/assets.rb">config/initializers/assets.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>14</td>
         <td>2</td>
@@ -241,7 +281,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#0216fea06a7337ced3b52688cde3b1885a1c3f44" class="src_link" title="config/initializers/backtrace_silencers.rb">config/initializers/backtrace_silencers.rb</a></td>
+        <td class="strong"><a href="#d2263e022779a48df81965d86d49693ef3d890e3" class="src_link" title="config/initializers/backtrace_silencers.rb">config/initializers/backtrace_silencers.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>7</td>
         <td>0</td>
@@ -251,7 +291,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#c8e58b8138d3345a0d955273f9185d7ed5b94807" class="src_link" title="config/initializers/content_security_policy.rb">config/initializers/content_security_policy.rb</a></td>
+        <td class="strong"><a href="#ad8b67ff51e3e10b7be09cf53a85904f540901c4" class="src_link" title="config/initializers/content_security_policy.rb">config/initializers/content_security_policy.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>25</td>
         <td>0</td>
@@ -261,7 +301,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#5120d6223b30ba538c9a0d0cf4d9f56ee9a14173" class="src_link" title="config/initializers/cookies_serializer.rb">config/initializers/cookies_serializer.rb</a></td>
+        <td class="strong"><a href="#ff858fb98bf2ec06106834e43279f31f981ca4a7" class="src_link" title="config/initializers/cookies_serializer.rb">config/initializers/cookies_serializer.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>5</td>
         <td>1</td>
@@ -271,7 +311,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#5231684ef1c564552b9e602807f1ba64d1dacd6b" class="src_link" title="config/initializers/cors.rb">config/initializers/cors.rb</a></td>
+        <td class="strong"><a href="#1cd79765b252fbfceb0c6ef3bd3be07b99f34020" class="src_link" title="config/initializers/cors.rb">config/initializers/cors.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>7</td>
         <td>0</td>
@@ -281,7 +321,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#f1cef264c879fca23e35f3a998146cef617095d4" class="src_link" title="config/initializers/filter_parameter_logging.rb">config/initializers/filter_parameter_logging.rb</a></td>
+        <td class="strong"><a href="#cba0e1b9ea868cf7a900bd845339635a27220f17" class="src_link" title="config/initializers/filter_parameter_logging.rb">config/initializers/filter_parameter_logging.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>4</td>
         <td>1</td>
@@ -291,7 +331,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#7550a671a12a39437d0d84ccdc97bcb78d101a99" class="src_link" title="config/initializers/inflections.rb">config/initializers/inflections.rb</a></td>
+        <td class="strong"><a href="#9df0c49cb0f1edec653d007c3c6ccc49aeb655a1" class="src_link" title="config/initializers/inflections.rb">config/initializers/inflections.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>16</td>
         <td>0</td>
@@ -301,7 +341,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#5b47b3dcf9fd2b6499ceff6177686c238aa34b1a" class="src_link" title="config/initializers/mime_types.rb">config/initializers/mime_types.rb</a></td>
+        <td class="strong"><a href="#57ecb6ee69d8a8144900420e16f3eabf50346dcf" class="src_link" title="config/initializers/mime_types.rb">config/initializers/mime_types.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>4</td>
         <td>0</td>
@@ -311,7 +351,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#c4269e6144ed05d0fb65b49975feaa3e2a0114aa" class="src_link" title="config/initializers/wrap_parameters.rb">config/initializers/wrap_parameters.rb</a></td>
+        <td class="strong"><a href="#e5bc195240c704fb4b0ea01ba66916c5d8518b8d" class="src_link" title="config/initializers/wrap_parameters.rb">config/initializers/wrap_parameters.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>14</td>
         <td>2</td>
@@ -321,7 +361,7 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#9b4641ed087c2690f55c1d2441e9d34b0fbb36e6" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
+        <td class="strong"><a href="#afed4a3bd03337419f9bcdaf7ec72f49976e02f4" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>35</td>
         <td>24</td>
@@ -331,7 +371,27 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#2ab445d1d70a77ee0f6c200f2265e0a034892963" class="src_link" title="spec/controllers/search_book_controller_spec.rb">spec/controllers/search_book_controller_spec.rb</a></td>
+        <td class="strong"><a href="#eed0e5d02bf7fa28b0559cbd47e5f720241c7b2f" class="src_link" title="spec/controllers/dashboard_controller_spec.rb">spec/controllers/dashboard_controller_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>35</td>
+        <td>22</td>
+        <td>22</td>
+        <td>0</td>
+        <td>1.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#42cffef08eb5023ca595cfe4f869c25264cc5ebd" class="src_link" title="spec/controllers/login_controller_spec.rb">spec/controllers/login_controller_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#6c3ee88858b10ae41599516fc6fea7b80121fa75" class="src_link" title="spec/controllers/search_book_controller_spec.rb">spec/controllers/search_book_controller_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>35</td>
         <td>23</td>
@@ -341,13 +401,133 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#c882f8d6c9adb0ab82c4133c40f033b21ab56163" class="src_link" title="spec/rails_helper.rb">spec/rails_helper.rb</a></td>
+        <td class="strong"><a href="#9876fe89f0a76d2b23481dfef880eac8d07f43a5" class="src_link" title="spec/controllers/textbook_wishlist_controller_spec.rb">spec/controllers/textbook_wishlist_controller_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>33</td>
+        <td>24</td>
+        <td>24</td>
+        <td>0</td>
+        <td>1.5</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#749b4ddc36e8de81e0af81d4ccf82b2cf91830ad" class="src_link" title="spec/helpers/dashboard_helper_spec.rb">spec/helpers/dashboard_helper_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>15</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#8fd17c2c5a0fbe888ec2b2e8fb144ea96c0a1dc5" class="src_link" title="spec/helpers/login_helper_spec.rb">spec/helpers/login_helper_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>15</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#9c5d4b2e4c1ac9a951cad39159f0f5e338a0ea96" class="src_link" title="spec/helpers/textbook_wishlist_helper_spec.rb">spec/helpers/textbook_wishlist_helper_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>15</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#85c02b22755a4091d6b47f62edc25c1915ed9874" class="src_link" title="spec/models/account_spec.rb">spec/models/account_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>34</td>
+        <td>23</td>
+        <td>23</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#b39e1ce348115645fe6f22f754cf247a6b454227" class="src_link" title="spec/models/book_spec.rb">spec/models/book_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>29</td>
+        <td>18</td>
+        <td>18</td>
+        <td>0</td>
+        <td>1.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#069f3829a24b431ebf5c408137cab26438ac1b3d" class="src_link" title="spec/models/search_book_test_spec.rb">spec/models/search_book_test_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>82</td>
+        <td>50</td>
+        <td>50</td>
+        <td>0</td>
+        <td>3.4</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#9336149122de7edda951663f9488cab8de6a8c94" class="src_link" title="spec/models/wishlist_spec.rb">spec/models/wishlist_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>18</td>
+        <td>11</td>
+        <td>11</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#81b9ec1fb74f368e05edb61df1a5db90de223b0a" class="src_link" title="spec/rails_helper.rb">spec/rails_helper.rb</a></td>
         <td class="yellow strong">85.71 %</td>
         <td>61</td>
         <td>14</td>
         <td>12</td>
         <td>2</td>
         <td>0.9</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#078073f1c290ebdcd53aa7ef9959842f59d50f65" class="src_link" title="spec/views/dashboard/index.html.erb_spec.rb">spec/views/dashboard/index.html.erb_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#f8ace770518df4a1adcd221a1a2bd436954f32c8" class="src_link" title="spec/views/dashboard/new.html.erb_spec.rb">spec/views/dashboard/new.html.erb_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#f95b24ea636115e6b859121288e42ee78ae5a8a9" class="src_link" title="spec/views/textbook_wishlist/index.html.erb_spec.rb">spec/views/textbook_wishlist/index.html.erb_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#1a3b54cdef1374b69557c711755074696696fadb" class="src_link" title="spec/views/users/new.html.erb_spec.rb">spec/views/users/new.html.erb_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>5</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>1.0</td>
       </tr>
       
     </tbody>
@@ -366,7 +546,7 @@
     
       <div class="source_files">
       
-        <div class="source_table" id="24e033ca90e9687f70579a6a79348edc5b9fb275">
+        <div class="source_table" id="8be986074a17a439601b90411e44486712a0583a">
   <div class="header">
     <h3>app/controllers/application_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -427,7 +607,693 @@
 </div>
 
       
-        <div class="source_table" id="6ddbcbcbad4e8c636de58f10d48fc604dec94116">
+        <div class="source_table" id="49c0189b84d2e99b8de092a18c603856d4ee4204">
+  <div class="header">
+    <h3>app/controllers/dashboard_controller.rb</h3>
+    <h4><span class="yellow">81.48 %</span> covered</h4>
+    <div>
+      <b>27</b> relevant lines. 
+      <span class="green"><b>22</b> lines covered</span> and
+      <span class="red"><b>5</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class DashboardController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def index</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    if !logged_in?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">      redirect_to &quot;/login&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @LogInOrOut = &quot;Logout, &quot; + String(@current_user.name)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">      # all books</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @books = @current_user.books.all()</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">      # users owned books</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @ownedBooks = @books.where(:sold =&gt; false)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">      # users currently selling</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @sellingBooks = @books.where(:selling =&gt; true)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">      # users sold books</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @soldBooks = @books.where(:sold =&gt; true)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @wishlistBooks_Final = []</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @wishlistBooks = Wishlist.where(:user_id =&gt; @current_user.id)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @wishlistBooks.each do |wishlistBook|</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="28">
+          
+          
+          <code class="ruby">        @Bookinfo = Book.where(:id =&gt; wishlistBook.book_id)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="29">
+          
+          
+          <code class="ruby">        @wishlistBooks_Final.push(@Bookinfo[0])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def update</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="35">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    if !logged_in?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="36">
+          
+          
+          <code class="ruby">      redirect_to &quot;/login&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="38">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      @LogInOrOut = &quot;Logout, &quot; + String(@current_user.name)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="41">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @current_user.books.where(:id =&gt; params[&#39;book_id&#39;]).update(:selling =&gt; true);</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="42">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    redirect_to &quot;/dashboard&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def sold</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="46">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    if !logged_in?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="47">
+          
+          
+          <code class="ruby">      redirect_to &quot;/login&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="49">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @LogInOrOut = &quot;Logout, &quot; + String(@current_user.name)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="52">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @current_user.books.where(:id =&gt; params[&#39;book_id&#39;]).update(:sold =&gt; true, :selling =&gt; false);</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="53">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    redirect_to &quot;/dashboard&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="54">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="017320a9054ac56f7702c0f2ffe7c166ea61aed4">
+  <div class="header">
+    <h3>app/controllers/login_controller.rb</h3>
+    <h4><span class="red">16.13 %</span> covered</h4>
+    <div>
+      <b>31</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>26</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class LoginController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">  #NEED TO MAKE TESTS FOR CREATE FUNCTION AND CHECK FUNCTION!!!!!!</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def create</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
+          
+          <code class="ruby">        p params</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">        @user = Account.new(:name =&gt; params[:name], :email =&gt; params[:email], :password =&gt; params[:password], :password_confirmation =&gt; params[:password_confirmation])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">        # @user.account_id = @user.id</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="7">
+          
+          
+          <code class="ruby">        if @user.valid?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">           flash.notice = &quot;Succesfully created account and logged in.&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">           @user.save</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">           log_in @user</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
+          
+          <code class="ruby">           redirect_to &quot;/&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">        else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="13">
+          
+          
+          <code class="ruby">            flash.alert = &quot;Error please check your username and password.&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
+          
+          <code class="ruby">            redirect_to &quot;/login&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">        end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def check</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">        # TODO(Add flash with loged in/logout message)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="20">
+          
+          
+          <code class="ruby">        user = Account.find_by(email: params[:user_email].downcase)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="21">
+          
+          
+          <code class="ruby">        if user.nil?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="22">
+          
+          
+          <code class="ruby">            flash.alert = &quot;User does not exist please signup.&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="23">
+          
+          
+          <code class="ruby">            redirect_to &quot;/login&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">        else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="25">
+          
+          
+          <code class="ruby">            if user.authenticate(params[:user_password])</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="26">
+          
+          
+          <code class="ruby">                log_in user</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="27">
+          
+          
+          <code class="ruby">                @current_user = current_user</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="28">
+          
+          
+          <code class="ruby">                p &quot;Correct Password&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="29">
+          
+          
+          <code class="ruby">                redirect_to &quot;/&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">            else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="31">
+          
+          
+          <code class="ruby">                flash.alert = &quot;Error please check your username and password.&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="32">
+          
+          
+          <code class="ruby">                redirect_to &quot;/login&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">            end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">        end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def destroy</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">        # TODO(Add flash with logout message)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="39">
+          
+          
+          <code class="ruby">        reset_session</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="40">
+          
+          
+          <code class="ruby">        redirect_to &quot;/&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby">    </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    def index</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby">        #@current_user = current_user</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="45">
+          
+          
+          <code class="ruby">        if logged_in?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="46">
+          
+          
+          <code class="ruby">            @LogInOrOut = &quot;Logout, &quot; + String(@current_user.name)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby">        else</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="48">
+          
+          
+          <code class="ruby">            p &quot;login&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="49">
+          
+          
+          <code class="ruby">            @LogInOrOut = &quot;Login&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby">        end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="0ba8a47cd4e4440130769aee15fdb620937d3e9f">
   <div class="header">
     <h3>app/controllers/search_book_controller.rb</h3>
     <h4><span class="green">92.31 %</span> covered</h4>
@@ -584,7 +1450,116 @@
 </div>
 
       
-        <div class="source_table" id="aa32ae67609d6a0220dbb3e786d4cb5c61eb0bf3">
+        <div class="source_table" id="a4524efb66703b9f1b75c1dd81c4c1e4279050b5">
+  <div class="header">
+    <h3>app/controllers/textbook_wishlist_controller.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>10</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class TextbookWishlistController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="3">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @wishlistCheck = Wishlist.where(:user_id =&gt; params[&#39;user_id&#39;], :book_id =&gt; params[&#39;book_id&#39;])</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="4">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    if(@wishlistCheck.length == 0)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      @new_wishlist = Wishlist.create(:user_id =&gt; params[&#39;user_id&#39;], :book_id =&gt; params[&#39;book_id&#39;])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="7">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    redirect_to &quot;/&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @wishlist = Wishlist.where(:user_id =&gt; params[&#39;user_id&#39;], :book_id =&gt; params[&#39;book_id&#39;])</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @wishlist[0].destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    redirect_to &#39;/textbook_wishlist&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="5af46751303b4aa32ea07a0e3fee6614764da746">
   <div class="header">
     <h3>app/helpers/add_book_helper.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -615,7 +1590,7 @@
 </div>
 
       
-        <div class="source_table" id="dfa2b98438b4f4d5888e6c8eec1ba917645534ec">
+        <div class="source_table" id="26c8f6d763a1e6326d924d3371e2714b1f8a15e4">
   <div class="header">
     <h3>app/helpers/application_helper.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -646,7 +1621,7 @@
 </div>
 
       
-        <div class="source_table" id="916d832b7fc0c53128cd6b2d341349ef0f5cd242">
+        <div class="source_table" id="195f13143075d3b34be31bb2c9234921acd750bc">
   <div class="header">
     <h3>app/helpers/dashboard_helper.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -677,7 +1652,7 @@
 </div>
 
       
-        <div class="source_table" id="9d6bfc4cac02b2ccb5e3729bd4f4b161196e0e4b">
+        <div class="source_table" id="6091fd9fac7ed82129adc8819b41ed1387456261">
   <div class="header">
     <h3>app/helpers/home_helper.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -708,14 +1683,14 @@
 </div>
 
       
-        <div class="source_table" id="3eafa2b6bd2fac677cf1cf9e1287bcc41b821c4a">
+        <div class="source_table" id="c2fddd1829675b1f6f776f2e19ff18f6163675af">
   <div class="header">
     <h3>app/helpers/login_helper.rb</h3>
-    <h4><span class="red">36.36 %</span> covered</h4>
+    <h4><span class="yellow">81.82 %</span> covered</h4>
     <div>
       <b>11</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
-      <span class="red"><b>7</b> lines missed.</span>
+      <span class="green"><b>9</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
     </div>
   </div>
   
@@ -752,14 +1727,14 @@
           <code class="ruby">  def current_user</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="6">
-          
+        <li class="covered" data-hits="4" data-linenumber="6">
+          <span class="hits">4</span>
           
           <code class="ruby">    if session[:user_id]</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="7">
-          
+        <li class="covered" data-hits="4" data-linenumber="7">
+          <span class="hits">4</span>
           
           <code class="ruby">      @current_user ||= Account.find_by(id: session[:user_id])</code>
         </li>
@@ -782,14 +1757,14 @@
           <code class="ruby">  def logged_in?</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="11">
-          
+        <li class="covered" data-hits="4" data-linenumber="11">
+          <span class="hits">4</span>
           
           <code class="ruby">    @current_user = current_user</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="12">
-          
+        <li class="covered" data-hits="4" data-linenumber="12">
+          <span class="hits">4</span>
           
           <code class="ruby">    if @current_user.nil?</code>
         </li>
@@ -806,8 +1781,8 @@
           <code class="ruby">    else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="15">
-          
+        <li class="covered" data-hits="4" data-linenumber="15">
+          <span class="hits">4</span>
           
           <code class="ruby">      return true</code>
         </li>
@@ -835,7 +1810,7 @@
 </div>
 
       
-        <div class="source_table" id="96f3a61e599061635fab4f020b834f3ec60a1b03">
+        <div class="source_table" id="53d54963098dcaddc9b4abfc47385813b973a2c6">
   <div class="header">
     <h3>app/helpers/search_book_helper.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -866,7 +1841,7 @@
 </div>
 
       
-        <div class="source_table" id="7f81694b379de1ea49a49a8f30a2e55f863cab62">
+        <div class="source_table" id="9d833ceb003190c4c5441f3fdfa45aaab53cf266">
   <div class="header">
     <h3>app/helpers/sessions_helper.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -897,7 +1872,7 @@
 </div>
 
       
-        <div class="source_table" id="50e897aeaa69b8467baec5f0fb86c9d2866463f0">
+        <div class="source_table" id="99cbd3eb33a21224daf20fa83fe1b03d4f3a56ea">
   <div class="header">
     <h3>app/helpers/textbook_wishlist_helper.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -928,7 +1903,7 @@
 </div>
 
       
-        <div class="source_table" id="32e76680f620adef0793ee1b7b250d9c24b9c21a">
+        <div class="source_table" id="61c1ce68d3ab71f06ceff1a99ce0693b8f1cdf26">
   <div class="header">
     <h3>app/models/account.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -954,8 +1929,8 @@
           <code class="ruby">    has_many :books, inverse_of: &#39;seller&#39;</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="3">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="37" data-linenumber="3">
+          <span class="hits">37</span>
           
           <code class="ruby">    before_save { self.email = email.downcase }</code>
         </li>
@@ -1061,7 +2036,7 @@
 </div>
 
       
-        <div class="source_table" id="2396bd297eda04d0948dcd7abf53c18e97bc102f">
+        <div class="source_table" id="994ef4a92570b3e22508122f9103f176a28a3219">
   <div class="header">
     <h3>app/models/application_record.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1098,7 +2073,7 @@
 </div>
 
       
-        <div class="source_table" id="fb7459c916d089fb3f4376f446a3de0ebad637a7">
+        <div class="source_table" id="50654c651cc3925b09593cea5121e2c629bb1484">
   <div class="header">
     <h3>app/models/book.rb</h3>
     <h4><span class="green">90.91 %</span> covered</h4>
@@ -1187,7 +2162,7 @@
         <li class="missed" data-hits="0" data-linenumber="13">
           
           
-          <code class="ruby">            return Book.where(&quot;(LOWER(title) like LOWER(&#39;%#{text}%&#39;) OR LOWER(author) like LOWER(&#39;%#{text}%&#39;) OR isbn=&#39;#{text}&#39;)&quot;)</code>
+          <code class="ruby">            return Book.where(&quot;(LOWER(title) like LOWER(&#39;%#{text}%&#39;) OR LOWER(author) like LOWER(&#39;%#{text}%&#39;) OR isbn=&#39;#{text}&#39;) AND selling=true AND sold=false&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
@@ -1199,7 +2174,7 @@
         <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
-          <code class="ruby">            return Book.joins(:seller).where(&quot;(LOWER(title) like LOWER(&#39;%#{text}%&#39;) OR LOWER(author) like LOWER(&#39;%#{text}%&#39;) OR isbn=&#39;#{text}&#39;) AND (LOWER(email) like LOWER(&#39;%@#{university}.edu&#39;))&quot;)</code>
+          <code class="ruby">            return Book.joins(:seller).where(&quot;(LOWER(title) like LOWER(&#39;%#{text}%&#39;) OR LOWER(author) like LOWER(&#39;%#{text}%&#39;) OR isbn=&#39;#{text}&#39;) AND (LOWER(email) like LOWER(&#39;%@#{university}.edu&#39;)) AND selling=true AND sold=false&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
@@ -1225,7 +2200,56 @@
 </div>
 
       
-        <div class="source_table" id="734df55b73253c545dba735c048e4226d55339ed">
+        <div class="source_table" id="9549a576df90caeb2bb375c6ed5b733d80fd79fb">
+  <div class="header">
+    <h3>app/models/wishlist.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Wishlist &lt; ApplicationRecord</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">    # belongs_to :account</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    validates :user_id, presence: true, numericality: { greater_than_or_equal_to:  0}</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    validates :book_id, presence: true, numericality: { greater_than_or_equal_to:  0}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="4487d467e6cfc295c6ac352918995e2100fa2eaf">
   <div class="header">
     <h3>config/application.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1358,7 +2382,7 @@
 </div>
 
       
-        <div class="source_table" id="1f16a49599853abc2e91c0a90763de69939372eb">
+        <div class="source_table" id="f768cbca430f18772944236fadd12b5a03b0f843">
   <div class="header">
     <h3>config/boot.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1401,7 +2425,7 @@
 </div>
 
       
-        <div class="source_table" id="ece7a9fb1ff98d0f8f36bc56c33a85108cfec789">
+        <div class="source_table" id="d91069342fdae038ce2e6545994bee1a569327e4">
   <div class="header">
     <h3>config/environment.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1450,7 +2474,7 @@
 </div>
 
       
-        <div class="source_table" id="f9f983bbfdaf9b5d99fd472b4c35725f7d0d82cf">
+        <div class="source_table" id="d1bd2fb5658a71db042a6dece529bf2ae373f7da">
   <div class="header">
     <h3>config/environments/test.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1745,7 +2769,7 @@
 </div>
 
       
-        <div class="source_table" id="ca751cd52f41b78f34812a677e2e4332f0ee4209">
+        <div class="source_table" id="e2e575f1869417ea3980b628b4222a1921c342ca">
   <div class="header">
     <h3>config/initializers/application_controller_renderer.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1812,7 +2836,7 @@
 </div>
 
       
-        <div class="source_table" id="090b683072998d1051c5b9f5bb3f082619b2111c">
+        <div class="source_table" id="6439533ec32b803842c661867f3368f51f0aab49">
   <div class="header">
     <h3>config/initializers/assets.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1915,7 +2939,7 @@
 </div>
 
       
-        <div class="source_table" id="0216fea06a7337ced3b52688cde3b1885a1c3f44">
+        <div class="source_table" id="d2263e022779a48df81965d86d49693ef3d890e3">
   <div class="header">
     <h3>config/initializers/backtrace_silencers.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -1976,7 +3000,7 @@
 </div>
 
       
-        <div class="source_table" id="c8e58b8138d3345a0d955273f9185d7ed5b94807">
+        <div class="source_table" id="ad8b67ff51e3e10b7be09cf53a85904f540901c4">
   <div class="header">
     <h3>config/initializers/content_security_policy.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -2145,7 +3169,7 @@
 </div>
 
       
-        <div class="source_table" id="5120d6223b30ba538c9a0d0cf4d9f56ee9a14173">
+        <div class="source_table" id="ff858fb98bf2ec06106834e43279f31f981ca4a7">
   <div class="header">
     <h3>config/initializers/cookies_serializer.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -2194,7 +3218,7 @@
 </div>
 
       
-        <div class="source_table" id="5231684ef1c564552b9e602807f1ba64d1dacd6b">
+        <div class="source_table" id="1cd79765b252fbfceb0c6ef3bd3be07b99f34020">
   <div class="header">
     <h3>config/initializers/cors.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -2255,7 +3279,7 @@
 </div>
 
       
-        <div class="source_table" id="f1cef264c879fca23e35f3a998146cef617095d4">
+        <div class="source_table" id="cba0e1b9ea868cf7a900bd845339635a27220f17">
   <div class="header">
     <h3>config/initializers/filter_parameter_logging.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -2298,7 +3322,7 @@
 </div>
 
       
-        <div class="source_table" id="7550a671a12a39437d0d84ccdc97bcb78d101a99">
+        <div class="source_table" id="9df0c49cb0f1edec653d007c3c6ccc49aeb655a1">
   <div class="header">
     <h3>config/initializers/inflections.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -2413,7 +3437,7 @@
 </div>
 
       
-        <div class="source_table" id="5b47b3dcf9fd2b6499ceff6177686c238aa34b1a">
+        <div class="source_table" id="57ecb6ee69d8a8144900420e16f3eabf50346dcf">
   <div class="header">
     <h3>config/initializers/mime_types.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -2456,7 +3480,7 @@
 </div>
 
       
-        <div class="source_table" id="c4269e6144ed05d0fb65b49975feaa3e2a0114aa">
+        <div class="source_table" id="e5bc195240c704fb4b0ea01ba66916c5d8518b8d">
   <div class="header">
     <h3>config/initializers/wrap_parameters.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -2559,7 +3583,7 @@
 </div>
 
       
-        <div class="source_table" id="9b4641ed087c2690f55c1d2441e9d34b0fbb36e6">
+        <div class="source_table" id="afed4a3bd03337419f9bcdaf7ec72f49976e02f4">
   <div class="header">
     <h3>config/routes.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -2788,7 +3812,285 @@
 </div>
 
       
-        <div class="source_table" id="2ab445d1d70a77ee0f6c200f2265e0a034892963">
+        <div class="source_table" id="eed0e5d02bf7fa28b0559cbd47e5f720241c7b2f">
+  <div class="header">
+    <h3>spec/controllers/dashboard_controller_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>22</b> relevant lines. 
+      <span class="green"><b>22</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe DashboardController, type: :controller do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before(:each) do</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="6">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    @ppcc_user = Account.new(name: &quot;ppcc user&quot;, email: &quot;user@ppcc.edu&quot;,password: &quot;foobar&quot;, password_confirmation: &quot;foobar&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="7">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    @grinch_book = Book.new(isbn: &quot;1665544332211&quot;, title: &quot;Grinch Stole Christmas&quot;, edition: &quot;12th&quot;, condition: &quot;new&quot;, price: 100, author: &quot;Seuss&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="8">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    @ppcc_user.books &lt;&lt; @grinch_book</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="9">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    @grinch_book.seller = @ppcc_user</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="10">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    @grinch_book.save!</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="11">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    @ppcc_user.save!</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;GET #index&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;returns http success&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      get :index, session: {&#39;user_id&#39; =&gt; @ppcc_user.id}</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(response).to have_http_status(:success)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;GET #update&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;returns http success&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      get :update, params: {&#39;book_id&#39; =&gt; @grinch_book.id}, session: {&#39;user_id&#39; =&gt; @ppcc_user.id}</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(response).to have_http_status(302)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;GET #sold&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;returns http success&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="30">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      get :update, params: {&#39;book_id&#39; =&gt; @grinch_book.id}, session: {&#39;user_id&#39; =&gt; @ppcc_user.id}</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      get :sold, params: {&#39;book_id&#39; =&gt; @grinch_book.id}, session: {&#39;user_id&#39; =&gt; @ppcc_user.id}</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(response).to have_http_status(302)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="42cffef08eb5023ca595cfe4f869c25264cc5ebd">
+  <div class="header">
+    <h3>spec/controllers/login_controller_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe LoginController, type: :controller do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="6c3ee88858b10ae41599516fc6fea7b80121fa75">
   <div class="header">
     <h3>spec/controllers/search_book_controller_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
@@ -3017,7 +4319,1605 @@
 </div>
 
       
-        <div class="source_table" id="c882f8d6c9adb0ab82c4133c40f033b21ab56163">
+        <div class="source_table" id="9876fe89f0a76d2b23481dfef880eac8d07f43a5">
+  <div class="header">
+    <h3>spec/controllers/textbook_wishlist_controller_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>24</b> relevant lines. 
+      <span class="green"><b>24</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe TextbookWishlistController, type: :controller do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before(:each) do</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @ppcc_user = Account.new(name: &quot;ppcc user&quot;, email: &quot;user@ppcc.edu&quot;,password: &quot;foobar&quot;, password_confirmation: &quot;foobar&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @uccs_user = Account.new(name: &quot;uccs user&quot;, email: &quot;user@uccs.edu&quot;,password: &quot;foobar1&quot;, password_confirmation: &quot;foobar1&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="7">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @grinch_book = Book.new(isbn: &quot;1665544332211&quot;, title: &quot;Grinch Stole Christmas&quot;, edition: &quot;12th&quot;, condition: &quot;new&quot;, price: 100, author: &quot;Seuss&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="8">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @physics_book = Book.new(isbn: &quot;1234567891234&quot;, title: &quot;University Physics&quot;, edition: &quot;12th&quot;, condition: &quot;new&quot;, price: 100, author: &quot;Milazzo&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="9">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @ppcc_user.books &lt;&lt; @grinch_book</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="10">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @grinch_book.seller = @ppcc_user</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="11">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @ppcc_user.save!</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="12">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @grinch_book.save!</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="13">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @uccs_user.books &lt;&lt; @physics_book</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="14">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @physics_book.seller = @uccs_user</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="15">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @uccs_user.save!</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="16">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @physics_book.save!</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;GET #create&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;returns http success&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      post :create, params: {&#39;user_id&#39; =&gt; 9999, &#39;book_id&#39; =&gt; 9999 }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(response).to have_http_status(302)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  describe &quot;GET #destroy&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &quot;returns http success&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      post :create, params: {&#39;user_id&#39; =&gt; 9999, &#39;book_id&#39; =&gt; 9999 }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      post :destroy, params: {&#39;user_id&#39; =&gt; 9999, &#39;book_id&#39; =&gt; 9999}</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="30">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(response).to have_http_status(302)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="749b4ddc36e8de81e0af81d4ccf82b2cf91830ad">
+  <div class="header">
+    <h3>spec/helpers/dashboard_helper_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"># Specs in this file have access to a helper object that includes</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"># the DashboardHelper. For example:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">#</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"># describe DashboardHelper do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">#   describe &quot;string concat&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">#     it &quot;concats two strings with spaces&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">#       expect(helper.concat_strings(&quot;this&quot;,&quot;that&quot;)).to eq(&quot;this that&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">#     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">#   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"># end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe DashboardHelper, type: :helper do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  pending &quot;add some examples to (or delete) #{__FILE__}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="8fd17c2c5a0fbe888ec2b2e8fb144ea96c0a1dc5">
+  <div class="header">
+    <h3>spec/helpers/login_helper_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"># Specs in this file have access to a helper object that includes</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"># the LoginHelper. For example:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">#</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"># describe LoginHelper do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">#   describe &quot;string concat&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">#     it &quot;concats two strings with spaces&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">#       expect(helper.concat_strings(&quot;this&quot;,&quot;that&quot;)).to eq(&quot;this that&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">#     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">#   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"># end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe LoginHelper, type: :helper do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  pending &quot;add some examples to (or delete) #{__FILE__}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="9c5d4b2e4c1ac9a951cad39159f0f5e338a0ea96">
+  <div class="header">
+    <h3>spec/helpers/textbook_wishlist_helper_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby"># Specs in this file have access to a helper object that includes</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"># the TextbookWishlistHelper. For example:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">#</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"># describe TextbookWishlistHelper do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">#   describe &quot;string concat&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">#     it &quot;concats two strings with spaces&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">#       expect(helper.concat_strings(&quot;this&quot;,&quot;that&quot;)).to eq(&quot;this that&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">#     end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">#   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"># end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe TextbookWishlistHelper, type: :helper do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  pending &quot;add some examples to (or delete) #{__FILE__}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="85c02b22755a4091d6b47f62edc25c1915ed9874">
+  <div class="header">
+    <h3>spec/models/account_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>23</b> relevant lines. 
+      <span class="green"><b>23</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe Account, type: :model do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby">  #@user = Account.new(name: &quot;example user&quot;, email: &quot;user@example.edu&quot;,password: &quot;foobar&quot;, password_confirmation: &quot;foobar&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;should be defined&#39; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby">    #@user.name = &quot;&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @user = Account.new(name: &quot;example user&quot;, email: &quot;user@example.edu&quot;,password: &quot;foobar&quot;, password_confirmation: &quot;foobar&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(@user.valid?).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;should not be defined&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @user = Account.new(name: &quot;&quot;, email: &quot;user@example.com&quot;,password: &quot;foobar&quot;, password_confirmation: &quot;foobar&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(@user.valid?).to be false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;should not be defined&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @user = Account.new(name: &quot;&quot;, email: &quot;&quot;,password: &quot;foobar&quot;, password_confirmation: &quot;foobar&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(@user.valid?).to be false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;should not be too long&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @user = Account.new(name: &quot;a&quot; * 51, email: &quot;a&quot; * 244 + &quot;@example.com&quot;,password: &quot;foobar&quot;, password_confirmation: &quot;foobar&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(@user.valid?).to be false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  end </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;should work for .edu accounts&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @user = Account.new(name: &quot;example user&quot;, email: &quot;user@example.edu&quot;,password: &quot;foobar&quot;, password_confirmation: &quot;foobar&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(@user.valid?).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;should not work for non .edu accounts&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @user = Account.new(name: &quot;John&quot;, email: &quot;lol@example.lol&quot;,password: &quot;foobar&quot;, password_confirmation: &quot;foobar&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(@user.valid?).to be false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="30">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;should not work for small passwords&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @user = Account.new(name: &quot;John&quot;, email: &quot;lol@example.edu&quot;,password: &quot;fooba&quot;, password_confirmation: &quot;fooba&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(@user.valid?).to be false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="b39e1ce348115645fe6f22f754cf247a6b454227">
+  <div class="header">
+    <h3>spec/models/book_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>18</b> relevant lines. 
+      <span class="green"><b>18</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe Book, type: :model do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before(:each) do</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="6">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    Account.new(name: &quot;ppcc user&quot;, email: &quot;user@ppcc.edu&quot;,password: &quot;foobar00&quot;, password_confirmation: &quot;foobar00&quot;) do |user|</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="7">
+          <span class="hits">4</span>
+          
+          <code class="ruby">      @ppcc_user = user</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;should be defined&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @book = Book.create(:isbn =&gt; &quot;1234567891234&quot;, :title =&gt; &quot;University Physics&quot;, :edition =&gt; &quot;12th&quot;, :author =&gt; &quot;Milazzo&quot;, :condition =&gt; &quot;new&quot;, :price =&gt; 100)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @book.seller = @ppcc_user</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">    # @current_user.books &lt;&lt; @book</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(@book.valid?).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;should not be defined&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @book = Book.create(:isbn =&gt; &quot;&quot;, :title =&gt; &quot;University Physics&quot;, :edition =&gt; &quot;12th&quot;, :author =&gt; &quot;Milazzo&quot;, :condition =&gt; &quot;new&quot;, :price =&gt; 100)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(@book.valid?).to be false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;should not be defined&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @book = Book.new(:isbn =&gt; &quot;12345&quot;, :title =&gt; &quot;University Physics&quot;, :edition =&gt; &quot;12th&quot;, :author =&gt; &quot;Milazzo&quot;, :condition =&gt; &quot;new&quot;, :price =&gt; 100)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(@book.valid?).to be false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;should not be too long&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    @book = Book.new(:isbn =&gt; &quot;1234567891234&quot; * 10, :title =&gt; &quot;University Physics&quot;, :edition =&gt; &quot;12th&quot;, :author =&gt; &quot;Milazzo&quot;, :condition =&gt; &quot;new&quot;, :price =&gt; 100)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(@book.valid?).to be false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  end </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="069f3829a24b431ebf5c408137cab26438ac1b3d">
+  <div class="header">
+    <h3>spec/models/search_book_test_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>50</b> relevant lines. 
+      <span class="green"><b>50</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe Book, type: :model do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">	#Seed dummy db for tests.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  before(:each) do</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="7">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    @ppcc_user = Account.new(name: &quot;ppcc user&quot;, email: &quot;user@ppcc.edu&quot;,password: &quot;foobar&quot;, password_confirmation: &quot;foobar&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="8">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    @uccs_user = Account.new(name: &quot;uccs user&quot;, email: &quot;user@uccs.edu&quot;,password: &quot;foobar1&quot;, password_confirmation: &quot;foobar1&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="9">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    @grinch_book = Book.new(isbn: &quot;1665544332211&quot;, title: &quot;Grinch Stole Christmas&quot;, edition: &quot;12th&quot;, condition: &quot;new&quot;, price: 100, author: &quot;Seuss&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="10">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    @physics_book = Book.new(isbn: &quot;1234567891234&quot;, title: &quot;University Physics&quot;, edition: &quot;12th&quot;, condition: &quot;new&quot;, price: 100, author: &quot;Milazzo&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="11">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    @ppcc_user.books &lt;&lt; @grinch_book</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="12">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    @grinch_book.seller = @ppcc_user</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="13">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    @ppcc_user.save!</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="14">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    @grinch_book.save!</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="15">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    @uccs_user.books &lt;&lt; @physics_book</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="16">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    @physics_book.seller = @uccs_user</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="17">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    @uccs_user.save!</code>
+        </li>
+      
+        <li class="covered" data-hits="11" data-linenumber="18">
+          <span class="hits">11</span>
+          
+          <code class="ruby">    @physics_book.save!</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context &#39;Basic search functionality&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should find results with partial title&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @found_books = Book.where(&quot;title like &#39;%Grinch%&#39;&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@found_books.length &gt; 0).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should find results through exact ISBN search&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @found_books = Book.where(&quot;isbn=&#39;1665544332211&#39;&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@found_books.length &gt; 0).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should find results through full title search&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @found_books = Book.where(&quot;title like &#39;%University Physics%&#39;&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@found_books.length &gt; 0).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should find results through Author search&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="38">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @found_books = Book.where(&quot;author like &#39;%Milazzo%&#39;&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@found_books.length &gt; 0).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;shouldnt find results with some searches&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @found_books = Book.where(&quot;title like &#39;%idaasda%&#39; OR author like &#39;%eifajiaj%&#39; OR isbn like &#39;%00000000000%&#39;&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="44">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@found_books.length == 0).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
+          
+          <code class="ruby">   it &#39;should return multiple books if matched&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @found_books = Book.where(&quot;title like &#39;%s%&#39;&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="49">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@found_books.length &gt; 1).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby">   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context &#39;Search functionality by University and basic search&#39; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should find results through university search&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="57">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	    @found_books = Book.joins(:seller).where(&quot;email like &#39;%@uccs.edu&#39;&quot;)   </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@found_books.length &gt; 0).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should find results through university and title search&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="62">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	    @found_books = Book.joins(:seller).where(&quot;email like &#39;%@uccs.edu&#39; AND title like &#39;%University Physics%&#39;&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="63">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	    expect(@found_books.length &gt; 0).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="64">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="65">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="66">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should find results through university and author search&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="67">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	    @found_books = Book.joins(:seller).where(&quot;email like &#39;%@ppcc.edu&#39; AND author like &#39;%Seuss%&#39;&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="68">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@found_books.length &gt;0).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="69">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="70">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should find results through university and ISBN search &#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="72">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	    @found_books = Book.joins(:seller).where(&quot;email like &#39;%@uccs.edu&#39; AND isbn=&#39;1234567891234&#39;&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="73">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@found_books.length &gt;0).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="74">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="75">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="76">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should not find some results&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="77">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	    @found_books = Book.joins(:seller).where(&quot;email like &#39;%blah.edu&#39; AND title like &#39;jsadaijdi&#39;&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="78">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	    expect(@found_books.length == 0).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="79">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="80">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="81">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="82">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="9336149122de7edda951663f9488cab8de6a8c94">
+  <div class="header">
+    <h3>spec/models/wishlist_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>11</b> relevant lines. 
+      <span class="green"><b>11</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe Wishlist, type: :model do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should be defined&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @wishlist = Wishlist.new(user_id: 12, book_id: 2)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@wishlist.valid?).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should not be defined for a negative user id&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @Wishlist = Wishlist.new(user_id: -1, book_id: 1)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@Wishlist.valid?).to be false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should not be defined without 2 arguments&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @Wishlist = Wishlist.new(user_id: 1)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@Wishlist.valid?).to be false</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="81b9ec1fb74f368e05edb61df1a5db90de223b0a">
   <div class="header">
     <h3>spec/rails_helper.rb</h3>
     <h4><span class="yellow">85.71 %</span> covered</h4>
@@ -3392,6 +6292,202 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="61">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="078073f1c290ebdcd53aa7ef9959842f59d50f65">
+  <div class="header">
+    <h3>spec/views/dashboard/index.html.erb_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe &quot;dashboard/index.html.erb&quot;, type: :view do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  pending &quot;add some examples to (or delete) #{__FILE__}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="f8ace770518df4a1adcd221a1a2bd436954f32c8">
+  <div class="header">
+    <h3>spec/views/dashboard/new.html.erb_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe &quot;dashboard/new.html.erb&quot;, type: :view do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  pending &quot;add some examples to (or delete) #{__FILE__}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="f95b24ea636115e6b859121288e42ee78ae5a8a9">
+  <div class="header">
+    <h3>spec/views/textbook_wishlist/index.html.erb_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe &quot;textbook_wishlist/index.html.erb&quot;, type: :view do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  pending &quot;add some examples to (or delete) #{__FILE__}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="1a3b54cdef1374b69557c711755074696696fadb">
+  <div class="header">
+    <h3>spec/views/users/new.html.erb_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>3</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">RSpec.describe &quot;users/new.html.erb&quot;, type: :view do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  pending &quot;add some examples to (or delete) #{__FILE__}&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby">end</code>
