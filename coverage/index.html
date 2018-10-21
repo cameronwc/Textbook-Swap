@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-10-21T00:21:47+00:00">2018-10-21T00:21:47+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-10-21T21:24:49+00:00">2018-10-21T21:24:49+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">92.57%</span></span>
+    (<span class="covered_percent"><span class="green">92.45%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.11
+         1.83
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>30</b> files in total.
-    <b>148</b> relevant lines. 
-    <span class="green"><b>137</b> lines covered</span> and
-    <span class="red"><b>11</b> lines missed </span>
+    <b>28</b> files in total.
+    <b>159</b> relevant lines. 
+    <span class="green"><b>147</b> lines covered</span> and
+    <span class="red"><b>12</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -49,26 +49,6 @@
       </tr>
     </thead>
     <tbody>
-      
-      <tr>
-        <td class="strong"><a href="#24e033ca90e9687f70579a6a79348edc5b9fb275" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>7</td>
-        <td>3</td>
-        <td>3</td>
-        <td>0</td>
-        <td>1.0</td>
-      </tr>
-      
-      <tr>
-        <td class="strong"><a href="#6ddbcbcbad4e8c636de58f10d48fc604dec94116" class="src_link" title="app/controllers/search_book_controller.rb">app/controllers/search_book_controller.rb</a></td>
-        <td class="green strong">92.31 %</td>
-        <td>23</td>
-        <td>13</td>
-        <td>12</td>
-        <td>1</td>
-        <td>1.7</td>
-      </tr>
       
       <tr>
         <td class="strong"><a href="#aa32ae67609d6a0220dbb3e786d4cb5c61eb0bf3" class="src_link" title="app/helpers/add_book_helper.rb">app/helpers/add_book_helper.rb</a></td>
@@ -157,7 +137,7 @@
         <td>10</td>
         <td>10</td>
         <td>0</td>
-        <td>1.4</td>
+        <td>3.2</td>
       </tr>
       
       <tr>
@@ -172,12 +152,12 @@
       
       <tr>
         <td class="strong"><a href="#fb7459c916d089fb3f4376f446a3de0ebad637a7" class="src_link" title="app/models/book.rb">app/models/book.rb</a></td>
-        <td class="green strong">90.91 %</td>
+        <td class="red strong">72.73 %</td>
         <td>18</td>
         <td>11</td>
-        <td>10</td>
-        <td>1</td>
-        <td>0.9</td>
+        <td>8</td>
+        <td>3</td>
+        <td>0.7</td>
       </tr>
       
       <tr>
@@ -331,13 +311,13 @@
       </tr>
       
       <tr>
-        <td class="strong"><a href="#2ab445d1d70a77ee0f6c200f2265e0a034892963" class="src_link" title="spec/controllers/search_book_controller_spec.rb">spec/controllers/search_book_controller_spec.rb</a></td>
+        <td class="strong"><a href="#f5d6178f95e9651802d1c35edb9ec133e48b4dde" class="src_link" title="spec/models/search_book_test_spec.rb">spec/models/search_book_test_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>35</td>
-        <td>23</td>
-        <td>23</td>
+        <td>82</td>
+        <td>50</td>
+        <td>50</td>
         <td>0</td>
-        <td>1.5</td>
+        <td>3.4</td>
       </tr>
       
       <tr>
@@ -365,224 +345,6 @@
       </div>
     
       <div class="source_files">
-      
-        <div class="source_table" id="24e033ca90e9687f70579a6a79348edc5b9fb275">
-  <div class="header">
-    <h3>app/controllers/application_controller.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
-    <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
-          
-          <code class="ruby">class ApplicationController &lt; ActionController::Base</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="2">
-          
-          
-          <code class="ruby">    #protect_from_forgery with: :null_session</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    skip_before_action :verify_authenticity_token</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    include LoginHelper</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="5">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="6">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-
-      
-        <div class="source_table" id="6ddbcbcbad4e8c636de58f10d48fc604dec94116">
-  <div class="header">
-    <h3>app/controllers/search_book_controller.rb</h3>
-    <h4><span class="green">92.31 %</span> covered</h4>
-    <div>
-      <b>13</b> relevant lines. 
-      <span class="green"><b>12</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
-    </div>
-  </div>
-  
-  <pre>
-    <ol>
-      
-        <li class="covered" data-hits="1" data-linenumber="1">
-          <span class="hits">1</span>
-          
-          <code class="ruby">class SearchBookController &lt; ApplicationController</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="2">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def index</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="3">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="4">
-          <span class="hits">2</span>
-          
-          <code class="ruby">	@found_books = Book.find_books(params[&quot;search_text&quot;],params[&quot;search_university&quot;])</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="5">
-          <span class="hits">2</span>
-          
-          <code class="ruby">	text = params[&quot;search_text&quot;]</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="6">
-          <span class="hits">2</span>
-          
-          <code class="ruby">	university = params[&quot;search_university&quot;]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="8">
-          <span class="hits">2</span>
-          
-          <code class="ruby">	if(@found_books.nil?)</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="9">
-          
-          
-          <code class="ruby">		@found_num = 0</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="10">
-          
-          
-          <code class="ruby">	else</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="11">
-          <span class="hits">2</span>
-          
-          <code class="ruby">		@found_num = @found_books.length</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
-          
-          
-          <code class="ruby">	end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
-          
-          
-          <code class="ruby">	</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="14">
-          <span class="hits">2</span>
-          
-          <code class="ruby">	  @message = &quot;#{@found_num} books were found&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="15">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="16">
-          <span class="hits">2</span>
-          
-          <code class="ruby">	  if(text != &quot;&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="17">
-          <span class="hits">2</span>
-          
-          <code class="ruby">		  @message = &quot;#{@message} for search &#39;#{text}&#39;&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="18">
-          
-          
-          <code class="ruby">	  end</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="19">
-          <span class="hits">2</span>
-          
-          <code class="ruby">	  if(university != &quot;&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="20">
-          <span class="hits">2</span>
-          
-          <code class="ruby">		  @message = &quot;#{@message} at university &#39;#{university}&#39;&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
-          <code class="ruby">	  end	  </code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="22">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
-          
-          
-          <code class="ruby">end</code>
-        </li>
-      
-    </ol>
-  </pre>
-</div>
-
       
         <div class="source_table" id="aa32ae67609d6a0220dbb3e786d4cb5c61eb0bf3">
   <div class="header">
@@ -954,8 +716,8 @@
           <code class="ruby">    has_many :books, inverse_of: &#39;seller&#39;</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="3">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="23" data-linenumber="3">
+          <span class="hits">23</span>
           
           <code class="ruby">    before_save { self.email = email.downcase }</code>
         </li>
@@ -1101,11 +863,11 @@
         <div class="source_table" id="fb7459c916d089fb3f4376f446a3de0ebad637a7">
   <div class="header">
     <h3>app/models/book.rb</h3>
-    <h4><span class="green">90.91 %</span> covered</h4>
+    <h4><span class="red">72.73 %</span> covered</h4>
     <div>
       <b>11</b> relevant lines. 
-      <span class="green"><b>10</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
     </div>
   </div>
   
@@ -1178,8 +940,8 @@
           <code class="ruby">    def self.find_books (text, university)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="12">
+          
           
           <code class="ruby">        if(university == &quot;&quot;)</code>
         </li>
@@ -1187,7 +949,7 @@
         <li class="missed" data-hits="0" data-linenumber="13">
           
           
-          <code class="ruby">            return Book.where(&quot;(LOWER(title) like LOWER(&#39;%#{text}%&#39;) OR LOWER(author) like LOWER(&#39;%#{text}%&#39;) OR isbn=&#39;#{text}&#39;)&quot;)</code>
+          <code class="ruby">            return Book.where(&quot;(LOWER(title) like LOWER(&#39;%#{text}%&#39;) OR LOWER(author) like LOWER(&#39;%#{text}%&#39;) OR isbn=&#39;#{text}&#39;) AND selling=true AND sold=false&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
@@ -1196,10 +958,10 @@
           <code class="ruby">        else</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="15">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="15">
           
-          <code class="ruby">            return Book.joins(:seller).where(&quot;(LOWER(title) like LOWER(&#39;%#{text}%&#39;) OR LOWER(author) like LOWER(&#39;%#{text}%&#39;) OR isbn=&#39;#{text}&#39;) AND (LOWER(email) like LOWER(&#39;%@#{university}.edu&#39;))&quot;)</code>
+          
+          <code class="ruby">            return Book.joins(:seller).where(&quot;(LOWER(title) like LOWER(&#39;%#{text}%&#39;) OR LOWER(author) like LOWER(&#39;%#{text}%&#39;) OR isbn=&#39;#{text}&#39;) AND (LOWER(email) like LOWER(&#39;%@#{university}.edu&#39;)) AND selling=true AND sold=false&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
@@ -2788,13 +2550,13 @@
 </div>
 
       
-        <div class="source_table" id="2ab445d1d70a77ee0f6c200f2265e0a034892963">
+        <div class="source_table" id="f5d6178f95e9651802d1c35edb9ec133e48b4dde">
   <div class="header">
-    <h3>spec/controllers/search_book_controller_spec.rb</h3>
+    <h3>spec/models/search_book_test_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>23</b> relevant lines. 
-      <span class="green"><b>23</b> lines covered</span> and
+      <b>50</b> relevant lines. 
+      <span class="green"><b>50</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2817,169 +2579,169 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">RSpec.describe SearchBookController, type: :controller do</code>
+          <code class="ruby">RSpec.describe Book, type: :model do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">	#Seed dummy db for tests.</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
           <code class="ruby">  before(:each) do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="5">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="11" data-linenumber="7">
+          <span class="hits">11</span>
           
           <code class="ruby">    @ppcc_user = Account.new(name: &quot;ppcc user&quot;, email: &quot;user@ppcc.edu&quot;,password: &quot;foobar&quot;, password_confirmation: &quot;foobar&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="6">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="11" data-linenumber="8">
+          <span class="hits">11</span>
           
           <code class="ruby">    @uccs_user = Account.new(name: &quot;uccs user&quot;, email: &quot;user@uccs.edu&quot;,password: &quot;foobar1&quot;, password_confirmation: &quot;foobar1&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="7">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="11" data-linenumber="9">
+          <span class="hits">11</span>
           
           <code class="ruby">    @grinch_book = Book.new(isbn: &quot;1665544332211&quot;, title: &quot;Grinch Stole Christmas&quot;, edition: &quot;12th&quot;, condition: &quot;new&quot;, price: 100, author: &quot;Seuss&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="8">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="11" data-linenumber="10">
+          <span class="hits">11</span>
           
           <code class="ruby">    @physics_book = Book.new(isbn: &quot;1234567891234&quot;, title: &quot;University Physics&quot;, edition: &quot;12th&quot;, condition: &quot;new&quot;, price: 100, author: &quot;Milazzo&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="9">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="11" data-linenumber="11">
+          <span class="hits">11</span>
           
           <code class="ruby">    @ppcc_user.books &lt;&lt; @grinch_book</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="10">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="11" data-linenumber="12">
+          <span class="hits">11</span>
           
           <code class="ruby">    @grinch_book.seller = @ppcc_user</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="11">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="11" data-linenumber="13">
+          <span class="hits">11</span>
           
           <code class="ruby">    @ppcc_user.save!</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="12">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="11" data-linenumber="14">
+          <span class="hits">11</span>
           
           <code class="ruby">    @grinch_book.save!</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="13">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="11" data-linenumber="15">
+          <span class="hits">11</span>
           
           <code class="ruby">    @uccs_user.books &lt;&lt; @physics_book</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="14">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="11" data-linenumber="16">
+          <span class="hits">11</span>
           
           <code class="ruby">    @physics_book.seller = @uccs_user</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="15">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="11" data-linenumber="17">
+          <span class="hits">11</span>
           
           <code class="ruby">    @uccs_user.save!</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="16">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="11" data-linenumber="18">
+          <span class="hits">11</span>
           
           <code class="ruby">    @physics_book.save!</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="17">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="18">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  describe &quot;GET #index&quot; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="19">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="20">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="20">
           
-          <code class="ruby">    it &quot;returns http success&quot; do</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
-          <code class="ruby">      get :index</code>
+          <code class="ruby">  context &#39;Basic search functionality&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="22">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(response).to have_http_status(:success)</code>
+          <code class="ruby">    it &#39;should find results with partial title&#39; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="covered" data-hits="1" data-linenumber="23">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @found_books = Book.where(&quot;title like &#39;%Grinch%&#39;&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@found_books.length &gt; 0).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="never" data-hits="" data-linenumber="26">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="25">
+        <li class="covered" data-hits="1" data-linenumber="27">
           <span class="hits">1</span>
           
-          <code class="ruby">    it &quot;calls method to assign search texts for university and book types&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="26">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      text_hash = {&quot;search_text&quot; =&gt; &#39;physics&#39;,&quot;search_university&quot; =&gt; &quot;uccs&quot;}</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="27">
-          
-          
-          <code class="ruby"></code>
+          <code class="ruby">    it &#39;should find results through exact ISBN search&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="28">
           <span class="hits">1</span>
           
-          <code class="ruby">      expect(Book).to receive(:find_books).with(&#39;physics&#39;,&#39;uccs&#39;).and_return([@physics_book])</code>
+          <code class="ruby">      @found_books = Book.where(&quot;isbn=&#39;1665544332211&#39;&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="29">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="30">
+        <li class="covered" data-hits="1" data-linenumber="29">
           <span class="hits">1</span>
           
-          <code class="ruby">      post :index, params: text_hash</code>
+          <code class="ruby">      expect(@found_books.length &gt; 0).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="31">
@@ -2988,25 +2750,307 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="32">
+        <li class="covered" data-hits="1" data-linenumber="32">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should find results through full title search&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @found_books = Book.where(&quot;title like &#39;%University Physics%&#39;&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@found_books.length &gt; 0).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="35">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="36">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="35">
+        <li class="covered" data-hits="1" data-linenumber="37">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should find results through Author search&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="38">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @found_books = Book.where(&quot;author like &#39;%Milazzo%&#39;&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@found_books.length &gt; 0).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;shouldnt find results with some searches&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @found_books = Book.where(&quot;title like &#39;%idaasda%&#39; OR author like &#39;%eifajiaj%&#39; OR isbn like &#39;%00000000000%&#39;&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="44">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@found_books.length == 0).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="46">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="47">
+          <span class="hits">1</span>
+          
+          <code class="ruby">   it &#39;should return multiple books if matched&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @found_books = Book.where(&quot;title like &#39;%s%&#39;&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="49">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@found_books.length &gt; 1).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="50">
+          
+          
+          <code class="ruby">   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="53">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="54">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context &#39;Search functionality by University and basic search&#39; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="56">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should find results through university search&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="57">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	    @found_books = Book.joins(:seller).where(&quot;email like &#39;%@uccs.edu&#39;&quot;)   </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@found_books.length &gt; 0).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should find results through university and title search&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="62">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	    @found_books = Book.joins(:seller).where(&quot;email like &#39;%@uccs.edu&#39; AND title like &#39;%University Physics%&#39;&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="63">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	    expect(@found_books.length &gt; 0).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="64">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="65">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="66">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should find results through university and author search&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="67">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	    @found_books = Book.joins(:seller).where(&quot;email like &#39;%@ppcc.edu&#39; AND author like &#39;%Seuss%&#39;&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="68">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@found_books.length &gt;0).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="69">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="70">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should find results through university and ISBN search &#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="72">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	    @found_books = Book.joins(:seller).where(&quot;email like &#39;%@uccs.edu&#39; AND isbn=&#39;1234567891234&#39;&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="73">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@found_books.length &gt;0).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="74">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="75">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="76">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;should not find some results&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="77">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	    @found_books = Book.joins(:seller).where(&quot;email like &#39;%blah.edu&#39; AND title like &#39;jsadaijdi&#39;&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="78">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	    expect(@found_books.length == 0).to be true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="79">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="80">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="81">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="82">
           
           
           <code class="ruby">end</code>
