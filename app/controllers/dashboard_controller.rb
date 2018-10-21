@@ -9,10 +9,17 @@ class DashboardController < ApplicationController
     else
       @LogInOrOut = "Logout, " + String(@current_user.name)
 
-      @books = @current_user.books.all();
-      @ownedBooks = @books.where(:sold => false);
-      @sellingBooks = @books.where(:selling => true);
-      @soldBooks = @books.where(:sold => true);
+      # all books
+      @books = @current_user.books.all()
+
+      # users owned books
+      @ownedBooks = @books.where(:sold => false)
+
+      # users currently selling
+      @sellingBooks = @books.where(:selling => true)
+
+      # users sold books
+      @soldBooks = @books.where(:sold => true)
   
       @wishlistBooks_Final = []
   
