@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe DashboardController, type: :controller do
-  
+
   before(:each) do
     @ppcc_user = Account.new(name: "ppcc user", email: "user@ppcc.edu",password: "foobar", password_confirmation: "foobar")
     @grinch_book = Book.new(isbn: "1665544332211", title: "Grinch Stole Christmas", edition: "12th", condition: "new", price: 100, author: "Seuss")
