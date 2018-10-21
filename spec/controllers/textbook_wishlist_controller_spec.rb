@@ -1,19 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe TextbookWishlistController, type: :controller do
-  describe "GET #index" do
+  describe "GET #create" do
     it "returns http success" do
-      get :index
+      post :create, params: { }
       expect(response).to have_http_status(:success)
     end
   end
-  describe "POST #create" do
-    it "returns http success" do
-      post :create
-      expect(response).to have_http_status(:success)
-    end
-  end
-  describe "POST #destroy" do
+  describe "GET #destroy" do
     it "returns http success" do
       post :destroy
       expect(response).to have_http_status(:success)

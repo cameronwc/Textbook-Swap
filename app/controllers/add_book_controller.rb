@@ -10,14 +10,19 @@ class AddBookController < ApplicationController
   def create
     if logged_in?
       @createdBook = Book.create(:isbn => params['isbn'], :title => params['title'], :edition => params['edition'], :author => params['author'], :condition => params['condition'], :price => params['price'])
-      @createdBook.seller = @current_user
-      @createdBook.save!
-      @current_user.books << @createdBook
+      if @createdBook.valid?
+        @createdBook.seller = @current_user
+        @createdBook.save!
+        @current_user.books << @createdBook
+      else
+        flash.alert = "Error please check your fields."
+        redirect_to "/add_book"
+      end
       #@current_user.save!
     else
       p "please login"
+      redirect_to "/login"
     end
-    redirect_to "/"
   end
 
   def similar

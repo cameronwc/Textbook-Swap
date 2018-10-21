@@ -8,11 +8,11 @@ RSpec.describe Wishlist, type: :model do
 
     it 'should not be defined for a negative user id' do
       @Wishlist = Wishlist.new(user_id: -1, book_id: 1)
-      expect(@wishlist.valid?).to be false
+      expect(@Wishlist.valid?).to be false
     end
 
     it 'should not be defined without 2 arguments' do
       @Wishlist = Wishlist.new(user_id: 1)
-      expect(@wishlist.valid?).to be false
+      expect(@Wishlist.valid?).to be false
     end
 end

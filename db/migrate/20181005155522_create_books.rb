@@ -9,7 +9,8 @@ class CreateBooks < ActiveRecord::Migration[5.2]
       t.integer 'price'
       t.string 'author'
       t.string 'picture_path'
-      t.boolean 'selling'
+      t.boolean 'selling', :default => false
+      t.boolean 'sold', :default => false
       t.timestamps
 
     end

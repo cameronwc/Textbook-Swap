@@ -1,43 +1,44 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/cameron/Code/textbookswap/spec/controllers/dashboard_controller_spec.rb": [
+      "/home/jbutler/group5_fall2018/spec/controllers/search_book_controller_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
         1,
         null,
         1,
         1,
         1,
-        1,
         null,
-        1,
-        0,
-        0,
         null,
         1,
         1,
         null,
         1,
-        0,
-        0,
-        null,
         null,
         1,
-        1,
-        1,
-        0,
-        0,
         null,
         null,
-        1,
-        1,
-        1,
-        0,
-        0,
         null,
         null,
         null
       ],
-      "/home/cameron/Code/textbookswap/spec/rails_helper.rb": [
+      "/home/jbutler/group5_fall2018/spec/rails_helper.rb": [
         null,
         1,
         1,
@@ -100,14 +101,14 @@
         null,
         null
       ],
-      "/home/cameron/Code/textbookswap/config/environment.rb": [
+      "/home/jbutler/group5_fall2018/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/home/cameron/Code/textbookswap/config/application.rb": [
+      "/home/jbutler/group5_fall2018/config/application.rb": [
         1,
         null,
         1,
@@ -128,13 +129,13 @@
         null,
         null
       ],
-      "/home/cameron/Code/textbookswap/config/boot.rb": [
+      "/home/jbutler/group5_fall2018/config/boot.rb": [
         1,
         null,
         1,
         1
       ],
-      "/home/cameron/Code/textbookswap/config/environments/test.rb": [
+      "/home/jbutler/group5_fall2018/config/environments/test.rb": [
         1,
         null,
         null,
@@ -182,7 +183,7 @@
         null,
         null
       ],
-      "/home/cameron/Code/textbookswap/config/initializers/application_controller_renderer.rb": [
+      "/home/jbutler/group5_fall2018/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
@@ -192,7 +193,7 @@
         null,
         null
       ],
-      "/home/cameron/Code/textbookswap/config/initializers/assets.rb": [
+      "/home/jbutler/group5_fall2018/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -208,7 +209,7 @@
         null,
         null
       ],
-      "/home/cameron/Code/textbookswap/config/initializers/backtrace_silencers.rb": [
+      "/home/jbutler/group5_fall2018/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -217,7 +218,7 @@
         null,
         null
       ],
-      "/home/cameron/Code/textbookswap/config/initializers/content_security_policy.rb": [
+      "/home/jbutler/group5_fall2018/config/initializers/content_security_policy.rb": [
         null,
         null,
         null,
@@ -244,14 +245,14 @@
         null,
         null
       ],
-      "/home/cameron/Code/textbookswap/config/initializers/cookies_serializer.rb": [
+      "/home/jbutler/group5_fall2018/config/initializers/cookies_serializer.rb": [
         null,
         null,
         null,
         null,
         1
       ],
-      "/home/cameron/Code/textbookswap/config/initializers/cors.rb": [
+      "/home/jbutler/group5_fall2018/config/initializers/cors.rb": [
         null,
         null,
         null,
@@ -260,13 +261,13 @@
         null,
         null
       ],
-      "/home/cameron/Code/textbookswap/config/initializers/filter_parameter_logging.rb": [
+      "/home/jbutler/group5_fall2018/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/home/cameron/Code/textbookswap/config/initializers/inflections.rb": [
+      "/home/jbutler/group5_fall2018/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -284,13 +285,13 @@
         null,
         null
       ],
-      "/home/cameron/Code/textbookswap/config/initializers/mime_types.rb": [
+      "/home/jbutler/group5_fall2018/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/home/cameron/Code/textbookswap/config/initializers/wrap_parameters.rb": [
+      "/home/jbutler/group5_fall2018/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -306,13 +307,7 @@
         null,
         null
       ],
-      "/home/cameron/Code/textbookswap/config/routes.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
+      "/home/jbutler/group5_fall2018/config/routes.rb": [
         1,
         1,
         null,
@@ -330,354 +325,111 @@
         1,
         1,
         1,
-        1,
         null,
         1,
-        null,
         1,
-        null,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/app/helpers/add_book_helper.rb": [
-        1,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/app/helpers/dashboard_helper.rb": [
-        1,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/app/helpers/home_helper.rb": [
-        1,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/app/helpers/login_helper.rb": [
-        1,
-        1,
-        0,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        null,
-        0,
-        null,
-        null,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/app/helpers/search_book_helper.rb": [
-        1,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/app/helpers/sessions_helper.rb": [
-        1,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/app/helpers/sold_books_helper.rb": [
-        1,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/app/helpers/textbook_wishlist_helper.rb": [
-        1,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/app/controllers/dashboard_controller.rb": [
-        1,
-        1,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/app/controllers/application_controller.rb": [
         1,
         null,
         1,
         1,
         null,
+        1,
+        1,
+        1,
+        1,
         null,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/spec/controllers/login_controller_spec.rb": [
         1,
         null,
         1,
         null,
         null
       ],
-      "/home/cameron/Code/textbookswap/app/controllers/login_controller.rb": [
+      "/home/jbutler/group5_fall2018/app/helpers/add_book_helper.rb": [
         1,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        0,
-        0,
-        null,
-        null,
-        1,
-        null,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
         null
       ],
-      "/home/cameron/Code/textbookswap/spec/controllers/search_book_controller_spec.rb": [
+      "/home/jbutler/group5_fall2018/app/helpers/application_helper.rb": [
         1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
         null
       ],
-      "/home/cameron/Code/textbookswap/app/controllers/search_book_controller.rb": [
+      "/home/jbutler/group5_fall2018/app/helpers/dashboard_helper.rb": [
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
         null
       ],
-      "/home/cameron/Code/textbookswap/spec/controllers/sold_books_controller_spec.rb": [
+      "/home/jbutler/group5_fall2018/app/helpers/home_helper.rb": [
         1,
+        null
+      ],
+      "/home/jbutler/group5_fall2018/app/helpers/login_helper.rb": [
+        1,
+        1,
+        0,
         null,
         1,
-        1,
-        1,
-        1,
-        1,
-        null,
+        0,
+        0,
         null,
         null,
         1,
-        1,
-        1,
+        0,
+        0,
+        0,
+        null,
         0,
         null,
         null,
         null
       ],
-      "/home/cameron/Code/textbookswap/app/controllers/sold_books_controller.rb": [
+      "/home/jbutler/group5_fall2018/app/helpers/search_book_helper.rb": [
         1,
-        1,
-        null,
         null
       ],
-      "/home/cameron/Code/textbookswap/spec/controllers/textbook_wishlist_controller_spec.rb": [
+      "/home/jbutler/group5_fall2018/app/helpers/sessions_helper.rb": [
+        1,
+        null
+      ],
+      "/home/jbutler/group5_fall2018/app/helpers/textbook_wishlist_helper.rb": [
+        1,
+        null
+      ],
+      "/home/jbutler/group5_fall2018/app/controllers/search_book_controller.rb": [
+        1,
         1,
         null,
-        1,
-        1,
-        1,
-        1,
+        2,
+        2,
+        2,
+        null,
+        2,
         0,
         null,
-        null,
-        1,
-        1,
-        1,
-        1,
+        2,
         null,
         null,
-        1,
-        1,
-        1,
-        0,
+        2,
+        null,
+        2,
+        2,
+        null,
+        2,
+        2,
         null,
         null,
         null
       ],
-      "/home/cameron/Code/textbookswap/app/controllers/textbook_wishlist_controller.rb": [
-        1,
-        1,
-        1,
-        1,
+      "/home/jbutler/group5_fall2018/app/controllers/application_controller.rb": [
         1,
         null,
         1,
+        1,
         null,
-        null,
-        1,
-        1,
-        1,
-        0,
         null,
         null
       ],
-      "/home/cameron/Code/textbookswap/spec/helpers/dashboard_helper_spec.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
+      "/home/jbutler/group5_fall2018/app/models/account.rb": [
         1,
         1,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/spec/helpers/login_helper_spec.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/spec/helpers/sold_books_helper_spec.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/spec/helpers/textbook_wishlist_helper_spec.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/spec/models/account_spec.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/app/models/account.rb": [
-        1,
-        1,
-        19,
+        5,
         1,
         1,
         1,
@@ -695,34 +447,12 @@
         null,
         null
       ],
-      "/home/cameron/Code/textbookswap/app/models/application_record.rb": [
+      "/home/jbutler/group5_fall2018/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/home/cameron/Code/textbookswap/spec/models/book_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/app/models/book.rb": [
+      "/home/jbutler/group5_fall2018/app/models/book.rb": [
         1,
         1,
         1,
@@ -731,171 +461,18 @@
         1,
         1,
         null,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/spec/models/search_book_test_spec.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        9,
-        9,
-        9,
-        9,
         null,
         null,
         1,
         1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/spec/models/sold_book_spec.rb": [
-        1,
-        null,
-        1,
-        null,
-        1,
-        4,
         0,
         null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/app/models/sold_book.rb": [
-        1,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/spec/models/wishlist_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
         1,
         null,
         null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/app/models/wishlist.rb": [
-        1,
-        null,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/spec/views/dashboard/index.html.erb_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/spec/views/dashboard/new.html.erb_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/spec/views/sold_books/index.html.erb_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/spec/views/textbook_wishlist/index.html.erb_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/home/cameron/Code/textbookswap/spec/views/users/new.html.erb_spec.rb": [
-        1,
-        null,
-        1,
-        1,
         null
       ]
     },
-    "timestamp": 1539894632
+    "timestamp": 1540081307
   }
 }
