@@ -1,42 +1,35 @@
 require 'rails_helper'
 
 RSpec.describe DashboardController, type: :controller do
+  
+  before(:each) do
+    @ppcc_user = Account.new(name: "ppcc user", email: "user@ppcc.edu",password: "foobar", password_confirmation: "foobar")
+    @grinch_book = Book.new(isbn: "1665544332211", title: "Grinch Stole Christmas", edition: "12th", condition: "new", price: 100, author: "Seuss")
+    @ppcc_user.books << @grinch_book
+    @grinch_book.seller = @ppcc_user
+    @grinch_book.save!
+    @ppcc_user.save!
+  end
+
   describe "GET #index" do
-    it "returns correct owned book for given user" do
-      @user = Account.new(:name => "Sergio", :email => "test@uccs.edu", :password => "password", :password_confirmation => "password")
-      #session probably wont work here
-      @createdBook = Book.create(:isbn => "123456789", :title => "Test1", :edition => "1", :author => "test1", :condition => "Good", :price => "10", :selling => False)
-      @createdBook = Book.create(:isbn => "987654321", :title => "Test2", :edition => "1", :author => "test2", :condition => "Good", :price => "10", :selling => True)
-      expect(@user.OwnedBooks).to eq "Test1"
-    end
-    it "returns correct owned books for given user" do
-      @user = Account.new(:name => "Sergio", :email => "test@uccs.edu", :password => "password", :password_confirmation => "password")
-      #session probably wont work here
-      @createdBook = Book.create(:isbn => "123456789", :title => "Test1", :edition => "1", :author => "test1", :condition => "Good", :price => "10", :selling => False)
-      @createdBook = Book.create(:isbn => "987654321", :title => "Test2", :edition => "1", :author => "test2", :condition => "Good", :price => "10", :selling => False)
-      expect(@user.OwnedBooks).to eq ["Test1","Test2"]
-    end
-
-    it "returns correct selling book for given user" do
-      @user = Account.new(:name => "Sergio", :email => "test@uccs.edu", :password => "password", :password_confirmation => "password")
-      @createdBook = Book.create(:isbn => "123456789", :title => "Test1", :edition => "1", :author => "test1", :condition => "Good", :price => "10", :selling => False)
-      @createdBook = Book.create(:isbn => "987654321", :title => "Test2", :edition => "1", :author => "test2", :condition => "Good", :price => "10", :selling => True)
-      expect(@user.SellingBooks).to eq "Test2"
-    end
-
-    it "returns correct selling book for given user" do
-      @user = Account.new(:name => "Sergio", :email => "test@uccs.edu", :password => "password", :password_confirmation => "password")
-      @createdBook = Book.create(:isbn => "123456789", :title => "Test1", :edition => "1", :author => "test1", :condition => "Good", :price => "10", :selling => True)
-      @createdBook = Book.create(:isbn => "987654321", :title => "Test2", :edition => "1", :author => "test2", :condition => "Good", :price => "10", :selling => True)
-      expect(@user.SellingBooks).to eq ["Test1","Test2"]
+    it "returns http success" do
+      get :index, session: {'user_id' => @ppcc_user.id}
+      expect(response).to have_http_status(:success)
     end
   end
 
   describe "GET #update" do
-
+    it "returns http success" do
+      get :update, params: {'book_id' => @grinch_book.id}, session: {'user_id' => @ppcc_user.id}
+      expect(response).to have_http_status(302)
+    end
   end
 
   describe "GET #sold" do
-
+    it "returns http success" do
+      get :update, params: {'book_id' => @grinch_book.id}, session: {'user_id' => @ppcc_user.id}
+      get :sold, params: {'book_id' => @grinch_book.id}, session: {'user_id' => @ppcc_user.id}
+      expect(response).to have_http_status(302)
+    end
   end
 end
