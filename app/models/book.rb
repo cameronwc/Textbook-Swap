@@ -8,7 +8,7 @@ class Book < ApplicationRecord
     #validates :seller_id, presence: true
 
 
-    def self.find_books (text,university)
+    def self.find_books (text, university)
         if(university == "")
             return Book.where("(LOWER(title) like LOWER('%#{text}%') OR LOWER(author) like LOWER('%#{text}%') OR isbn='#{text}')")
         else
