@@ -25,3 +25,7 @@ h2 {
 	align-content: center;
 	align-items: center;	
 }
+
+.search_container .ui.form ::-moz-placeholder {
+	color: black;
+}

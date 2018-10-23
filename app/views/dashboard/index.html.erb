@@ -8,14 +8,11 @@
               Textbook Swap
             </div>
           </a>
-          <a href="/" class="item">
-            Home
-          </a>
           <a href="/dashboard" class="active item">
             Dashboard
           </a>
           <a href="/add_book" class="item">
-            Sell an item
+            Add A Book
           </a>
         </div>
         <div class="right menu">
@@ -39,9 +36,7 @@
       <h1 class="ui orange header">Dashboard</h1>
     </div>
     <div class="ui divider"></div>
-    <div class="ui grid">
-      <div class="sixteen wide column">
-        <div class="ui center aligned grid" id="related_books" align="center">
+        <div class="ui stackable center aligned grid" id="related_books" align="center">
           <div class="two wide column">
             <div class="ui inverted compact vertical labeled icon menu">
               <!-- Add Embedded Ruby Here to activate correct icon? -->
@@ -67,7 +62,7 @@
             <div class="pool-banner">
               <div id="OwnedBooks">
                 <!-- ADD HTML FOR OWNED BOOKS HERE -->
-                    <div class="ui grid">
+                    <div class="ui stackable grid">
                     <% if(@ownedBooks.present?) %>
                     <% @ownedBooks.each do |book| %>
                         <div class="four wide column">
@@ -100,7 +95,7 @@
               </div>
 
               <div id="Selling">
-                    <div class="ui grid">
+                    <div class="ui stackable grid">
                     <% if(@sellingBooks.present?) %>
                     <% @sellingBooks.each do |book| %>
                         <div class="four wide column">
@@ -132,7 +127,7 @@
                 </div>
 
                <div id="SoldBooks">
-                <div class="ui grid">
+                <div class="ui stackable grid">
                     <% if(@soldBooks.present?) %>
                     <% @soldBooks.each do |book| %>
                         <div class="four wide column">
@@ -163,8 +158,6 @@
                     <%= render "textbook_wishlist/index"%>
                 </div>
               </div>
-            </div>
-          </div>
         </div>
     </div>
   </div>

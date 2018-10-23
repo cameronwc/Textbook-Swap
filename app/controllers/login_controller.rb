@@ -1,5 +1,4 @@
 class LoginController < ApplicationController
-  #NEED TO MAKE TESTS FOR CREATE FUNCTION AND CHECK FUNCTION!!!!!!
     def create
         p params
         @user = Account.new(:name => params[:name], :email => params[:email], :password => params[:password], :password_confirmation => params[:password_confirmation])

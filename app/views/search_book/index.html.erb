@@ -8,14 +8,11 @@
                         Textbook Swap
                     </div>
                 </a>
-                <a href="/" class="active item">
-                    Home
-                </a>
                 <a href="/dashboard" class="item">
                     Dashboard
                 </a>
                 <a href="/add_book" class="item">
-                    Sell an item
+                    Add A Book
                 </a>
             </div>
           <div class="right menu">
@@ -34,21 +31,7 @@
     </div>
     </div>
 
-	<div align="center">
-		<div class="search_container">
-			<h2>Search for a textbook...</h2>
-			<form action="/search_book" method="POST" enctype="application/json">
-				<div class="ui fluid action input">
-					<input id="search_text" name="search_text" type="text" placeholder="ISBN, title, author"/>
-					<button type="submit" class="ui orange button">
-						search
-						&nbsp;
-						<i class="white search icon"></i>
-					</button>
-				</div>
-			</form>
-		</div>
-	</div>
+	<%=render "partials/search" %>
 
 	<br><br>
 	<div align="center">
