@@ -37,8 +37,8 @@ class DashboardController < ApplicationController
     else
       @LogInOrOut = "Logout, " + String(@current_user.name)
     end
-
     @current_user.books.where(:id => params['book_id']).update(:selling => true);
+    flash.alert = "Your book has been added to your selling list."
     redirect_to "/dashboard"
   end
 
@@ -49,7 +49,7 @@ class DashboardController < ApplicationController
       @LogInOrOut = "Logout, " + String(@current_user.name)
     end
     @books = @current_user.books.all()
-
+   flash.alert = "Your book has been deleted."
    @books.where(:id => params['book_id']).destroy(params['book_id'])
     redirect_to "/dashboard"
   end

@@ -30,7 +30,17 @@
       </div>
     </div>
   </div>
-
+  <% if flash[:alert] %>
+  <div class="ui container">
+      <div class="ui danger message">
+          <i class="close icon"></i>
+          <div class="header">
+              Notice
+          </div>
+          <p><%= flash[:alert] %></p>
+      </div>
+  </div>
+  <% end %>
   <div class="dashboard_container ui container">
     <div align="center">
       <h1 class="ui orange header">Dashboard</h1>
