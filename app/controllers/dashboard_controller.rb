@@ -42,13 +42,25 @@ class DashboardController < ApplicationController
     redirect_to "/dashboard"
   end
 
+  def destroy 
+    if !logged_in?
+      redirect_to "/login"
+    else
+      @LogInOrOut = "Logout, " + String(@current_user.name)
+    end
+    @books = @current_user.books.all()
+
+   @books.where(:id => params['book_id']).destroy(params['book_id'])
+    redirect_to "/dashboard"
+  end
+
+
   def sold
     if !logged_in?
       redirect_to "/login"
     else
       @LogInOrOut = "Logout, " + String(@current_user.name)
     end
-  
     @current_user.books.where(:id => params['book_id']).update(:sold => true, :selling => false);
     redirect_to "/dashboard"
   end
