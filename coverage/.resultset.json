@@ -1,7 +1,11 @@
 {
   "RSpec": {
     "coverage": {
+<<<<<<< HEAD
       "/home/jbutler/group5_fall2018/spec/models/search_book_test_spec.rb": [
+=======
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/spec/controllers/dashboard_controller_spec.rb": [
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
         1,
         null,
         1,
@@ -123,7 +127,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/jbutler/group5_fall2018/spec/rails_helper.rb": [
+=======
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/spec/rails_helper.rb": [
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
         null,
         1,
         1,
@@ -186,14 +194,22 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/jbutler/group5_fall2018/config/environment.rb": [
+=======
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/config/environment.rb": [
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
         null,
         1,
         null,
         null,
         1
       ],
+<<<<<<< HEAD
       "/home/jbutler/group5_fall2018/config/application.rb": [
+=======
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/config/application.rb": [
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
         1,
         null,
         1,
@@ -214,13 +230,21 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/jbutler/group5_fall2018/config/boot.rb": [
+=======
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/config/boot.rb": [
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
         1,
         null,
         1,
         1
       ],
+<<<<<<< HEAD
       "/home/jbutler/group5_fall2018/config/environments/test.rb": [
+=======
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/config/environments/test.rb": [
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
         1,
         null,
         null,
@@ -268,7 +292,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/jbutler/group5_fall2018/config/initializers/application_controller_renderer.rb": [
+=======
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/config/initializers/application_controller_renderer.rb": [
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
         null,
         null,
         null,
@@ -278,7 +306,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/jbutler/group5_fall2018/config/initializers/assets.rb": [
+=======
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/config/initializers/assets.rb": [
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
         null,
         null,
         null,
@@ -294,7 +326,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/jbutler/group5_fall2018/config/initializers/backtrace_silencers.rb": [
+=======
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/config/initializers/backtrace_silencers.rb": [
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
         null,
         null,
         null,
@@ -303,7 +339,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/jbutler/group5_fall2018/config/initializers/content_security_policy.rb": [
+=======
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/config/initializers/content_security_policy.rb": [
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
         null,
         null,
         null,
@@ -330,14 +370,22 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/jbutler/group5_fall2018/config/initializers/cookies_serializer.rb": [
+=======
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/config/initializers/cookies_serializer.rb": [
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
         null,
         null,
         null,
         null,
         1
       ],
+<<<<<<< HEAD
       "/home/jbutler/group5_fall2018/config/initializers/cors.rb": [
+=======
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/config/initializers/cors.rb": [
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
         null,
         null,
         null,
@@ -346,13 +394,21 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/jbutler/group5_fall2018/config/initializers/filter_parameter_logging.rb": [
+=======
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/config/initializers/filter_parameter_logging.rb": [
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
         null,
         null,
         null,
         1
       ],
+<<<<<<< HEAD
       "/home/jbutler/group5_fall2018/config/initializers/inflections.rb": [
+=======
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/config/initializers/inflections.rb": [
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
         null,
         null,
         null,
@@ -370,13 +426,21 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/jbutler/group5_fall2018/config/initializers/mime_types.rb": [
+=======
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/config/initializers/mime_types.rb": [
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
         null,
         null,
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/jbutler/group5_fall2018/config/initializers/wrap_parameters.rb": [
+=======
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/config/initializers/wrap_parameters.rb": [
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
         null,
         null,
         null,
@@ -392,7 +456,11 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/jbutler/group5_fall2018/config/routes.rb": [
+=======
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/config/routes.rb": [
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
         1,
         1,
         null,
@@ -431,6 +499,7 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/jbutler/group5_fall2018/app/helpers/add_book_helper.rb": [
         1,
         null
@@ -448,6 +517,25 @@
         null
       ],
       "/home/jbutler/group5_fall2018/app/helpers/login_helper.rb": [
+=======
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/app/helpers/add_book_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/app/helpers/dashboard_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/app/helpers/home_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/app/helpers/login_helper.rb": [
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
         1,
         1,
         0,
@@ -467,6 +555,7 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/jbutler/group5_fall2018/app/helpers/search_book_helper.rb": [
         1,
         null
@@ -480,37 +569,413 @@
         null
       ],
       "/home/jbutler/group5_fall2018/app/models/book.rb": [
+=======
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/app/helpers/search_book_helper.rb": [
         1,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/app/helpers/sessions_helper.rb": [
         1,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/app/helpers/textbook_wishlist_helper.rb": [
         1,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/app/controllers/dashboard_controller.rb": [
         1,
-        1,
-        1,
+        null,
         1,
         null,
         null,
+        1,
+        1,
+        0,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
+        1,
+        1,
+        1,
+        1,
+<<<<<<< HEAD
+        1,
+=======
+        2,
+        0,
+        null,
+        2,
+        null,
+        2,
+        2,
+        2,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
+        1,
+        1,
+        0,
+        null,
+        1,
+        null,
+<<<<<<< HEAD
+=======
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/app/controllers/application_controller.rb": [
+        1,
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
         null,
         1,
         12,
         7,
         null,
+<<<<<<< HEAD
+        5,
+=======
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/spec/controllers/login_controller_spec.rb": [
+        1,
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
+        null,
+        null,
+        null
+      ],
+<<<<<<< HEAD
+      "/home/jbutler/group5_fall2018/app/models/application_record.rb": [
+=======
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/app/controllers/login_controller.rb": [
+        1,
+        1,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
+        1,
+        1,
+        null
+      ],
+<<<<<<< HEAD
+      "/home/jbutler/group5_fall2018/app/models/account.rb": [
+=======
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/spec/controllers/search_book_controller_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        5,
+        5,
+        5,
+        5,
         5,
         null,
+        5,
+        5,
+        5,
+        5,
         null,
-        null
-      ],
-      "/home/jbutler/group5_fall2018/app/models/application_record.rb": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        null,
         1,
-        1,
-        null
-      ],
-      "/home/jbutler/group5_fall2018/app/models/account.rb": [
+        null,
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
         1,
         1,
         31,
         1,
         1,
         1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+<<<<<<< HEAD
+=======
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        0,
+        null,
+        0,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/app/controllers/search_book_controller.rb": [
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
+        1,
+        null,
+        null,
+        null,
+<<<<<<< HEAD
+=======
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/spec/controllers/textbook_wishlist_controller_spec.rb": [
+        1,
+        null,
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
+        1,
+        null,
+        null,
+        null,
+<<<<<<< HEAD
+        null
+      ]
+    },
+    "timestamp": 1540676055
+=======
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/app/controllers/textbook_wishlist_controller.rb": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        null,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/spec/helpers/dashboard_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/spec/helpers/login_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/spec/helpers/textbook_wishlist_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/spec/models/account_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        10,
+        null,
+        10,
+        10,
+        10,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/app/models/account.rb": [
+        1,
+        1,
+        45,
+        1,
+        1,
+        1,
         null,
         1,
         1,
@@ -524,8 +989,204 @@
         null,
         null,
         null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/spec/models/book_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        4,
+        4,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/app/models/book.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        4,
+        0,
+        null,
+        4,
+        null,
+        null,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/spec/models/search_book_test_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        11,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/spec/models/wishlist_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/app/models/wishlist.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/spec/views/dashboard/index.html.erb_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/spec/views/dashboard/new.html.erb_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/spec/views/textbook_wishlist/index.html.erb_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/Users/ericruacho/RubymineProjects/TryIteration3Again/group5_fall2018/spec/views/users/new.html.erb_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        null
       ]
     },
-    "timestamp": 1540676055
+    "timestamp": 1540675695
+>>>>>>> 0b3a39f416fb75d4a52791a06cfe335310f4039b
   }
 }
