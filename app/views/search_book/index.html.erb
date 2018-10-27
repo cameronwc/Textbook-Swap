@@ -1,37 +1,11 @@
 <div id="search_book">
     <div class="nav-stripe">
-    <div class="ui container">
-        <div class="ui secondary menu">
-            <div class="left menu">
-                <a href="/" class="item">
-                    <div class="nav-logo">
-                        Textbook Swap
-                    </div>
-                </a>
-                <a href="/dashboard" class="item">
-                    Dashboard
-                </a>
-                <a href="/add_book" class="item">
-                    Add A Book
-                </a>
-            </div>
-          <div class="right menu">
-            <a
-             <% if(@LogInOrOut != 'Login') %>
-             href="/logout" 
-             data-method="delete"
-             <% else %>
-             href="/login"
-             <% end %>
-             class="active item">
-              <%= @LogInOrOut || 'Login' %>
-            </a>
-          </div>
-        </div>
-    </div>
+	    <%= render "partials/navbar" %>
+	    <div class="ui container">
+		    <%=render "partials/search"%>
+	    </div>
     </div>
 
-	<%=render "partials/search" %>
 
 	<br><br>
 	<div align="center">
