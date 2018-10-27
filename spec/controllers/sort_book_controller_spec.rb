@@ -17,5 +17,13 @@ RSpec.describe SortBookController, type: :controller do
     @physics_book.save!
   end
 
+  describe "GET #index" do
 
+    it "returns http success" do
+      get :index
+      expect(response).to have_http_status(:success)
+    end
+
+  end
+  describe "Should filter by condition and return to new page with filtered results"
 end
