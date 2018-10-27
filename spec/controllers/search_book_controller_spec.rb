@@ -47,7 +47,7 @@ RSpec.describe SearchBookController, type: :controller do
 
       sorted_books = Book.sort_books(filter,books)
 
-      expect(Book).to receive(:sort_books).with('edition',books).and_return(sorted_books)
+      expect(Book).to receive(:sort_books).with(filter,books).and_return(sorted_books)
 
       post :index, params: total_search
 
@@ -63,7 +63,7 @@ RSpec.describe SearchBookController, type: :controller do
 
       sorted_books = Book.sort_books(filter,books)
 
-      expect(Book).to receive(:sort_books).with('edition',books).and_return(sorted_books)
+      expect(Book).to receive(:sort_books).with(filter,books).and_return(sorted_books)
 
       post :index, params: total_search
     end
@@ -77,7 +77,7 @@ RSpec.describe SearchBookController, type: :controller do
 
       sorted_books = Book.sort_books(filter,books)
 
-      expect(Book).to receive(:sort_books).with('edition',books).and_return(sorted_books)
+      expect(Book).to receive(:sort_books).with(filter,books).and_return(sorted_books)
 
       post :index, params: total_search
     end
