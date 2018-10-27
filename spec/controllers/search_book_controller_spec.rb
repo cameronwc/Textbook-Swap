@@ -24,12 +24,19 @@ RSpec.describe SearchBookController, type: :controller do
 
     it "calls method to assign search texts for university and book types" do
       text_hash = {"search_text" => 'physics',"search_university" => "uccs"}
-
       expect(Book).to receive(:find_books).with('physics','uccs').and_return([@physics_book])
-
       post :index, params: text_hash
-
     end
+
+    it "sorts books by edition" do
+    end
+
+    it "sorts books by condition" do
+    end
+
+    it "sorts books by price" do
+    end
+
   end
 
 end
