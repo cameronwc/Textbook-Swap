@@ -30,4 +30,12 @@ RSpec.describe TextbookWishlistController, type: :controller do
       expect(response).to have_http_status(302)
     end
   end
+
+  describe "GET #contact_info" do
+    it "returns http success" do
+      get :contact_info, params: {'book_id' => @grinch_book.id}
+      expect(response).to eq(@ppcc_user.id)
+    end
+
+  end
 end

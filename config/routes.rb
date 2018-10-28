@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'textbook_wishlist', to: 'textbook_wishlist#index'
   get 'textbook_wishlist/create', to: 'textbook_wishlist#create'
   get 'textbook_wishlist/destroy', to: 'textbook_wishlist#destroy'
+  get 'textbook_wishlist/contact_info', to: 'textbook_wishlist#contact_info'
 
   get 'dashboard/update', to: 'dashboard#update'
   get 'dashboard/sold', to: 'dashboard#sold'

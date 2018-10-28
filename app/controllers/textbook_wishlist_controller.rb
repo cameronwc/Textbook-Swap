@@ -12,4 +12,5 @@ class TextbookWishlistController < ApplicationController
     @wishlist[0].destroy
     redirect_to '/textbook_wishlist'
   end
+
 end
