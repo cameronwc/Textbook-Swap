@@ -54,7 +54,6 @@ class DashboardController < ApplicationController
     redirect_to "/dashboard"
   end
 
-
   def sold
     if !logged_in?
       redirect_to "/login"
@@ -64,4 +63,5 @@ class DashboardController < ApplicationController
     @current_user.books.where(:id => params['book_id']).update(:sold => true, :selling => false);
     redirect_to "/dashboard"
   end
+
 end
