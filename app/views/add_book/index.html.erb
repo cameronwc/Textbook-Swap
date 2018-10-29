@@ -49,7 +49,7 @@
         </div>
         <br>
         <% end %>
-
+          <div class="ui error message"></div>
             <div class="ui grid">
                 <div class="eight wide column">
                     <form action="/add_book" method="POST" class="ui form" enctype="application/json">
@@ -98,7 +98,7 @@
                             <!-- <a onclick="$('#image-upload').click();" class="ui medium yellow button">Upload Picture</a> -->
                         </div>
                         <div align="center">
-                            <button type="submit" class="ui large orange button">Sell Now</button>
+                            <button type="submit" class="ui large orange button", onclick="clearFields()">Sell Now</button>
                         </div>
                     </form>
                 </div>
@@ -199,4 +199,15 @@
             clearable: true
         })
         ;
+
+    $('.ui.form')
+        .form({
+            fields: {
+                name   : 'empty',
+                isbn   : ['minLength[9]', 'maxLength[13]', 'empty'],
+                price  : 'empty',
+                author : 'empty'
+            }
+        })
+    ;
 </script>

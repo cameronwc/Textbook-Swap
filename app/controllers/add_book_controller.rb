@@ -14,8 +14,9 @@ class AddBookController < ApplicationController
       if (@createdBook.valid?)
         @createdBook.save!
         @current_user.books << @createdBook
+        redirect_to "/dashboard"
       else
-        flash.alert = "Error please check your fields."
+        flash.alert = "Please check your fields."
         redirect_to "/add_book"
       end
     else
