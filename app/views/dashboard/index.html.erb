@@ -30,7 +30,17 @@
       </div>
     </div>
   </div>
-
+  <% if flash[:alert] %>
+  <div class="ui container">
+      <div class="ui danger message">
+          <i class="close icon"></i>
+          <div class="header">
+              Notice
+          </div>
+          <p><%= flash[:alert] %></p>
+      </div>
+  </div>
+  <% end %>
   <div class="dashboard_container ui container">
     <div align="center">
       <h1 class="ui orange header">Dashboard</h1>
@@ -82,8 +92,9 @@
                                         <br>
                                         <div align="center">
                                             <a class="ui basic small green button" href="/dashboard/update?book_id=<%= book.id %>">Sell</a>
-                                            <a class="ui basic small red button" href="/textbook_wishlist/destroy?book_id=<%= book.id %>&user_id=<%= @current_user %>">Remove</a>
-                                        </div>
+                                            <a class="ui basic small red button" href="/dashboard/destroy?book_id=<%= book.id %>&user_id=<%= @current_user.id %>">Remove</a>
+
+                                         </div>
                                     </div>
                                 </div>
                             </div>

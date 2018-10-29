@@ -8,9 +8,11 @@ Rails.application.routes.draw do
   get 'textbook_wishlist', to: 'textbook_wishlist#index'
   get 'textbook_wishlist/create', to: 'textbook_wishlist#create'
   get 'textbook_wishlist/destroy', to: 'textbook_wishlist#destroy'
+  get 'textbook_wishlist/contact_info', to: 'textbook_wishlist#contact_info'
 
   get 'dashboard/update', to: 'dashboard#update'
   get 'dashboard/sold', to: 'dashboard#sold'
+  get 'dashboard/destroy', to: 'dashboard#destroy'
   
   get 'sessions/new'
   get 'users/new'
@@ -29,6 +31,7 @@ Rails.application.routes.draw do
   delete 'logout',  to: 'login#destroy'
 
   get 'dashboard', to: 'dashboard#index'
+  post 'destroy', to: 'dashboard#destroy'
 
   resources :users
 
