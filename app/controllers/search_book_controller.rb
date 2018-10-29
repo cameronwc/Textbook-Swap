@@ -1,6 +1,5 @@
 class SearchBookController < ApplicationController
   def index
-
 	@found_books = Book.find_books(params["search_text"],params["search_university"])
 	text = params["search_text"]
 	university = params["search_university"]
