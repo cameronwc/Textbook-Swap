@@ -14,6 +14,10 @@ class TextbookWishlistController < ApplicationController
   end
 
   def contact_info
-
+    @contact_book = Book.where(:isbn => params['book_isbn'])
+    @seller = Account.where(:id => params['seller_id'])
+    p "-------seller---------"
+    p @seller
+    redirect_to '/dashboard'
   end
 end
