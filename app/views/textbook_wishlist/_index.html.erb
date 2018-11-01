@@ -19,8 +19,8 @@
                         <br>
                         <br>
                         <div align="center">
-                            <a class="ui basic small green button">Buy Now</a>
-                            <a class="ui basic small red button" href="/textbook_wishlist/destroy?book_id=<%= book.id %>&user_id=<%= @current_user.id %>">Remove</a>
+                        <a class="ui basic small green button" href="/textbook_wishlist/contact_info?book_isbn=<%=book.isbn %>&seller_id=<%=book.account_id %>&user_id=<%=@current_user.id %>">Contact Seller</a>
+                        <a class="ui basic small red button" href="/textbook_wishlist/destroy?book_id=<%= book.id %>&user_id=<%= @current_user.id %>">Remove</a>
                         </div>
                     </div>
                 </div>
