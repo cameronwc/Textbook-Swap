@@ -90,7 +90,7 @@
                         <label>Price</label>
                         <div class="field">
                             <div class="ui input">
-                                <input name="price" type="number" placeholder="$100.00">
+                                <input id="price" name="price" type="number" placeholder="$100.00">
                             </div>
                         </div>
                         <div class="field">
@@ -100,6 +100,7 @@
                         <div align="center">
                             <button type="submit" class="ui large orange button">Sell Now</button>
                         </div>
+                      <div class="ui error message"></div>
                     </form>
                 </div>
                 <div class="eight wide column" align="center">
@@ -158,11 +159,27 @@
             url: 'https://www.googleapis.com/books/v1/volumes?q=' + $('#isbn').val(),
             // data: $("#form").serialize(),
             success: function (response) {
-                response = JSON.parse(response)
-                var firstBookResp = response.items[0].volumeInfo
+                response = JSON.parse(response);
+                var firstBookResp = response.items[0].volumeInfo;
                 var title = firstBookResp.title;
                 var author = firstBookResp.authors[0];
                 var imagelink = firstBookResp.imageLinks.thumbnail;
+                try {
+                    var price = response.items[0].saleInfo.retailPrice.amount;
+                    $('#price').val(price);
+                } catch(error) {
+                    $.ajax({
+                        type: "get",
+                        dataType: "html",
+                        url: `add_book/similar?isbn=${$('#isbn').val()}&limit=1`,
+                        success: function(response) {
+                            response = JSON.parse(response);
+                            price = response[0].price;
+                            $('#price').val(price);
+
+                        }
+                    })
+                }
                 $('#title').val(title);
                 $('#author').val(author);
                 $('#thumbnail').attr('src', imagelink);
@@ -177,19 +194,19 @@
                 response = JSON.parse(response);
                 $('#related-title-1').text(response[0].title);
                 $('#related-price-1').text(`\$${response[0].price}`);
-                $('#related-link-1').attr('href',`/book/${response[0].id}`)
+                $('#related-link-1').attr('href',`/book/${response[0].id}`);
 
                 $('#related-title-2').text(response[1].title);
                 $('#related-price-2').text(`\$${response[1].price}`);
-                $('#related-link-2').attr('href',`/book/${response[1].id}`)
+                $('#related-link-2').attr('href',`/book/${response[1].id}`);
 
                 $('#related-title-3').text(response[2].title);
                 $('#related-price-3').text(`\$${response[2].price}`);
-                $('#related-link-3').attr('href',`/book/${response[2].id}`)
+                $('#related-link-3').attr('href',`/book/${response[2].id}`);
 
                 $('#related-title-4').text(response[3].title);
                 $('#related-price-4').text(`\$${response[3].price}`);
-                $('#related-link-4').attr('href',`/book/${response[3].id}`)
+                $('#related-link-4').attr('href',`/book/${response[3].id}`);
             }
         })
     });
@@ -199,4 +216,16 @@
             clearable: true
         })
         ;
+
+    $('.ui.form')
+        .form({
+            fields: {
+                title   : 'empty',
+                isbn    : ['minLength[9]', 'maxLength[13]', 'empty'],
+                price   : 'empty',
+                edition : 'empty',
+                author  : 'empty'
+            }
+        })
+    ;
 </script>
