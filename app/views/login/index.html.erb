@@ -46,10 +46,14 @@
             <h1 class="logo">Textbook Swap</h1>
         </div>
 
+
+
         <div class="login_container ui container">
             <div class="ui grid">
                 <div class="eight wide column">
-                    <form action="/create" class="ui large inverted form" method="post" enctype="application/json" >
+                    <form id="signup-form" action="/create" class="ui large inverted form" method="post" enctype="application/json" >
+                        
+            <div class="ui error message"></div>
                         <div class="ui stacked inverted segment">
                     <h3>Create an Account</h3>
                             <div class="field">
@@ -88,7 +92,9 @@
                 </div>
 
                 <div class="eight wide column">
-                    <form action="/check" class="ui large inverted form" method="post" enctype="application/json" >
+                    <form id="login-form" action="/check" class="ui large inverted form" method="post" enctype="application/json" >
+                        
+                        <div class="ui error message"></div>
                         <div class="ui stacked inverted segment">
                             <h3>Login</h3>
                             <div class="field">
@@ -118,3 +124,27 @@
         </div>
     </div>
 </div>
+
+<script>
+    $('#signup-form')
+        .form({
+            fields: {
+                email   : 'empty',
+                password    : 'empty',
+                password_confirmation   : 'empty',
+                name : 'empty',
+                zip  : 'empty'
+            }
+        })
+    ;
+
+
+    $('#login-form')
+        .form({
+            fields: {
+                user_email   : 'empty',
+                user_password    : '',
+            }
+        })
+    ;
+</script>
