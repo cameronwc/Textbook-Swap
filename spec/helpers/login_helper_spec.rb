@@ -11,6 +11,16 @@ require 'rails_helper'
 #   end
 # end
 RSpec.describe LoginHelper, type: :helper do
+
+  describe "compare_ users" do
+    it "return true with users from the same university" do
+      @ppcc_user = Account.new(name: "ppcc user", email: "user@ppcc.edu",password: "foobar", password_confirmation: "foobar")
+      @uccs_user = Account.new(name: "uccs user", email: "user@uccs.edu",password: "foobar1", password_confirmation: "foobar1")
+      log_in(@ppcc_user)
+      current_user
+      expect(compare_users(@uccs_user)).to eq(false)
+
+
   pending "add some examples to (or delete) #{__FILE__}"
 end
 
