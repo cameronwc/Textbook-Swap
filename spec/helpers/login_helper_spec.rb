@@ -48,7 +48,7 @@ end
     end
     it "returns contact info if users are in the same university" do
       log_in(@uccs_user_1)
-      expect(contact_info_display(compare_users(@grinch_book.seller),@grinch_book.seller )).to eq("<a class=\"ui basic small red button\" href=\"mailto:user@uccs.edu\">Email Seller: user@uccs.edu</a>")
+      expect(contact_info_display(compare_users(@grinch_book.seller),@grinch_book.seller )).to eq("<a class=\"ui basic small green button\" href=\"mailto:user@uccs.edu\">Email Seller: user@uccs.edu</a>")
     end
   end
 end
