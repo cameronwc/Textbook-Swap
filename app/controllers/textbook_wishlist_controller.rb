@@ -10,7 +10,7 @@ class TextbookWishlistController < ApplicationController
   def destroy
     @wishlist = Wishlist.where(:user_id => params['user_id'], :book_id => params['book_id'])
     @wishlist[0].destroy
-    redirect_to '/textbook_wishlist'
+    redirect_to '/dashboard'
   end
 
   def contact_info
