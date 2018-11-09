@@ -33,7 +33,7 @@ module LoginHelper
     end
   end
   def contact_info_display(compare, book_seller)
-    format1="<a class='ui basic small red button' href='mailto:#{book_seller.email}'>Email Seller: #{book_seller.email}</a>"
+    format1="<a class='ui basic small green button' href='mailto:#{book_seller.email}'>Email Seller: #{book_seller.email}</a>"
     format2='<p>Not same university - no contact info displayed</p>'
     format3='<a href="/Login">Please login to view email</a>'
 
