@@ -32,20 +32,17 @@ module LoginHelper
       return false
     end
   end
-  def contact_info_display(compare)
-    format1="<a class='ui basic small red button' href='mailto: #{book.seller.email}'>Email Seller: <%=book.seller.email%></a>"
+  def contact_info_display(compare, book_seller)
+    format1="<a class='ui basic small red button' href='mailto:#{book_seller.email}'>Email Seller: #{book_seller.email}</a>"
     format2='<p>Not same university - no contact info displayed</p>'
     format3='<a href="/Login">Please login to view email</a>'
 
     if logged_in? && compare
-      return format1
-      #return Sanitize.fragment(format1, Sanitize::Config::RELAXED)
+      return Sanitize.fragment(format1, Sanitize::Config::RELAXED)
     elsif logged_in? && !compare
-      return format2
-      #return Sanitize.fragment(format2, Sanitize::Config::RELAXED)
+      return Sanitize.fragment(format2, Sanitize::Config::RELAXED)
     else
-      return format3
-      #return Sanitize.fragment(format3, Sanitize::Config::RELAXED)
+      return Sanitize.fragment(format3, Sanitize::Config::RELAXED)
     end
   end
 
