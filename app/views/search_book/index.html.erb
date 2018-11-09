@@ -32,7 +32,7 @@
 								<p><%= "Price: $"+book.price.to_s %></p>
 								<!-- Add ERB to only show contact info if users info matches-->
 								<p><%= "Seller: "+book.seller.name %></p>
-							  <%= contact_info_display(compare_users(book.seller))%>
+							  <%= contact_info_display(compare_users(book.seller)).html_safe%>
 
 
             </div>
