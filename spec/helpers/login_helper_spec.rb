@@ -10,15 +10,27 @@ require 'rails_helper'
 #     end
 #   end
 # end
-RSpec.describe LoginHelper, type: :helper do
 
+
+RSpec.describe LoginHelper, type: :helper do
+before(:each) do
+  @ppcc_user = Account.new(name: "ppcc user", email: "user@ppcc.edu",password: "foobar", password_confirmation: "foobar")
+  @uccs_user = Account.new(name: "uccs user", email: "user@uccs.edu",password: "foobar1", password_confirmation: "foobar1")
+  @uccs_user_1 = Account.new(name: "uccs user 1", email: "user1@uccs.edu",password: "foobar", password_confirmation: "foobar")
+  @uccs_user_2 = Account.new(name: "uccs user 2", email: "user2@uccs.edu",password: "foobar1", password_confirmation: "foobar1")
+  @ppcc_user.save!
+  @uccs_user.save!
+  @uccs_user_1.save!
+  @uccs_user_2.save!
+end
   describe "compare_ users" do
-    it "return false with users from the different university" do
-      @ppcc_user = Account.new(name: "ppcc user", email: "user@ppcc.edu",password: "foobar", password_confirmation: "foobar")
-      @uccs_user = Account.new(name: "uccs user", email: "user@uccs.edu",password: "foobar1", password_confirmation: "foobar1")
+    it "return false with users from a different university" do
       log_in(@ppcc_user)
-      current_user
       expect(compare_users(@uccs_user)).to eq(false)
+    end
+    it "return true with users from the same university" do
+      log_in(@uccs_user)
+      expect(compare_users(@uccs_user_2)).to eq(true)
     end
   end
 end
