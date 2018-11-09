@@ -17,10 +17,19 @@
                         <br>
                         <%= "Price: $#{book.price}" %>
                         <br>
+<<<<<<< HEAD
                         <br>
                         <div align="center">
                             <a class="ui basic small green button" href="/textbook_wishlist/contact_info?book_isbn=<%=book.isbn %>&seller_id=<%=book.account_id %>&user_id=<%=@current_user.id %>">Contact Seller</a>
                             <a class="ui basic small red button" href="/textbook_wishlist/destroy?book_id=<%= book.id %>&user_id=<%= @current_user.id %>">Remove</a>
+=======
+
+                        <p><%= "Seller: "+book.seller.name %></p>
+                        <%= contact_info_display(compare_users(book.seller))%>
+                          <!--<a href="mailto:<%= book.seller.email %>">Email Seller: <%=book.seller.email %></a>-->
+                          <div align="center">
+                          <a class="ui basic small red button" href="/textbook_wishlist/destroy?book_id=<%= book.id %>&user_id=<%= @current_user.id %>">Remove</a>
+>>>>>>> c6617b368b127985b50828b7290febe5f5ad00e1
                         </div>
                     </div>
                 </div>
