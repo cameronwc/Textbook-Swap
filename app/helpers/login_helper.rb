@@ -19,9 +19,12 @@ module LoginHelper
   end
   def compare_users(book_seller)
     @current_user = current_user
-    seller_domain = book_seller.email[/(?<=@)[^.]+(?=\.)/,1]
+    p @current_user
+    seller_domain = book_seller.email[/(?<=@)[^.]+(?=\.)/].to_s.downcase
+    p seller_domain
     if !@current_user.nil?
-    buyer_domain = @current_user.email[/(?<=@)[^.]+(?=\.)/,1]
+    buyer_domain = @current_user.email[/(?<=@)[^.]+(?=\.)/].to_s.downcase
+    p buyer_domain
     end
     if seller_domain == buyer_domain
       return true
@@ -30,9 +33,9 @@ module LoginHelper
     end
   end
   def contact_info_display(compare)
-    format1='<a href=\"mailto:<%= book.seller.email%>\">Email Seller: <%=book.seller.email%></a>'
+    format1='<a class="ui basic small red button" href="mailto:<%= book.seller.email%>">Email Seller: <%=book.seller.email%></a>'
     format2='<p>Not same university - no contact info displayed</p>'
-    format3='<a href=\"/Login\">Please login to view email</a>'
+    format3='<a href="/Login">Please login to view email</a>'
 
     if logged_in? && compare
       return Sanitize.fragment(format1, Sanitize::Config::RELAXED)
