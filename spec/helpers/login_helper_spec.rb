@@ -50,6 +50,10 @@ end
       log_in(@uccs_user_1)
       expect(contact_info_display(compare_users(@grinch_book.seller),@grinch_book.seller )).to eq("<a class=\"ui basic small green button\" href=\"mailto:user@uccs.edu\">Email Seller: user@uccs.edu</a>")
     end
+
+    it "returns no contact info if the users is not logged in" do
+      expect(contact_info_display(compare_users(@grinch_book.seller),@grinch_book.seller )).to eq('<a href="/Login">Please login to view email</a>')
+    end
   end
 end
 
