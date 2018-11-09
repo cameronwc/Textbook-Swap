@@ -17,13 +17,14 @@
                         <br>
                         <%= "Price: $#{book.price}" %>
                         <br>
+
                         <p><%= "Seller: "+book.seller.name %></p>
-                        <br>
-                        <a href=<%= book.seller.email %>>Email Seller</a>
-                        <br>
-                        <div align="center">
-                        <a class="ui basic small green button" href="/textbook_wishlist/contact_info?book_isbn=<%=book.isbn %>&seller_id=<%=book.account_id %>&user_id=<%=@current_user.id %>">Contact Seller</a>
-                        <a class="ui basic small red button" href="/textbook_wishlist/destroy?book_id=<%= book.id %>&user_id=<%= @current_user.id %>">Remove</a>
+                          <!--<a href="mailto:<%= book.seller.email %>">Email Seller: <%=book.seller.email %></a>-->
+                          <div align="center">
+                          <!--<a class="ui basic small green button" href="/textbook_wishlist/contact_info?book_isbn=<%=book.isbn %>&seller_id=<%=book.account_id %>&user_id=<%=@current_user.id %>">Contact Seller</a>-->
+                           <!-- <a class="ui basic small green button" href="mailto:<%= book.seller.email %>">Email Seller: <%=book.seller.email%></a>-->
+                           <%= contact_info_display(book.seller)%>
+                          <a class="ui basic small red button" href="/textbook_wishlist/destroy?book_id=<%= book.id %>&user_id=<%= @current_user.id %>">Remove</a>
                         </div>
                     </div>
                 </div>
