@@ -27,13 +27,13 @@ class Book < ApplicationRecord
             fair_books = Array.new
             poor_books = Array.new
             books.each do |x|
-                if x.condition == "New"
+                if x.condition.downcase == "new"
                     new_books.push(x)
-                elsif x.condition == "Good"
+                elsif x.condition.downcase == "good"
                     good_books.push(x)
-                elsif x.condition == "Fair"
+                elsif x.condition.downcase == "fair"
                     fair_books.push(x)
-                elsif x.condition == "Poor"
+                elsif x.condition.downcase == "poor"
                     poor_books.push(x)
                 end
             end
@@ -42,14 +42,18 @@ class Book < ApplicationRecord
 
         elsif filter == "edition"
             books.each do |x|
-                x.edition = (/\d+/).match(x.edition).captures
+                capture = /(\d+)/.match(x.edition).captures
+                p capture
+                p "yay"
+                x.edition = capture
             end
-            sorted_books = books.sort{|x,y| y.edition <=> x.edition}
+            sorted_books = books.sort! {|x,y| y.edition <=> x.edition}
+            p sorted_books
             return sorted_books
 
         elsif filter == "price"
-            sorted_books = books.sort{|x, y| x.price <=> y.price}
-            return sorted_books
+            books.sort! {|x, y| x.price <=> y.price}
+            return books
 
         else
             return books

@@ -63,7 +63,7 @@ RSpec.describe SearchBookController, type: :controller do
 
       sorted_books = Book.sort_books(filter,books)
 
-      expect(Book).to receive(:sort_books).with(filter,books).and_return(sorted_books)
+      expect(Book).to receive(:sort_books).with(filter,books).and_return([@physics_book])
 
       post :index, params: total_search
     end
@@ -73,7 +73,7 @@ RSpec.describe SearchBookController, type: :controller do
 
       books = Book.find_books('physics', 'uccs')
 
-      total_search = {"filter_choice" => filter, "books_hash" => books}
+      total_search = {"sort_filter" => filter, "books_hash" => books}
 
       sorted_books = Book.sort_books(filter,books)
 
