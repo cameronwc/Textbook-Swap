@@ -31,7 +31,7 @@ class SearchBookController < ApplicationController
 	  end	  
 
 	  #Sort books if sort filter has been specified.
-	  if(@filter != "None")
+	  if(!@filter.nil?)
 		  @found_books = Book.sort_books(filter, @found_books)
 	  end
   end
