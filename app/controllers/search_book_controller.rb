@@ -23,16 +23,16 @@ class SearchBookController < ApplicationController
 	
 	  @message = "#{@found_num} books were found"
 
-	  if(@text != "")
+	  if(!@text.nil? && @text != "")
 		  @message = "#{@message} for search '#{@text}'"
 	  end
-	  if(@university != "")
+	  if(!@university.nil? && @university != "")
 		  @message = "#{@message} at university '#{@university}'"
 	  end	  
 
 	  #Sort books if sort filter has been specified.
-	  if(!@filter.nil?)
-		  @found_books = Book.sort_books(filter, @found_books)
+	  if(!@filter.nil? || @filter != "")
+		  @found_books = Book.sort_books(@filter, @found_books)
 	  end
   end
 end
