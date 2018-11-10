@@ -19,8 +19,8 @@ class Book < ApplicationRecord
 
     def self.sort_books(filter, books)
 
-
-        if filter == "Condition"
+        filter = filter.downcase
+        if filter == "condition"
             #new , good, fair , poor
             new_books = Array.new
             good_books = Array.new
@@ -40,15 +40,15 @@ class Book < ApplicationRecord
             sorted_books = new_books.append(good_books).append(fair_books).append(poor_books).flatten!
             return sorted_books
 
-        elsif filter == "Edition"
+        elsif filter == "edition"
             books.each do |x|
                 x.edition = (/\d+/).match(x.edition).captures
             end
-            sorted_books = books.sort!{|x,y| y.edition <=> x.edition}
+            sorted_books = books.sort{|x,y| y.edition <=> x.edition}
             return sorted_books
 
-        elsif filter == "Price"
-            sorted_books = books.sort! {|x, y| x.price <=> y.price}
+        elsif filter == "price"
+            sorted_books = books.sort{|x, y| x.price <=> y.price}
             return sorted_books
 
         else

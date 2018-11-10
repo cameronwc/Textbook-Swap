@@ -43,7 +43,7 @@ RSpec.describe SearchBookController, type: :controller do
       filter = 'edition'
       books = Book.find_books('physics', 'uccs')
 
-      total_search = {"filter_choice" => filter, "books_hash" => books}
+      total_search = {"filter_choice" => 'edition', "books_hash" => books}
 
       sorted_books = Book.sort_books(filter,books)
 
