@@ -6,8 +6,8 @@ RSpec.describe Book, type: :model do
   before(:each) do
     @ppcc_user = Account.new(name: "ppcc user", email: "user@ppcc.edu",password: "foobar", password_confirmation: "foobar")
     @uccs_user = Account.new(name: "uccs user", email: "user@uccs.edu",password: "foobar1", password_confirmation: "foobar1")
-    @grinch_book = Book.new(isbn: "1665544332211", title: "Grinch Stole Christmas", edition: "12th", condition: "new", price: 150, author: "Seuss", selling: true)
-    @physics_book = Book.new(isbn: "1234567891234", title: "University Physics", edition: "11th", condition: "fair", price: 100, author: "Milazzo", selling: true)
+    @grinch_book = Book.new(isbn: "1665544332211", title: "Grinch Stole Christmas", edition: "2nd", condition: "new", price: 150, author: "Seuss", selling: true)
+    @physics_book = Book.new(isbn: "1234567891234", title: "University Physics", edition: "4th", condition: "fair", price: 100, author: "Milazzo", selling: true)
     @ppcc_user.books << @grinch_book
     @grinch_book.seller = @ppcc_user
     @ppcc_user.save!
@@ -92,11 +92,11 @@ RSpec.describe Book, type: :model do
  	it 'should sort by edition' do
 		book1 = double(:edition => "12th")
 		book2 = double(:edition => "10th")
-		#found_books = [book2,book1]
-    found_books = [@physics_book,@grinch_book]
+		found_books = [book1, book2]
+    #found_books = [@physics_book,@grinch_book]
 		sorted_books = Book.sort_books("edition", found_books)
-		#expect(sorted_books).to eq [book1, book2]
-    expect(sorted_books).to eq [@grinch_book,@physics_book]
+		expect(sorted_books).to eq [book1, book2]
+    #expect(sorted_books).to eq [@grinch_book,@physics_book]
 	end
 
 	it 'should sort by condition' do

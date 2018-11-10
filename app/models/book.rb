@@ -41,13 +41,16 @@ class Book < ApplicationRecord
             return sorted_books
 
         elsif filter == "edition"
-            books.each do |x|
-                capture = /(\d+)/.match(x.edition).captures
-                p capture
-                p "yay"
-                x.edition = capture
-            end
-            sorted_books = books.sort! {|x,y| y.edition <=> x.edition}
+           # books.each do |x|
+           #     capture = /(\d+)/.match(x.edition).captures
+           #     p capture
+           #     p "yay"
+           #     x.edition = capture
+            #end
+            #sorted_books = books.sort! {|x,y| y.edition <=> x.edition}
+            #p sorted_books
+            #reverse because it does it in descending order by this sort
+            sorted_books = books.sort_by {|book| book.edition.gsub(/\D/,'')}.reverse!
             p sorted_books
             return sorted_books
 
