@@ -12,7 +12,14 @@
 		<div class="results-banner">
 			<h3><%= @message %>
 				<div align="right">
-					<button class="ui red button">Proceed to Checkout</button>
+					<p>Sort By... 
+					<select name="sort_filter" onchange="search_form.submit()">
+						<option value="None">None</option>
+						<option value="Edition">Edition</option>
+						<option value="Condition">Condition</option>
+						<option value="Price">Price</option>
+					</select>
+					</p>
 				</div>
 			</h3>
 	    	</div>
@@ -40,10 +47,6 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio impedit minus voluptas praesentium dignissimos, voluptatem repellat quo nulla hic dicta aliquam voluptates est aperiam enim omnis consequuntur repellendus quos? Saepe!
                 </p>
-                <div align="right">
-                    <button class="ui orange button">Add to Cart</button>
-                    <button class="ui orange button">Request Swap</button>
-                </div>
             </div>
         </div>
     </div>
