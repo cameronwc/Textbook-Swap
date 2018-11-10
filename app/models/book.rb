@@ -15,4 +15,9 @@ class Book < ApplicationRecord
             return Book.joins(:seller).where("(LOWER(title) like LOWER('%#{text}%') OR LOWER(author) like LOWER('%#{text}%') OR isbn='#{text}') AND (LOWER(email) like LOWER('%@#{university}.edu')) AND selling=true AND sold=false")
         end
     end
+
+
+    def self.sort_books(filter, books)
+    	
+    end
 end
