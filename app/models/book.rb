@@ -18,6 +18,41 @@ class Book < ApplicationRecord
 
 
     def self.sort_books(filter, books)
-    	
+
+
+        if filter == "Condition"
+            #new , good, fair , poor
+            new_books = Array.new
+            good_books = Array.new
+            fair_books = Array.new
+            poor_books = Array.new
+            books.each do |x|
+                if x.condition == "New"
+                    new_books.push(x)
+                elsif x.condition == "Good"
+                    good_books.push(x)
+                elsif x.condition == "Fair"
+                    fair_books.push(x)
+                elsif x.condition == "Poor"
+                    poor_books.push(x)
+                end
+            end
+            sorted_books = new_books.append(good_books).append(fair_books).append(poor_books).flatten!
+            return sorted_books
+
+        elsif filter == "Edition"
+            books.each do |x|
+                x.edition = (/\d+/).match(x.edition).captures
+            end
+            sorted_books = books.sort!{|x,y| y.edition <=> x.edition}
+            return sorted_books
+
+        elsif filter == "Price"
+            sorted_books = books.sort! {|x, y| x.price <=> y.price}
+            return sorted_books
+
+        else
+            return books
+        end
     end
 end
