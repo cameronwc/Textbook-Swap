@@ -10,9 +10,9 @@ class Book < ApplicationRecord
 
     def self.find_books (text, university)
         if(university == "")
-            return Book.where("(LOWER(title) like LOWER('%#{text}%') OR LOWER(author) like LOWER('%#{text}%') OR isbn='#{text}') AND selling=true AND sold=false")
+		return Book.where("(LOWER(title) like LOWER('%#{text}%') OR LOWER(author) like LOWER('%#{text}%') OR isbn='#{text}') AND selling=true AND sold=false").to_a
         else
-            return Book.joins(:seller).where("(LOWER(title) like LOWER('%#{text}%') OR LOWER(author) like LOWER('%#{text}%') OR isbn='#{text}') AND (LOWER(email) like LOWER('%@#{university}.edu')) AND selling=true AND sold=false")
+		return Book.joins(:seller).where("(LOWER(title) like LOWER('%#{text}%') OR LOWER(author) like LOWER('%#{text}%') OR isbn='#{text}') AND (LOWER(email) like LOWER('%@#{university}.edu')) AND selling=true AND sold=false").to_a
         end
     end
 
@@ -41,22 +41,12 @@ class Book < ApplicationRecord
             return sorted_books
 
         elsif filter == "edition"
-           # books.each do |x|
-           #     capture = /(\d+)/.match(x.edition).captures
-           #     p capture
-           #     p "yay"
-           #     x.edition = capture
-            #end
-            #sorted_books = books.sort! {|x,y| y.edition <=> x.edition}
-            #p sorted_books
-            #reverse because it does it in descending order by this sort
             sorted_books = books.sort_by {|book| book.edition.gsub(/\D/,'')}.reverse!
-            p sorted_books
             return sorted_books
 
         elsif filter == "price"
-            books.sort! {|x, y| x.price <=> y.price}
-            return books
+            sorted_books = books.sort {|x, y| x.price <=> y.price}
+            return sorted_books
 
         else
             return books

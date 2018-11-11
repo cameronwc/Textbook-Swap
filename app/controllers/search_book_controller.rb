@@ -15,7 +15,7 @@ class SearchBookController < ApplicationController
 	@found_books = Book.find_books(params["search_text"],params["search_university"])
 	@filter = params["sort_filter"]
 
-	if(@found_books.nil?)
+	if(@found_books.nil? || @found_books == [])
 		@found_num = 0
 	else
 		@found_num = @found_books.length
@@ -31,7 +31,7 @@ class SearchBookController < ApplicationController
 	  end	  
 
 	  #Sort books if sort filter has been specified.
-	  if(!@filter.nil? || @filter != "")
+	  if(!@filter.nil? && @filter != "")
 		  @found_books = Book.sort_books(@filter, @found_books)
 	  end
   end

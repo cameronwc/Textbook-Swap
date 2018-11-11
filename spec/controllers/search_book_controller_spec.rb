@@ -38,17 +38,11 @@ RSpec.describe SearchBookController, type: :controller do
   describe "Sorts books and sends to correct page" do
 
     it "sorts books by edition" do
-
-      #sort_books is function that will be implemented in next iteration in the Book model
-      filter = 'edition'
+      filter = "edition"
       books = Book.find_books('physics', 'uccs')
-
-      total_search = {"filter_choice" => 'edition', "books_hash" => books}
-
-      sorted_books = Book.sort_books(filter,books)
-
+      sorted_books = Book.sort_books(filter, books)
+      total_search = {"sort_filter" => filter, "search_text"=>'physics', "search_university"=>'uccs'}
       expect(Book).to receive(:sort_books).with(filter,books).and_return(sorted_books)
-
       post :index, params: total_search
 
 
@@ -56,29 +50,19 @@ RSpec.describe SearchBookController, type: :controller do
 
     it "sorts books by condition" do
       filter = 'condition'
-
       books = Book.find_books('physics', 'uccs')
-
-      total_search = {"filter_choice" => filter, "books_hash" => books}
-
+      total_search = {"sort_filter" => filter, "search_text"=>'physics', "search_university"=>"uccs"}
       sorted_books = Book.sort_books(filter,books)
-
-      expect(Book).to receive(:sort_books).with(filter,books).and_return([@physics_book])
-
+      expect(Book).to receive(:sort_books).with(filter,books).and_return(sorted_books)
       post :index, params: total_search
     end
 
     it "sorts books by price" do
       filter = 'price'
-
       books = Book.find_books('physics', 'uccs')
-
-      total_search = {"sort_filter" => filter, "books_hash" => books}
-
+      total_search = {"sort_filter" => filter, "search_text"=>"physics", "search_university"=>"uccs"}
       sorted_books = Book.sort_books(filter,books)
-
       expect(Book).to receive(:sort_books).with(filter,books).and_return(sorted_books)
-
       post :index, params: total_search
     end
   end
