@@ -35,6 +35,8 @@ gem 'jquery-rails'
 gem 'bootstrap'
 
 gem 'simplecov', require: false, group: :test
+gem 'flog'
+gem 'metric_fu-Saikuro'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
