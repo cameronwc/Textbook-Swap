@@ -43,19 +43,12 @@
                     <% end %>
                 </h4>
                 <p><%= "ISBN: "+book.isbn %></p>
-<<<<<<< HEAD
-		<p><%= "Price: $"+book.price.to_s %></p>
-		<p><%= "Condition: "+book.condition %></p>
-		<p><%= "Seller: "+book.seller.name %></p>
-		<p><%= "Contact: "+book.seller.email %></p>
-=======
 								<p><%= "Price: $"+book.price.to_s %></p>
 								<!-- Add ERB to only show contact info if users info matches-->
 								<p><%= "Seller: "+book.seller.name %></p>
 								<%= contact_info_display(compare_users(book.seller),book.seller).html_safe%>
 
 
->>>>>>> SJContact
             </div>
             <div class="ten wide column">
                 <p>
