@@ -1,7 +1,5 @@
 class SearchBookController < ApplicationController
   def index
-<<<<<<< HEAD
-=======
 
 	  #Get text and university fields from either params or session
 	if(params["search_text"] == "" && params["search_university"] == "")
@@ -14,7 +12,6 @@ class SearchBookController < ApplicationController
 		session["search_university"] = @university
 	end
 	
->>>>>>> sort
 	@found_books = Book.find_books(params["search_text"],params["search_university"])
 	@filter = params["sort_filter"]
 
