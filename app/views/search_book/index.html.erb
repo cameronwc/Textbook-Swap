@@ -1,5 +1,6 @@
 <div id="search_book">
-    <div class="nav-stripe">
+   <form action="/search_book" method="POST" name="search_form" class="ui form">	
+   <div class="nav-stripe">
 	    <%= render "partials/navbar" %>
 	    <div class="ui container">
 		    <%=render "partials/search"%>
@@ -11,11 +12,27 @@
 	<div align="center">
 		<div class="results-banner">
 			<h3><%= @message %>
+<<<<<<< HEAD
+=======
+				<div align="right">
+					<select name="sort_filter" style="width:25%" onchange="search_form.submit()">
+						<% if @filter.nil? %>
+							<option value="" selected disabled hidden> Sort By...</option>
+						<% else %>
+							<option value="" selected disabled hidden><%=@filter%></option>
+						<% end %>
+						<option value="None">None</option>
+						<option value="Edition">Edition</option>
+						<option value="Condition">Condition</option>
+						<option value="Price">Price</option>
+					</select>
+				</div>
+>>>>>>> sort
 			</h3>
 	    	</div>
 		<br>
    	</div>
-
+   </form>
     <div class="ui container">
     <% @found_books.each do |book| %>
     <br>
@@ -30,6 +47,7 @@
                 </h4>
                 <p><%= "ISBN: "+book.isbn %></p>
 		<p><%= "Price: $"+book.price.to_s %></p>
+		<p><%= "Condition: "+book.condition %></p>
 		<p><%= "Seller: "+book.seller.name %></p>
 		<p><%= "Contact: "+book.seller.email %></p>
             </div>
