@@ -12,8 +12,6 @@
 	<div align="center">
 		<div class="results-banner">
 			<h3><%= @message %>
-<<<<<<< HEAD
-=======
 				<div align="right">
 					<select name="sort_filter" style="width:25%" onchange="search_form.submit()">
 						<% if @filter.nil? %>
@@ -27,7 +25,6 @@
 						<option value="Price">Price</option>
 					</select>
 				</div>
->>>>>>> sort
 			</h3>
 	    	</div>
 		<br>
@@ -46,10 +43,19 @@
                     <% end %>
                 </h4>
                 <p><%= "ISBN: "+book.isbn %></p>
+<<<<<<< HEAD
 		<p><%= "Price: $"+book.price.to_s %></p>
 		<p><%= "Condition: "+book.condition %></p>
 		<p><%= "Seller: "+book.seller.name %></p>
 		<p><%= "Contact: "+book.seller.email %></p>
+=======
+								<p><%= "Price: $"+book.price.to_s %></p>
+								<!-- Add ERB to only show contact info if users info matches-->
+								<p><%= "Seller: "+book.seller.name %></p>
+								<%= contact_info_display(compare_users(book.seller),book.seller).html_safe%>
+
+
+>>>>>>> SJContact
             </div>
             <div class="ten wide column">
                 <p>
