@@ -20,7 +20,6 @@ class AddBookController < ApplicationController
         redirect_to "/add_book"
       end
     else
-      p "please login"
       redirect_to "/login"
     end
   end
