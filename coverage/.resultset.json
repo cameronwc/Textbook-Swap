@@ -444,10 +444,6 @@
         1,
         null
       ],
-      "/home/cameron/Code/textbookswap/app/helpers/sessions_helper.rb": [
-        1,
-        null
-      ],
       "/home/cameron/Code/textbookswap/app/helpers/textbook_wishlist_helper.rb": [
         1,
         null
@@ -764,8 +760,6 @@
         null,
         1,
         null,
-        1,
-        1,
         1,
         1,
         1,
@@ -1250,6 +1244,6 @@
         null
       ]
     },
-    "timestamp": 1541971396
+    "timestamp": 1542391938
   }
 }
