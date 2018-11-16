@@ -13,7 +13,7 @@
 		<div class="results-banner">
 			<h3><%= @message %>
 				<div align="right">
-					<select name="sort_filter" style="width:25%" onchange="search_form.submit()">
+					<select class="ui dropdown" name="sort_filter" style="width:25%;" onchange="search_form.submit()">
 						<% if @filter.nil? %>
 							<option value="" selected disabled hidden> Sort By...</option>
 						<% else %>
