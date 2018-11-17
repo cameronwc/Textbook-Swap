@@ -32,23 +32,19 @@ before(:each) do
 end
   # Add more tests For all Login Functions
   describe "log_in" do
-    before do
-      params = {user_password: "foobar"}
-      post :log_in, params: params
-    end
-    it "logs a user in if they have the correct login information" do
-      log_in(@ppcc_user)
-      expect(response).to eq("/")
-    end
-    before do
-      #params = {user_password: "wrong"}
-      #post :log_in(@ppcc_user), params: params
-    end
-    it "does not log in a user if it does not authenticate" do
-      expect(response).to eq("/login")
-    end
+
   end
   describe "current_user" do
+    it "returns the id of the current logged in user" do
+      log_in(@ppcc_user)
+      expect(current_user.name).to eq("ppcc user")
+    end
+    it "returns null if no user is logged in" do
+      testUser = current_user
+      expect(testUser.nil?).to eq(true)
+    end
+  end
+  describe "" do
 
   end
   describe "logged_in?" do

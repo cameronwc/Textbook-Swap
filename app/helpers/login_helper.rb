@@ -4,7 +4,7 @@ module LoginHelper
   def log_in(user)
       session[:user_id] = user.id
   end
-  def input_compare(user, input)
+  def login_compare(user, input)
     if user.authenticate(input)
       log_in user
       @current_user = current_user
