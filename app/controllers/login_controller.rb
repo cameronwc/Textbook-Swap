@@ -1,13 +1,12 @@
 class LoginController < ApplicationController
     def create
-        p params
         @user = Account.new(:name => params[:name], :email => params[:email], :password => params[:password], :password_confirmation => params[:password_confirmation])
         # @user.account_id = @user.id
         if @user.valid?
-           flash.notice = "Succesfully created account and logged in."
-           @user.save
-           log_in @user
-           redirect_to "/"
+            flash.notice = "Succesfully created account and logged in."
+            @user.save
+            log_in @user
+            redirect_to "/"
         else
             flash.alert = "Error please check your username and password."
             redirect_to "/login"
@@ -21,8 +20,15 @@ class LoginController < ApplicationController
             flash.alert = "User does not exist please signup."
             redirect_to "/login"
         else
-            redirect = log_in user
-            redirect_to redirect
+            if user.authenticate(params[:user_password])
+                log_in user
+                @current_user = current_user
+                p "Correct Password"
+                redirect_to "/"
+            else
+                flash.alert = "Error please check your username and password."
+                redirect_to "/login"
+            end
         end
     end
 

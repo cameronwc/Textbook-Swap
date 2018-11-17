@@ -2,14 +2,7 @@ require 'sanitize'
 module LoginHelper
   #require 'sanitize'
   def log_in(user)
-    if user.authenticate(params[:user_password])
-      session[:user_id] = user.id   
-      p "Correct Password"
-      return "/"
-    else
-      flash.alert = "Error please check your username and password."
-      return "/login"
-    end
+      session[:user_id] = user.id
   end
   
   def current_user
