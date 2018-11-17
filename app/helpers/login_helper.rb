@@ -4,7 +4,16 @@ module LoginHelper
   def log_in(user)
       session[:user_id] = user.id
   end
-  
+  def input_compare(user, input)
+    if user.authenticate(input)
+      log_in user
+      @current_user = current_user
+      return "/"
+    else
+      flash.alert = "Error please check your username and password."
+      return "/login"
+    end
+  end
   def current_user
     if session[:user_id]
       @current_user ||= Account.find_by(id: session[:user_id])

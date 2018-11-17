@@ -1,4 +1,5 @@
 class LoginController < ApplicationController
+   #this function creates a new user in the database
     def create
         @user = Account.new(:name => params[:name], :email => params[:email], :password => params[:password], :password_confirmation => params[:password_confirmation])
         # @user.account_id = @user.id
@@ -12,23 +13,15 @@ class LoginController < ApplicationController
             redirect_to "/login"
         end
     end
-
+    #this function either logs in a user if their login info is correct and sends an error if it is not correct
     def check
-        # TODO(Add flash with loged in/logout message)
         user = Account.find_by(email: params[:user_email].downcase)
         if user.nil?
             flash.alert = "User does not exist please signup."
             redirect_to "/login"
         else
-            if user.authenticate(params[:user_password])
-                log_in user
-                @current_user = current_user
-                p "Correct Password"
-                redirect_to "/"
-            else
-                flash.alert = "Error please check your username and password."
-                redirect_to "/login"
-            end
+            redirect = input_compare(user,params[:user_password])
+            redirect_to redirect
         end
     end
 
