@@ -1,4 +1,5 @@
 class SearchBookController < ApplicationController
+
   def index
 
   	#Get text and university fields from either params or session
@@ -16,20 +17,10 @@ class SearchBookController < ApplicationController
 	@found_books = Book.find_books(text,university)
 	
 	#Get number of found books
-	if(@found_books.nil? || @found_books == [])
-		found_num = 0
-	else
-		found_num = @found_books.length
-	end
+	found_num = @found_books.length
 
 	#Initialize message to print in view
-	@message = "#{found_num} books were found"
-	if(!text.nil? && text != "")
-		@message = "#{@message} for search '#{text}'"
-	end
-	if(!university.nil? && university != "")
-		@message = "#{@message} at university '#{university}'"
-	end	  
+	@message = helpers.set_message(found_num, text, university)
 
 	#Sort books by filter
 	filter = params["sort_filter"]
@@ -37,4 +28,5 @@ class SearchBookController < ApplicationController
 		@found_books = Book.sort_books(filter, @found_books)
 	end
   end
+
 end
