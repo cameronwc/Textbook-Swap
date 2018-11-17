@@ -2,20 +2,32 @@ require 'rails_helper'
 
 RSpec.describe LoginController, type: :controller do
 
-    describe "create" do
-        it "creates account for user with proper credentials" do
-          let(:params) {
-              {name: "Test"}
-              {email: "testing@uccs.edu"}
-              {password: "password"}
-              {password_confirmation: "password"}
-          }
-          expect(compare_users(@uccs_user)).to eq(false)
-        end
-        it "return true with users from the same university" do
-          log_in(@uccs_user)
-          expect(compare_users(@uccs_user_2)).to eq(true)
-        end
-      end
+    describe "create account if user provides correct information" do
+            before  do
+                params = {name: "hello", email: "testing@uccs.edu", password: "password", password_confirmation: "password"}
+                post :create,  params: params
+            end
+            it { expect(response).to redirect_to('/') }
 
+    end
+
+    describe " do not create account if user provides incorrect information" do
+        before  do
+            params = {name: "hello", email: "testing@uccs.com", password: "password", password_confirmation: "password"}
+            post :create,  params: params
+        end
+        it { expect(response).to redirect_to('/login') }
+    end
+  describe "check login info against database" do
+    @ppcc_user = Account.new(name: "ppcc user", email: "testing@ppcc.edu",password: "foobar", password_confirmation: "foobar")
+    @ppcc_user.save!
+    before  do
+        params = {user_email: "user@ppcc.edu", user_password: "foobar"}
+        post :check,  params: params
+    end
+    it { expect(response).to redirect_to('/') }
+  end
+  describe "logout resets the session #destroy" do
+
+  end
 end
