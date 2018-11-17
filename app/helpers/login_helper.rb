@@ -4,7 +4,6 @@ module LoginHelper
   def log_in(user)
     if user.authenticate(params[:user_password])
       session[:user_id] = user.id   
-      @current_user = current_user
       p "Correct Password"
       return "/"
     else
