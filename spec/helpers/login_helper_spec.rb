@@ -28,8 +28,18 @@ before(:each) do
   @uccs_user_2.save!
   @grinch_book.save!
   @physics_book.save!
-  
+
 end
+  # Add more tests For all Login Functions
+  describe "log_in" do
+
+  end
+  describe "current_user" do
+
+  end
+  describe "logged_in?" do
+
+  end
   describe "compare_ users" do
     it "return false with users from a different university" do
       log_in(@ppcc_user)
