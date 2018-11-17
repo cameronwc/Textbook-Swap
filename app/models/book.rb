@@ -21,7 +21,25 @@ class Book < ApplicationRecord
     def self.sort_books(filter, books)
         filter = filter.downcase
         if filter == "condition"
+            # new_books = Array.new
+            # good_books = Array.new
+            # fair_books = Array.new
+            # poor_books = Array.new
+            # books.each do |book|
+            #     condition = book.condition.downcase
+            #     if condition == "new"
+            #         new_books.push(book)
+            #     elsif condition == "good"
+            #         good_books.push(book)
+            #     elsif condition == "fair"
+            #         fair_books.push(book)
+            #     elsif condition == "poor"
+            #         poor_books.push(book)
+            #     end
+            # end
+            #return new_books.append(good_books).append(fair_books).append(poor_books).flatten!
             return sorted_books = sort_by_condition(books)
+            #
         elsif filter == "edition"
             return sorted_books = books.sort_by {|book| book.edition.gsub(/\D/,'')}.reverse!
         elsif filter == "price"
@@ -32,17 +50,20 @@ class Book < ApplicationRecord
     end
 
     def self.sort_by_condition(books)
-        new_books = Array.new,good_books = Array.new,fair_books = Array.new,poor_books = Array.new
+        new_books = Array.new
+        good_books = Array.new
+        fair_books = Array.new
+        poor_books = Array.new
         books.each do |book|
             condition = book.condition.downcase
             if condition == "new"
-                new_books.push(x)
+                new_books.push(book)
             elsif condition == "good"
-                good_books.push(x)
+                good_books.push(book)
             elsif condition == "fair"
-                fair_books.push(x)
+                fair_books.push(book)
             elsif condition == "poor"
-                poor_books.push(x)
+                poor_books.push(book)
             end
         end
         return sorted_books = new_books.append(good_books).append(fair_books).append(poor_books).flatten!
