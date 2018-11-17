@@ -31,10 +31,4 @@ RSpec.describe TextbookWishlistController, type: :controller do
     end
   end
 
-  describe "GET #contact_info" do
-    it "display correct contact info" do
-      post :contact_info, params: {'book_id' => @grinch_book}
-      expect(response).to eq(@ppcc_user.id)
-    end
-  end
 end

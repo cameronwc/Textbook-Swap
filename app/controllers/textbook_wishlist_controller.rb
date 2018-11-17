@@ -13,11 +13,5 @@ class TextbookWishlistController < ApplicationController
     redirect_to '/dashboard'
   end
 
-  def contact_info
-    #not sure if this is useful
-    @contact_book = Book.where(:isbn => params['book_isbn'])
-    @seller = Account.where(:id => params['seller_id'])
-    redirect_to '/dashboard'
-  end
 
 end
