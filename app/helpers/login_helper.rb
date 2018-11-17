@@ -29,12 +29,9 @@ module LoginHelper
   end
   def compare_users(book_seller)
     @current_user = current_user
-    p @current_user
     seller_domain = book_seller.email[/(?<=@)[^.]+(?=\.)/].to_s.downcase
-    p seller_domain
     if !@current_user.nil?
     buyer_domain = @current_user.email[/(?<=@)[^.]+(?=\.)/].to_s.downcase
-    p buyer_domain
     end
     if seller_domain == buyer_domain
       return true

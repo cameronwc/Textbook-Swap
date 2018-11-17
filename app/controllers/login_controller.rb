@@ -1,3 +1,4 @@
+# The LoginController is responsible for account creation (create), user validation for login (check), and logout functionality (destroy)
 class LoginController < ApplicationController
    #this function creates a new user in the database
     def create
