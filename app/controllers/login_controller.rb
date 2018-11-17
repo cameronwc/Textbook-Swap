@@ -21,15 +21,8 @@ class LoginController < ApplicationController
             flash.alert = "User does not exist please signup."
             redirect_to "/login"
         else
-            if user.authenticate(params[:user_password])
-                log_in user
-                @current_user = current_user
-                p "Correct Password"
-                redirect_to "/"
-            else
-                flash.alert = "Error please check your username and password."
-                redirect_to "/login"
-            end
+            redirect = log_in user
+            redirect_to redirect
         end
     end
 
@@ -42,7 +35,7 @@ class LoginController < ApplicationController
     def index
         #@current_user = current_user
         if logged_in?
-            @LogInOrOut = "Logout, " + String(@current_user.name)
+            @LogInOrOut = "Logout, " + String(current_user.name)
         else
             p "login"
             @LogInOrOut = "Login"

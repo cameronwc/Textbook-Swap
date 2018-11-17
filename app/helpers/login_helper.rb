@@ -2,8 +2,17 @@ require 'sanitize'
 module LoginHelper
   #require 'sanitize'
   def log_in(user)
-    session[:user_id] = user.id
+    if user.authenticate(params[:user_password])
+      session[:user_id] = user.id   
+      @current_user = current_user
+      p "Correct Password"
+      return "/"
+    else
+      flash.alert = "Error please check your username and password."
+      return "/login"
+    end
   end
+  
   def current_user
     if session[:user_id]
       @current_user ||= Account.find_by(id: session[:user_id])
