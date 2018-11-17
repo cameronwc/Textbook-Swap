@@ -19,7 +19,6 @@ class Book < ApplicationRecord
 
 
     def self.sort_books(filter, books)
-
         filter = filter.downcase
         if filter == "condition"
             return sorted_books = sort_by_condition(books)
