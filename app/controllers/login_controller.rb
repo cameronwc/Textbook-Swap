@@ -20,7 +20,7 @@ class LoginController < ApplicationController
             flash.alert = "User does not exist please signup."
             redirect_to "/login"
         else
-            redirect = input_compare(user,params[:user_password])
+            redirect = login_compare(user,params[:user_password])
             redirect_to redirect
         end
     end
