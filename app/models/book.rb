@@ -31,7 +31,7 @@ class Book < ApplicationRecord
         end
     end
 
-    def sort_by_condition(books)
+    def self.sort_by_condition(books)
         new_books = Array.new,good_books = Array.new,fair_books = Array.new,poor_books = Array.new
         books.each do |book|
             condition = book.condition.downcase
