@@ -1,3 +1,4 @@
+#Helpers for the search book controller
 module SearchBookHelper
 
 	#Sets the message to print in the search view based on search parameters.
