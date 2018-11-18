@@ -59,30 +59,4 @@ module LoginHelper
       return Sanitize.fragment(dlogin, Sanitize::Config::RELAXED)
     end
   end
-
-  # def html_message(compare)
-  #   message1="Email Seller: <%=book.seller.email%>"
-  #   message2="Not same university - no contact info displayed"
-  #   message3="Login to view contact info"
-  #
-  #   if logged_in? && compare
-  #     return message1.sanitize
-  #   elsif logged_in? && !compare
-  #     return message2.sanitize
-  #   else
-  #     return message3.sanitize
-  #   end
-  #
-  # end
-  # def html_close_tag(compare)
-  #
-  #   close_tag1 ="a"
-  #   close_tag2 ="p"
-  #
-  #   if compare || !logged_in?
-  #     return close_tag1.sanitize
-  #   else
-  #     return close_tag2.sanitize
-  #   end
-  # end
 end
