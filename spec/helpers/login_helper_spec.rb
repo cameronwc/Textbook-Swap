@@ -28,8 +28,36 @@ before(:each) do
   @uccs_user_2.save!
   @grinch_book.save!
   @physics_book.save!
-  
+
 end
+  describe "current_user" do
+    it "returns the id of the current logged in user" do
+      log_in(@ppcc_user)
+      expect(current_user.name).to eq("ppcc user")
+    end
+    it "returns null if no user is logged in" do
+      testUser = current_user
+      expect(testUser.nil?).to eq(true)
+    end
+  end
+  describe "login_compare" do
+    it "returns / if the typed password and the actual password match" do
+      expect(login_compare(@ppcc_user,"foobar")).to eq("/")
+    end
+    it "returns /login if the typed password and the actual password don't match" do
+      expect(login_compare(@ppcc_user,"wrong")).to eq("/login")
+    end
+  end
+  describe "logged_in?" do
+    it "should return true when the user is logged in" do
+      log_in(@ppcc_user)
+      expect(logged_in?).to eq(true)
+    end
+    it "should return false when the user is not logged in" do
+      expect(logged_in?).to eq(false)
+    end
+
+  end
   describe "compare_ users" do
     it "return false with users from a different university" do
       log_in(@ppcc_user)
