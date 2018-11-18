@@ -2,12 +2,12 @@
 class LoginController < ApplicationController
    #this function creates a new user in the database
     def create
-        @user = Account.new(:name => params[:name], :email => params[:email], :password => params[:password], :password_confirmation => params[:password_confirmation])
+        user = Account.new(:name => params[:name], :email => params[:email], :password => params[:password], :password_confirmation => params[:password_confirmation])
         # @user.account_id = @user.id
-        if @user.valid?
+        if user.valid?
             flash.notice = "Succesfully created account and logged in."
-            @user.save
-            log_in @user
+            user.save
+            log_in user
             redirect_to "/"
         else
             flash.alert = "Error please check your username and password."
