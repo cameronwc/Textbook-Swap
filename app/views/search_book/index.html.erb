@@ -34,7 +34,10 @@
     <% @found_books.each do |book| %>
     <br>
     <div class="ui raised segment">
-        <div class="ui grid">
+        <div class="ui stackable grid">
+			<div class="four wide column">
+			<img class="ui image" src="<%= book.picture_path || "https://webstores.activenetwork.com/school-software/del_sol_high_schofaw/images/products/detail_516_del_sol_high_schofaw_textbooks.jpg" %>">
+			</div>
             <div class="six wide column">
                 <h4>
                     <%= book.title %>
@@ -50,7 +53,7 @@
 
 
             </div>
-            <div class="ten wide column">
+            <div class="six wide column">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio impedit minus voluptas praesentium dignissimos, voluptatem repellat quo nulla hic dicta aliquam voluptates est aperiam enim omnis consequuntur repellendus quos? Saepe!
                 </p>

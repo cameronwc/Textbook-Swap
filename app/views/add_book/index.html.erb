@@ -94,7 +94,7 @@
                             </div>
                         </div>
                         <div class="field">
-                            <input name="picture_path" type="file" id="image-upload" style="display: none">
+                            <input name="picture_path" type="text" id="picture_path" style="visibility: hidden; position: absolute;">
                             <!-- <a onclick="$('#image-upload').click();" class="ui medium yellow button">Upload Picture</a> -->
                         </div>
                         <div align="center">
@@ -183,6 +183,7 @@
                 $('#title').val(title);
                 $('#author').val(author);
                 $('#thumbnail').attr('src', imagelink);
+                $('#picture_path').val(imagelink);
             }
         });
 

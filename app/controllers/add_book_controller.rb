@@ -6,7 +6,7 @@ class AddBookController < ApplicationController
   end
 
   def create
-    @createdBook = Book.create(:isbn => params['isbn'], :title => params['title'], :edition => params['edition'], :author => params['author'], :condition => params['condition'], :price => params['price'])
+    @createdBook = Book.create(:isbn => params['isbn'], :title => params['title'], :edition => params['edition'], :author => params['author'], :condition => params['condition'], :price => params['price'], :picture_path => params['picture_path'])
     @createdBook.seller = @current_user
     if (@createdBook.valid?)
       @createdBook.save!
