@@ -3,17 +3,15 @@ class SearchBookController < ApplicationController
 
   def index
   	#Get text and university fields from either params or session
-#	text = params["search_text"]
-#	university = params["search_university"]
-#	if(text == "" && university == "")
-#		text = session["search_text"]
-#		university = session["search_university"]
-#	else
-#		session["search_text"] = text
-#		session["search_university"] = university
-#	end
-	text = helpers.set_text
-	university = helpers.set_university
+	text = params["search_text"]
+	university = params["search_university"]
+	if(text == "" && university == "")
+		text = session["search_text"]
+		university = session["search_university"]
+	else
+		session["search_text"] = text
+		session["search_university"] = university
+	end
 
 	#Query database	
 	@found_books = Book.find_books(text,university)

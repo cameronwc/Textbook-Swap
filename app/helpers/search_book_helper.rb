@@ -25,25 +25,4 @@ module SearchBookHelper
 		return message
 	end
 
-	#Sets the search text from params/session hash
-	def set_text
-		text = params["search_text"]
-		if(text != "")
-			session["search_text"] = text
-		else
-			text = session["search_text"]
-		end
-		return text
-	end
-
-	#Sets the search university from params/session hash
-	def set_university
-		university = params["search_university"]
-		if(university != "")
-			session["search_university"] = university
-		else
-			university = session["search_university"]
-		end
-		return university
-	end
 end
