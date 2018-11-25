@@ -111,12 +111,16 @@ $red-color: #f12711;
   border-radius: 8px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
 	.search_category i {
 		font-size: 0.5em;
 	}
 	.search_container {
 		width: 95%;
+	}
+
+	.nav-logo {
+		display: none;
 	}
 }
 
