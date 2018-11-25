@@ -4,7 +4,7 @@
 // add a gradient background to the login page
 #loginPage{
   background-image: linear-gradient(to right,#f12711,#f5af19) !important;
-  height:100%;
+  min-height: 100%;
 }
 .login_container {
   margin-top: 2%;
