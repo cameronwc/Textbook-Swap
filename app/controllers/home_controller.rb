@@ -1,3 +1,4 @@
+#The home page controller
 class HomeController < ApplicationController
   def index
     @allBooks = Book.all.limit(4)

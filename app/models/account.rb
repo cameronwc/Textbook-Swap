@@ -1,3 +1,4 @@
+#User account model
 class Account < ApplicationRecord
     has_many :books, inverse_of: 'seller' do
         def selling
